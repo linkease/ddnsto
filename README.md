@@ -17,7 +17,7 @@ Issue for ddnsto
 * Lede-x64 软件中心提供直接安装
 
 ## Windows  病毒检测
-* [地址](https://www.virustotal.com/#/file/754d18a3bee5e46805658fce0249ca9be0072896629180b6c4569ba9010ff16b/detection)
+* [在线病毒检测报告](https://www.virustotal.com/#/file/754d18a3bee5e46805658fce0249ca9be0072896629180b6c4569ba9010ff16b/detection)
 * 绝大多数都是绿色，360 报毒应该是误报
 
 最近上线的功能：
