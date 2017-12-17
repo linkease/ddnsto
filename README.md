@@ -29,7 +29,7 @@ Issue for ddnsto
 * Lede X86 插件源码：https://github.com/koolshare/ledesoft/tree/master/easyexplorer
 
 视频实时转码播放支持
-* linux 下载 video_mux 并与  easy-explorer-x86 放同一个目录
+* linux 下载 video_mux 并与  easy-explorer-linux 放同一个目录
 * windows 下载　video_mux.exe 并与 easy-explorer-x86.exe 放同一个目录
 * windows 打包下载，支持文件传输+DLNA  链接: https://pan.baidu.com/s/1hs8IZUc 密码: e29x
 
