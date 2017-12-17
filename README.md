@@ -17,7 +17,6 @@ Issue for ddnsto
 * [地址](https://www.virustotal.com/#/file/754d18a3bee5e46805658fce0249ca9be0072896629180b6c4569ba9010ff16b/detection)
 * 绝大多数都是绿色，360 报毒应该是误报
 
-
 最近上线的功能：
 * 支持 DLNA，请下载　DLNA 的软件，便可以通过手机或电视看局域网里的视频
 * ddnsto: http://koolshare.cn/thread-123567-1-1.html
