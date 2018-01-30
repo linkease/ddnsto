@@ -1,5 +1,6 @@
 ### 功能
 直接直接在 vlc 上播放 EasyExplorer 的视频，支持拖动等
+* 版本支持： EasyExplorer 0.1.5+; VLC 1.1.0+
 
 ### 安装办法
 Create a directory "extensions" at this location if it doesn't exists, then extract the file "vlsub.lua" from the archive inside:
