@@ -1,5 +1,5 @@
 ### 功能
-直接直接在 vlc 上播放 EasyExplorer 的视频，支持拖动等；因为 EasyExplorer 支持跨地点的点对点传输，所以自己可以借助 VLC 看多个地方的视频。
+直接直接在 vlc 上播放 EasyExplorer 的视频而不需要下载到本地，支持拖动等；因为 EasyExplorer 支持跨地点的点对点传输，所以自己可以借助 VLC 看多个地方的视频。
 * 版本支持： EasyExplorer 0.1.5+; VLC 1.1.0+
 
 ### 安装办法
