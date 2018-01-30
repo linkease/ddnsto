@@ -1,8 +1,6 @@
 ### 功能
 直接直接在 vlc 上播放 EasyExplorer 的视频，支持拖动等
 
-### 效果图
-
 ### 安装办法
 Create a directory "extensions" at this location if it doesn't exists, then extract the file "vlsub.lua" from the archive inside:
 把 easyext.lua 下载到 exensions 文件夹下，不存在则创建一个 extensions 文件夹，路径如下：
@@ -17,3 +15,6 @@ Create a directory "extensions" at this location if it doesn't exists, then extr
 * 直接启动 vlc
 * 视图 --> EasyExplorer 
 * 设置路径，默认是 http://127.0.0.1:8899/files/
+
+### 效果图
+![EasyExplorer VLC Extension](easyext.png)
