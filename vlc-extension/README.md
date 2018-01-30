@@ -3,7 +3,7 @@
 * 版本支持： EasyExplorer 0.1.5+; VLC 1.1.0+
 
 ### 安装办法
-Create a directory "extensions" at this location if it doesn't exists, then extract the file "vlsub.lua" from the archive inside:
+
 把 easyext.lua 下载到 exensions 文件夹下，不存在则创建一个 extensions 文件夹，路径如下：
 * Windows (all users): %ProgramFiles%\VideoLAN\VLC\lua\extensions\
 * Windows (current user): %APPDATA%\vlc\lua\extensions\
