@@ -6,6 +6,11 @@ Issue for ddnsto
 
 有问题请在这里反馈。
 
+最近更新内容：
+vlc 支持，详情看　vlc-extension；如果是　iOS 浏览器播放直接使用　vlc 打开链接远程播放，可以播放几乎所有格式 (vlc 在 appstore 免费)
+如果是　windows/linux 则可使用　vlc 插件，远程播放视频
+如果是　android　则最好使用　dlna ，安装　dlna app 即可
+
 ## 下载
 * 3cf6e180afad4385eae2968c2c487457  [easy-explorer-arm5](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-arm5)
 * e9c8f24cb724b2ea39792189399a6252  [easy-explorer-linux](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-linux)
