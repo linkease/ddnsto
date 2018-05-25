@@ -1,14 +1,15 @@
 # ddnsto
 Issue for ddnsto
 
-官网：https://www.ddns.to
+官网：https://www.ddnsto.com
+旧：https://www.ddns.to 暂时不用
 
 有问题请在这里反馈。
 
 ## 下载
-* 3f71e70115739c7b349c4242d620d8e5  [easy-explorer-arm5](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-arm5)
-* 3541d7ee4d2495dc7a8e9a049e874655  [easy-explorer-linux](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-linux)
-* b027fb70cf025c45f07e20a4b7a9fd1f  [easy-explorer-mac](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-mac)
+* 3cf6e180afad4385eae2968c2c487457  [easy-explorer-arm5](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-arm5)
+* e9c8f24cb724b2ea39792189399a6252  [easy-explorer-linux](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-linux)
+* 743828ddfda619503c9795c581cd197d  [easy-explorer-mac](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-mac)
 * c18007211b780ba928ea15ac16e9c1f0  [easy-explorer-x86.zip](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-x86.zip)
 * 群辉插件，支持在线转码+DLNA [下载并手动安装](https://github.com/koolshare/synology-easyexplorer/blob/master/easyexplorer_x86.spk)
 * b212c90fff368f279973df62d79d7295  [video_mux](https://github.com/koolshare/synology-easyexplorer/blob/master/package/bin/video_mux)
