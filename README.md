@@ -15,10 +15,7 @@ vlc 支持，详情看　vlc-extension
 * 如果是　android　则最好使用　dlna ，安装　dlna app 即可
 
 ## 下载
-* 3cf6e180afad4385eae2968c2c487457  [easy-explorer-arm5](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-arm5)
-* e9c8f24cb724b2ea39792189399a6252  [easy-explorer-linux](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-linux)
-* 743828ddfda619503c9795c581cd197d  [easy-explorer-mac](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-mac)
-* c18007211b780ba928ea15ac16e9c1f0  [easy-explorer-x86.zip](http://ddnsto.b0.upaiyun.com/fe/easy-explorer-x86.zip)
+* http://firmware.koolshare.cn/binary/Easy-Explorer/
 * 群辉插件，支持在线转码+DLNA [下载并手动安装](https://github.com/koolshare/synology-easyexplorer/blob/master/easyexplorer_x86.spk)
 * b212c90fff368f279973df62d79d7295  [video_mux](https://github.com/koolshare/synology-easyexplorer/blob/master/package/bin/video_mux)
 * 3f1b653dcf32778a2daa27e2d63f1f7a  video_mux.exe
