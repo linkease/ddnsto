@@ -32,6 +32,7 @@ vlc 支持，详情看　vlc-extension
 * Lede X86 插件源码：https://github.com/koolshare/ledesoft/tree/master/easyexplorer
 
 # 最新动态 (2018-12-08)
-* 小程序请搜索 koolcenter
+* 支持远程 windows/ssh/telnet 并且支持分享
+* 小程序，请搜索 koolcenter
 * iOS App 正在开发中，将重点突出远程播放功能。App 的开放，也导致了 DLNA + video_mux  功能的放弃
 
