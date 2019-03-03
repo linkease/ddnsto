@@ -17,6 +17,7 @@ vlc 支持，详情看　vlc-extension
 ## 下载
 * http://firmware.koolshare.cn/binary/Easy-Explorer/
 * 群辉插件[下载并手动安装](https://github.com/koolshare/synology-easyexplorer/blob/master/easyexplorer_x86.spk)
+* QNAP插件[下载并手动安装](https://firmware.koolshare.cn/binary/Easy-Explorer/qnap-20190303.063515/)
 * Merlin 软件中心提供直接安装
 * Lede-x64 软件中心提供直接安装
 
@@ -27,9 +28,10 @@ vlc 支持，详情看　vlc-extension
 # 功能使用
 * ddnsto: http://koolshare.cn/thread-123567-1-1.html
 * EasyExplorer: http://koolshare.cn/thread-129199-1-1.html
-* 群辉插件源码：https://github.com/koolshare/synology-easyexplorer
-* Netgear NAS 插件源码： https://github.com/koolshare/readynas-easyexplorer
-* Lede X86 插件源码：https://github.com/koolshare/ledesoft/tree/master/easyexplorer
+* 群辉插件源码: https://github.com/koolshare/synology-easyexplorer
+* Netgear NAS 插件源码: https://github.com/koolshare/readynas-easyexplorer
+* Lede X86 插件源码: https://github.com/koolshare/ledesoft/tree/master/easyexplorer
+* QNAP 插件源代码: https://github.com/koolshare/qnap-easyexplorer
 
 # 最新动态 (2018-12-08)
 * 支持远程 windows/ssh/telnet 并且支持分享
