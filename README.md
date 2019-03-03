@@ -26,8 +26,9 @@ vlc 支持，详情看　vlc-extension
 * 绝大多数都是绿色，360 报毒应该是误报
 
 # 功能使用
-* ddnsto: http://koolshare.cn/thread-123567-1-1.html
-* EasyExplorer: http://koolshare.cn/thread-129199-1-1.html
+* ddnsto远程域名教程: http://koolshare.cn/thread-123567-1-1.html
+* EasyExplorer远程文件管理教程: http://koolshare.cn/thread-129199-1-1.html
+* 远程桌面与远程协助教程: http://koolshare.cn/thread-143102-1-1.html
 * 群辉插件源码: https://github.com/koolshare/synology-easyexplorer
 * Netgear NAS 插件源码: https://github.com/koolshare/readynas-easyexplorer
 * Lede X86 插件源码: https://github.com/koolshare/ledesoft/tree/master/easyexplorer
