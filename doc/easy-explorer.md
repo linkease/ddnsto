@@ -9,15 +9,21 @@
 [Windows 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.exe)
 
 ### 安装与绑定账号
-![初始化配置](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "初始化配置")
+![初始化配置](https://github.com/koolshare/ddnsto/raw/master/doc/img/win01.png "初始化配置")
+![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/win02.png "桌面菜单")
 
 # MAC 安装教程
 ### 程序地址
 [MAC 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
 
 ### 安装与绑定账号
+![拖到 Applications](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac01.png "拖到 Applications")
+![Applications中打开](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "Applications中打开")
+
+初始化配置参考 Windows
 
 # QNAP 安装教程
+[参考论坛文章完成 QNAP 安装](http://koolshare.cn/thread-156616-1-1.html)
 
 # 群辉安装教程
 
