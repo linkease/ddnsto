@@ -4,6 +4,9 @@
 * 增量备份，只传改动的数据
 * 全平台相互管理与备份，一个都不能少（路由器，NAS，手机，电脑)
 
+# 重要，一定要运行一个非手机端的程序，手机才能完整的体验！！！
+下面是各种非手机平台的安装办法　
+
 # Windows 安装教程
 ### 程序地址
 [Windows 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.exe)
