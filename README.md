@@ -7,7 +7,7 @@
 官网：https://www.ddnsto.com
 旧：https://www.ddns.to 暂时不用
 
-有问题请在这里反馈。
+有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
 
 ## 下载
 * [MAC 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
