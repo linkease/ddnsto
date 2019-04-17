@@ -22,6 +22,8 @@
 
 初始化配置参考 Windows
 
+![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "桌面菜单")
+
 # QNAP 安装教程
 [参考论坛文章完成 QNAP 安装](http://koolshare.cn/thread-156616-1-1.html)
 
