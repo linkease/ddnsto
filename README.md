@@ -1,5 +1,8 @@
-# ddnsto
-Issue for ddnsto
+# ddnsto 是什么？
+* 可以配置一个域名，远程到家里的私有网络
+* 可以用网页，远程家里的桌面
+* 可以安装 EasyExplorer 与 APP，用备份手机的数据到家里
+* 用 EasyExplorer 看家里的视频，不管有没有公网 IP
 
 官网：https://www.ddnsto.com
 旧：https://www.ddns.to 暂时不用
