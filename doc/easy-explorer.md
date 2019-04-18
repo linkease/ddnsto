@@ -28,7 +28,7 @@
 ![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "桌面菜单")
 
 # Merlin 安装教程
-![在路由应用市场中安装](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm01.jpg "在路由应用市场中安装")
+![在路由应用市场中安装](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm02.png "在路由应用市场中安装")
 ![打开插件](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm02.jpg "打开插件")
 
 登录 https://www.ddnsto.com 手动把 token 填入插件相关的位置。
