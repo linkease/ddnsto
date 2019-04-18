@@ -17,6 +17,7 @@
 
 # MAC 安装教程
 ### 程序地址
+要记得，把 EasyExplorer 移动到 Applications 里面！
 [MAC 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
 
 ### 安装与绑定账号
