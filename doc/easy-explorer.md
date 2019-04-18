@@ -17,16 +17,16 @@
 
 # MAC 安装教程
 ### 程序地址
-要记得，把 EasyExplorer 移动到 Applications 里面！
 [MAC 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
 
 ### 安装与绑定账号
+
+要记得，把 EasyExplorer 移动到 Applications 里面！
+
 ![拖到 Applications](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac01.png "拖到 Applications")
 ![Applications中打开](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "Applications中打开")
 
 初始化配置参考 Windows
-
-![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "桌面菜单")
 
 # Merlin 安装教程
 ![在路由应用市场中安装](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm02.png "在路由应用市场中安装")
