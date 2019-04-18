@@ -50,7 +50,7 @@
 ![显示已绑定的所有设备列表](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS01.jpg "显示已绑定的所有设备列表")
 ![文件夹查看](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS02.jpg "文件夹查看")
 ![管理设备以及上传备份](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS03.jpg "管理设备以及上传备份")
-![文件菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS04.jpg "文件菜单")
+![文件菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS05.jpg "文件菜单")
 
 其它细节自己体验，如：
 1. 打开视频
