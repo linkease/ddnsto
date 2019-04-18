@@ -12,7 +12,6 @@
 ## 下载
 * [MAC 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
 * [Windows 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.exe)
-* 群辉插件[下载并手动安装](https://github.com/koolshare/synology-easyexplorer/blob/master/easyexplorer_x86.spk)
 * QNAP插件[下载并手动安装](https://firmware.koolshare.cn/binary/Easy-Explorer/qnap-20190303.063515/)
 * Merlin 软件中心提供直接安装
 * Lede-x64 软件中心提供直接安装
@@ -27,7 +26,6 @@
 * 路由器插件发布：http://koolshare.cn/thread-116500-1-1.html
 * EasyExplorer远程文件管理教程: http://koolshare.cn/thread-129199-1-1.html
 * 远程桌面与远程协助教程: http://koolshare.cn/thread-143102-1-1.html
-* 群辉插件源码: https://github.com/koolshare/synology-easyexplorer
 * Netgear NAS 插件源码: https://github.com/koolshare/readynas-easyexplorer
 * Lede X86 插件源码: https://github.com/koolshare/ledesoft/tree/master/easyexplorer
 * QNAP 插件源代码: https://github.com/koolshare/qnap-easyexplorer
