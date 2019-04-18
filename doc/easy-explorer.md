@@ -40,11 +40,6 @@
 # QNAP 安装教程
 [参考论坛文章完成 QNAP 安装](http://koolshare.cn/thread-156616-1-1.html)
 
-# 群辉安装教程
-* 群辉插件[下载并手动安装](https://github.com/koolshare/synology-easyexplorer/blob/master/easyexplorer_x86.spk)
-手动离线安装，类似 QNAP。
-目前只支持 x86 版本，arm 系列的不支持。
-
 # iOS 支持（android版本开发中）
 在公测群公告查看下载链接，安装，微信登录，再进行测试。
 ### iOS 功能简单介绍
