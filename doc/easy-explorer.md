@@ -48,9 +48,8 @@
 在公测群公告查看下载链接，安装，微信登录，再进行测试。
 ### iOS 功能简单介绍
 ![显示已绑定的所有设备列表](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS01.jpg "显示已绑定的所有设备列表")
-![文件夹查看](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS02.jpg "文件夹查看")
-![管理设备以及上传备份](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS03.jpg "管理设备以及上传备份")
 ![文件菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS05.jpg "文件菜单")
+![管理设备以及上传备份](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS03.jpg "管理设备以及上传备份")
 
 其它细节自己体验，如：
 1. 打开视频
