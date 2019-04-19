@@ -12,6 +12,9 @@
 [Windows 桌面版本](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.exe)
 
 ### 安装与绑定账号
+
+前期因为 Windows 还没有购买代码签名证书，所以会弹出安全提示，请仍然运行！
+
 ![初始化配置](https://github.com/koolshare/ddnsto/raw/master/doc/img/win01.png "初始化配置")
 ![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/win02.png "桌面菜单")
 
