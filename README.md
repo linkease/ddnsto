@@ -40,4 +40,4 @@
 
 # APP 公测链接 (2019-04-17)
 * [公测链接](https://testflight.apple.com/join/Pl4jm65I)
-
+* [基础教程](doc/easy-explorer.md)
