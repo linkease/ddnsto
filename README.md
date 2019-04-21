@@ -39,5 +39,5 @@
 * APP 内测中：http://koolshare.cn/thread-156616-1-1.html
 
 # APP 公测链接 (2019-04-21)
-* [公测链接](https://testflight.apple.com/join/Pl4jm65I)
+* [iOS点此链接测试](https://testflight.apple.com/join/Pl4jm65I)
 * [基础教程](doc/easy-explorer.md)
