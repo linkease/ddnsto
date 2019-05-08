@@ -93,7 +93,7 @@
 
 目前确实是这样的，未来再考虑支持
 
-# 加群参数测试
+# 加这个人，他会拉你进群参测试
 
 ![IMG_0439](https://user-images.githubusercontent.com/7870528/56940482-4ec39e80-6b41-11e9-9256-b94aaa66eb13.JPG)
 
