@@ -16,13 +16,13 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 
 易有云目前支持以下终端类型：
 
-1. （1）Windows
-2. （2）MAC
-3. （3）KoolShare Merlin
-4. （4）QNAP
-5. （5）Fw867 Lede
-6. （6）iOS
-7. （7）Android （开发中，6 月初发布测试）
+（1）Windows
+（2）MAC
+（3）KoolShare Merlin
+（4）QNAP
+（5）Fw867 Lede
+（6）iOS
+（7）Android （开发中，6 月初发布测试）
 
 在以上设备安装易有云软件后，就可以使用设备端的文件服务了。TODO 多平台操作指南。
 
@@ -72,7 +72,7 @@ Logs文件夹中保存程序的相关日志
 
 点击首页右上角菜单按钮，可查看本机可进行的设备相关操作。如下图
 
-![设备菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-home.png)
+![设备菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-device.png)
 
 （1）相册
 
