@@ -254,7 +254,7 @@ useDirect 表示是否直连
 ![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video1.png)
 ![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video2.png)
 
-## 3.FAQ
+## 3. 常见问题
 
 1. 支持多文件夹（多共享目录）吗？
 
