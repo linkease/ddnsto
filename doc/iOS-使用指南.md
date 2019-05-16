@@ -132,21 +132,22 @@ Logs文件夹中保存程序的相关日志
 
 2.3.4 非本机设备管理相关操作
 
-多平台操作指南。点击设备列表中的&quot;公司电脑&quot;，可对非本机设备进行管理及文件操作，操作项与本机基本相同，但多了&quot;备份相册&quot;及&quot;设备状态&quot;两项
+多平台操作指南。点击设备列表中的”公司电脑”，可对非本机设备进行管理及文件操作，操作项与本机基本相同，但多了“备份相册”及”设备状态”两项
 
- 
+![非本机设备](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-device.png)
 
 （1）备份相册
 
-点击备份相册，开始将本手机的相册备份到当前打开的设备中，备份后会在当前打开的设备中创建命名为&quot;设备名称+的照片备份&quot;的文件夹
+点击备份相册，开始将本手机的相册备份到当前打开的设备中，备份后会在当前打开的设备中创建命名为“设备名称+的照片备份”的文件夹
 
- 
+![备份1](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-backup1.png)
+![备份2](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-backup2.png)
 
 （2）设备状态
 
 点击可查看当前设备状态，是否连接等
 
- 
+![是否连接](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect1.png)
 
 isConnect为1表示连接成功
 
@@ -160,22 +161,28 @@ useDirect 表示是否直连
 
  1. 外网连接非直连
 
- 
+![外网连接非直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect2.png)
+
  2. 内网连接直连
 
+![内网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect3.png)
 
-3. 外网连接直连
+ 3. 外网连接直连
+
+![外网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect4.png)
 
  2.3.5文件操作
 
 用户可在手机客户端管理所有在线设备的所有文件，支持跨设备的文件操作。选择设备中的任何文件或文件夹，可对该文件执行多种操作，如下图：
 
- 
+![文件操作](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-file.png)
+
 （1）重命名
 
 选择需要重命名的文件后，点击重命名可对文件名称进行重新编辑，点击确定后，新的名称生效
 
- 
+![设备重命名](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-rename.png)
+
 
 （2）移动
 
@@ -189,24 +196,37 @@ useDirect 表示是否直连
 
 易有云采用增量同步技术进行复制，不管是全新的复制，还是复制到一半的错误或取消，后续对相同文件名的文件进行重新复制时，都会快速计算增量值，并且仅复制不同部分的数据，大大缩短复制的时间。
 
- 
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy1.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy2.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy3.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy4.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy5.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy6.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy7.png)
+![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy8.png)
+
 
 （4）压缩
 
 选择需要压缩的文件，点击操作项中的压缩，则可对该文件进行压缩，压缩格式为.zip。压缩完成后，在文件所在的文件夹中生成一个压缩文件
 
- 
+![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip1.png)
+![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip2.png)
+![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip3.png)
+
 
 （5）删除
 
 点击删除，需二次确认，确认后可进行删除，删除在前台进行
 
- 
+![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del1.png)
+![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del2.png)
+
 2.3.6文件预览
 
 （1）文档
 
-支持目前大部分主流的文档格式，包括Word、PDF、TXT等
+支持目前大部分主流的文档格式，包括 Word、PDF、TXT 等
 
 （2）表格
 
@@ -216,7 +236,8 @@ useDirect 表示是否直连
   1. 支持所有主流图片格式
   2. 支持左右滑动查看
 
- 
+![图片](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-photo.png)
+
 （4）音频
 
 支持主流的音频格式播放
@@ -225,11 +246,13 @@ useDirect 表示是否直连
 
 支持如下功能
 
-1.
   1. 开始暂停，及快进后退
   2. 字幕文件选择
   3. 播放倍速，支持X0.5、X1、X1.5、X2
   4. 横竖屏控制
+
+![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video1.png)
+![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video2.png)
 
 ## 3.FAQ
 
@@ -237,46 +260,46 @@ useDirect 表示是否直连
 
 答：暂时不支持，未来会支持
 
-1. 支持内网吗？
+2. 支持内网吗？
 
 答：支持，也同时支持外网。内网会走内网的连接速度
 
-1. 会自动断点续传吗？
+3. 会自动断点续传吗？
 
 答：再复制一次，都会重新计算增量然后会传增量的部分，这个相当于断点续传
 
-1. 连接突然出错怎么样？
+4. 连接突然出错怎么样？
 
 答：突然连接出错，请尝试再连接一次；关闭代理再尝试；杀进程重启再尝试；排错方法，可以查看连接状态，具体参考上文的连接状态部分。
 
-1. 除了手机之后，没显示其它的设备怎么办？
+5. 除了手机之后，没显示其它的设备怎么办？
 
 答：确认是否在其它地方绑定了设备？ 如果已绑定了，则等一会再看是否显示设备列表。，若仍无法显示则杀进程重试。
 
-1. 看视频特别卡？
+6. 看视频特别卡？
 
 答：确认手机是否打开代理，打开则关闭；确认与视频所在设备的连接状态是否为连接中，非连接中请等待连接完成。
 
-1. 如果文件夹设置错误了怎么办
+7. 如果文件夹设置错误了怎么办
 
 答：目前代码限制，只能共享一个文件夹，如果配置错误了，可以在菜单右上角，系统配置再修改共享的目录。
 
-1. 易有云文件传输安全吗？
+9. 易有云文件传输安全吗？
 
 答：
 
-1. （1）如传输文件的两个节点都在内网，会优先使用内网传输，速度快且安全
-2. （2）如果您的网络状态比较好，易有云优先选择使用 P2P 进行文件加密传输，数据不走服务器，肯定安全。
-3. （3）如果您名下的设备节点，有一台有公网 IP 的设备，则节点通信会借助这台设备转发，通信也不走服务器，安全。
-4. （4）如果您网络不满足上面的任何条件，则数据走了服务器转发，服务器只转流量，不存任何真实数据，安全。
-5. （5）您可以通过查看连接状态了确认当前的传输方式，也可以看传输速度来确定是否走服务器转发。文件很大，服务器转发速度有限，没有直连快！
-6. （6）Token 目前还比较重要，请不要分享给他人
+ （1）如传输文件的两个节点都在内网，会优先使用内网传输，速度快且安全
+ （2）如果您的网络状态比较好，易有云优先选择使用 P2P 进行文件加密传输，数据不走服务器，肯定安全。
+ （3）如果您名下的设备节点，有一台有公网 IP 的设备，则节点通信会借助这台设备转发，通信也不走服务器，安全。
+ （4）如果您网络不满足上面的任何条件，则数据走了服务器转发，服务器只转流量，不存任何真实数据，安全。
+ （5）您可以通过查看连接状态了确认当前的传输方式，也可以看传输速度来确定是否走服务器转发。文件很大，服务器转发速度有限，没有直连快！
+ （6）Token 目前还比较重要，请不要分享给他人
 
-1. 易有云安全实现说明
+10. 易有云安全实现说明
 
 答：
 
-1. （1）目前易有云先经过非对称加密，最后由服务器在内存当中生成一个对称加密密钥。
-2. （2）服务器生成的密钥只存于内存，不存于任何数据库，每个用户都不一样，服务器重启或者用户再次连接则变化。
-3. （3）文件在传输过程数据会加密，存到本地之后，会解密。
-4. （4）目前在一定程度上，安全级别还不够，未来考虑让用户自己设置本地的密钥，但使用会更复杂。(TODO 使用 gpg 密钥对服务器)
+ （1）目前易有云先经过非对称加密，最后由服务器在内存当中生成一个对称加密密钥。
+ （2）服务器生成的密钥只存于内存，不存于任何数据库，每个用户都不一样，服务器重启或者用户再次连接则变化。
+ （3）文件在传输过程数据会加密，存到本地之后，会解密。
+ （4）目前在一定程度上，安全级别还不够，未来考虑让用户自己设置本地的密钥，但使用会更复杂。(TODO 使用 gpg 密钥对服务器)
