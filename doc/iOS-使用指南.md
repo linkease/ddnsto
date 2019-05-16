@@ -171,7 +171,7 @@ useDirect 表示是否直连
 
 ![外网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect4.png)
 
-#### 2.3.5文件操作
+#### 2.3.5 文件操作
 
 用户可在手机客户端管理所有在线设备的所有文件，支持跨设备的文件操作。选择设备中的任何文件或文件夹，可对该文件执行多种操作，如下图：
 
@@ -222,7 +222,7 @@ useDirect 表示是否直连
 ![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del1.png)
 ![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del2.png)
 
-#### 2.3.6文件预览
+#### 2.3.6 文件预览
 
 （1）文档
 
