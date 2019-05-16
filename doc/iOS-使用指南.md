@@ -32,7 +32,7 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
     
 ![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png)
     
-2.2.2 注册及登录
+#### 2.2.2 注册及登录
 
 （1）微信登录
 
