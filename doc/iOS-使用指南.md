@@ -28,7 +28,7 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 
 ### 2.2 iOS客户端安装及注册登录
 
-2.2.1 打开App Store 搜索并下载易有云 App
+#### 2.2.1 打开App Store 搜索并下载易有云 App
     
 ![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png)
     
@@ -58,7 +58,7 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 
 ### 2.3 iOS 客户端使用指南
 
-2.3.1 首页
+#### 2.3.1 首页
 
 登录成功后，首页为本机共享目录的详细信息，iPhone 上为固定的路径，首次登录仅包含如下两个文件夹：
 
@@ -68,7 +68,7 @@ Logs文件夹中保存程序的相关日志
 
 ![文件夹说明](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-home.png)
 
-2.3.2 本机设备管理相关操作
+#### 2.3.2 本机设备管理相关操作
 
 点击首页右上角菜单按钮，可查看本机可进行的设备相关操作。如下图
 
@@ -101,7 +101,7 @@ Logs文件夹中保存程序的相关日志
 ![新建](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new.png)
 ![显示新建内容](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new2.png)
 
-2.3.3 左侧菜单
+#### 2.3.3 左侧菜单
 
 点击首页左上角的菜单按钮即可看到设备列表以及系统相关的操作
 
@@ -130,7 +130,7 @@ Logs文件夹中保存程序的相关日志
 ![任务1](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task1.png)
 ![任务2](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task2.png)
 
-2.3.4 非本机设备管理相关操作
+#### 2.3.4 非本机设备管理相关操作
 
 多平台操作指南。点击设备列表中的”公司电脑”，可对非本机设备进行管理及文件操作，操作项与本机基本相同，但多了“备份相册”及”设备状态”两项
 
@@ -171,7 +171,7 @@ useDirect 表示是否直连
 
 ![外网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect4.png)
 
- 2.3.5文件操作
+#### 2.3.5文件操作
 
 用户可在手机客户端管理所有在线设备的所有文件，支持跨设备的文件操作。选择设备中的任何文件或文件夹，可对该文件执行多种操作，如下图：
 
@@ -190,7 +190,7 @@ useDirect 表示是否直连
 
 目前只支持设备内移动，不可跨设备移动
 
-1. （3）复制
+（3）复制
 
 复制，即将文件从当前所在设备复制到目的地址中，目的地址可以是任何设备的地址。复制过程中，目的地址会存在三个临时文件，不可预览，待复制完成后临时文件删除。
 
@@ -222,7 +222,7 @@ useDirect 表示是否直连
 ![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del1.png)
 ![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del2.png)
 
-2.3.6文件预览
+#### 2.3.6文件预览
 
 （1）文档
 
