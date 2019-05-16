@@ -27,40 +27,38 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 在以上设备安装易有云软件后，就可以使用设备端的文件服务了。TODO 多平台操作指南。
 
 ### 2.2 iOS客户端安装及注册登录
-    1. 2.2.1 打开App Store 搜索并下载&quot;易有云&quot;App
-    
-    ![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png "下载并注册")
-    
-    2. 2.2.2 注册及登录
 
-1. （1）微信登录
+2.2.1 打开App Store 搜索并下载易有云 App
+    
+![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png)
+    
+2.2.2 注册及登录
+
+（1）微信登录
 
 点击微信按钮，跳转至微信授权即可登录
 
-1. （2）邮箱密码登录
-  1. 浏览器打开链接[https://www.ddnsto.com/](https://www.ddnsto.com/)
-  2. 点击右上角进行微信登录
+（2）邮箱密码登录
 
+1. 浏览器打开链接[https://www.ddnsto.com/](https://www.ddnsto.com/)
+2. 点击右上角进行微信登录
 
+![右上角](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-home.png)
 
-1.
-  1. 微信扫码登录
+3. 微信扫码登录
+![扫码登录](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-qr.png)
 
- 
+4. 登录后可查看令牌，在非移动端设备登录时使用
 
-1.
-  1. 登录后可查看令牌，在非移动端设备登录时使用
+![设备信息](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-info.png)
 
- 
+5. 点击右上角“更多” --> 设置“个人资料”，可编辑用户名及密码，后续手机登录可使用用户名密码的方式进行
 
-1.
-  1. 点击右上角&quot;更多&quot;--\&gt;&quot;设置个人资料&quot;，可编辑用户名及密码，后续手机登录可使用用户名密码的方式进行
+![个人资料修改](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-info.png)
 
- 
+### 2.3iOS客户端使用指南
 
-1.
-  1. 2.3iOS客户端使用指南
-    1. 2.3.1首页
+2.3.1 首页
 
 登录成功后，首页为本机共享目录的详细信息，iPhone上为固定的路径，首次登录仅包含如下两个文件夹：
 
