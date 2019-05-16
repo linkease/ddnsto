@@ -76,7 +76,7 @@ Logs文件夹中保存程序的相关日志
 
 （1）相册
 
-点击--\&gt;在手机相册选择需要共享的照片--\&gt;点击确定
+点击-->在手机相册选择需要共享的照片-->点击确定
 
 照片就会复制的当前设备的共享目录中，如下图：
 
@@ -84,19 +84,19 @@ Logs文件夹中保存程序的相关日志
 
 （2）文件
 
-点击--\&gt;选择位置--\&gt;选中待管理的云文件
+点击-->选择位置-->选中待管理的云文件
 
 例如将iCloud上的文件同步到易有云
 
 （3）重命名设备
 
-点击--\&gt;设置新的设备名称--\&gt;确定
+点击-->设置新的设备名称-->确定
 
 ![重命名](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-rename.png)
 
 （4）新建文件夹
 
-点击--\&gt;输入新建文件夹名称--\&gt;确定
+点击-->输入新建文件夹名称-->确定
 
 ![新建](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new.png)
 ![显示新建内容](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new2.png)
