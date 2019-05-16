@@ -15,8 +15,8 @@
 
 前期因为 Windows 还没有购买代码签名证书，所以会弹出安全提示，请仍然运行！
 
-![初始化配置](https://github.com/koolshare/ddnsto/raw/master/doc/img/win01.png "初始化配置")
-![桌面菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/win02.png "桌面菜单")
+![初始化配置](https://www.ddnsto.com/doc/img/win01.png "初始化配置")
+![桌面菜单](https://www.ddnsto.com/doc/img/win02.png "桌面菜单")
 
 # MAC 安装教程
 ### 程序地址
@@ -26,14 +26,14 @@
 
 要记得，把 EasyExplorer 移动到 Applications 里面！
 
-![拖到 Applications](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac01.png "拖到 Applications")
-![Applications中打开](https://github.com/koolshare/ddnsto/raw/master/doc/img/mac02.png "Applications中打开")
+![拖到 Applications](https://www.ddnsto.com/doc/img/mac01.png "拖到 Applications")
+![Applications中打开](https://www.ddnsto.com/doc/img/mac02.png "Applications中打开")
 
 初始化配置参考 Windows
 
 # Merlin 安装教程
-![在路由应用市场中安装](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm02.png "在路由应用市场中安装")
-![打开插件](https://github.com/koolshare/ddnsto/raw/master/doc/img/arm02.jpg "打开插件")
+![在路由应用市场中安装](https://www.ddnsto.com/doc/img/arm02.png "在路由应用市场中安装")
+![打开插件](https://www.ddnsto.com/doc/img/arm02.jpg "打开插件")
 
 登录 https://www.ddnsto.com 手动把 token 填入插件相关的位置。
 
@@ -46,9 +46,9 @@
 # iOS 支持（android版本开发中）
 在公测群公告查看下载链接，安装，微信登录，再进行测试。
 ### iOS 功能简单介绍
-![显示已绑定的所有设备列表](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS01.jpg "显示已绑定的所有设备列表")
-![文件菜单](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS05.jpg "文件菜单")
-![管理设备以及上传备份](https://github.com/koolshare/ddnsto/raw/master/doc/img/iOS03.jpg "管理设备以及上传备份")
+![显示已绑定的所有设备列表](https://www.ddnsto.com/doc/img/iOS01.jpg "显示已绑定的所有设备列表")
+![文件菜单](https://www.ddnsto.com/doc/img/iOS05.jpg "文件菜单")
+![管理设备以及上传备份](https://www.ddnsto.com/doc/img/iOS03.jpg "管理设备以及上传备份")
 
 其它细节自己体验，如：
 1. 打开视频
