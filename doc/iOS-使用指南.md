@@ -66,9 +66,13 @@ Imports 文件夹中保存通过其他应用发送过来的文件，例如微信
 
 Logs文件夹中保存程序的相关日志
 
+![文件夹说明](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-home.png)
+
 2.3.2 本机设备管理相关操作
 
 点击首页右上角菜单按钮，可查看本机可进行的设备相关操作。如下图
+
+![设备菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-home.png)
 
 （1）相册
 
@@ -76,7 +80,7 @@ Logs文件夹中保存程序的相关日志
 
 照片就会复制的当前设备的共享目录中，如下图：
 
- 
+![照片上传](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-upload.png)
 
 （2）文件
 
@@ -88,19 +92,24 @@ Logs文件夹中保存程序的相关日志
 
 点击--\&gt;设置新的设备名称--\&gt;确定
 
+![重命名](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-rename.png)
+
 （4）新建文件夹
 
 点击--\&gt;输入新建文件夹名称--\&gt;确定
+
+![新建](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new.png)
+![显示新建内容](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new2.png)
 
 2.3.3 左侧菜单
 
 点击首页左上角的菜单按钮即可看到设备列表以及系统相关的操作
 
+![左侧菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-left.png)
+
 （1）设备列表
 
 可查查看使用本账号登录的所有在线设备列表，点击每个设备，可对其进行设备操作及文件管理
-
- 
 
 （2）设置
 
@@ -112,11 +121,14 @@ Logs文件夹中保存程序的相关日志
 
 退出登录操作
 
- 
+![系统信息](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-setting.png)
 
 （3）任务
 
 分设备显示所有当前正在执行的任务，复制、移动等操作的源设备及目的设备中都会展示该条任务
+
+![任务1](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task1.png)
+![任务2](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task2.png)
 
 2.3.4 非本机设备管理相关操作
 
