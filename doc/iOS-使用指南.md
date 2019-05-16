@@ -28,7 +28,7 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 
 ### 2.2 iOS客户端安装及注册登录
     1. 2.2.1 打开App Store 搜索并下载&quot;易有云&quot;App
-    ![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone.png "下载并注册")
+    ![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png "下载并注册")
     
     2. 2.2.2 注册及登录
 
