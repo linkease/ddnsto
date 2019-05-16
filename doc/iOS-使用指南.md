@@ -30,7 +30,7 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 
 #### 2.2.1 打开App Store 搜索并下载易有云 App
     
-![下载并注册](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/login.png)
+![下载并注册](https://www.ddnsto.com/doc/iOS/login.png)
     
 #### 2.2.2 注册及登录
 
@@ -43,18 +43,18 @@ iOS设备可用于管理易有云个人账号下的所以设备，但使用前�
 1. 浏览器打开链接[https://www.ddnsto.com/](https://www.ddnsto.com/)
 2. 点击右上角进行微信登录
 
-![右上角](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-home.png)
+![右上角](https://www.ddnsto.com/doc/iOS/web-home.png)
 
 3. 微信扫码登录
-![扫码登录](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-qr.png)
+![扫码登录](https://www.ddnsto.com/doc/iOS/web-qr.png)
 
 4. 登录后可查看令牌，在非移动端设备登录时使用
 
-![设备信息](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-info.png)
+![设备信息](https://www.ddnsto.com/doc/iOS/web-info.png)
 
 5. 点击右上角“更多” --> 设置“个人资料”，可编辑用户名及密码，后续手机登录可使用用户名密码的方式进行
 
-![个人资料修改](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/web-info.png)
+![个人资料修改](https://www.ddnsto.com/doc/iOS/web-info.png)
 
 ### 2.3 iOS 客户端使用指南
 
@@ -66,13 +66,13 @@ Imports 文件夹中保存通过其他应用发送过来的文件，例如微信
 
 Logs文件夹中保存程序的相关日志
 
-![文件夹说明](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-home.png)
+![文件夹说明](https://www.ddnsto.com/doc/iOS/phone-home.png)
 
 #### 2.3.2 本机设备管理相关操作
 
 点击首页右上角菜单按钮，可查看本机可进行的设备相关操作。如下图
 
-![设备菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-device.png)
+![设备菜单](https://www.ddnsto.com/doc/iOS/phone-device.png)
 
 （1）相册
 
@@ -80,7 +80,7 @@ Logs文件夹中保存程序的相关日志
 
 照片就会复制的当前设备的共享目录中，如下图：
 
-![照片上传](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-upload.png)
+![照片上传](https://www.ddnsto.com/doc/iOS/phone-upload.png)
 
 （2）文件
 
@@ -92,20 +92,20 @@ Logs文件夹中保存程序的相关日志
 
 点击-->设置新的设备名称-->确定
 
-![重命名](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-rename.png)
+![重命名](https://www.ddnsto.com/doc/iOS/phone-rename.png)
 
 （4）新建文件夹
 
 点击-->输入新建文件夹名称-->确定
 
-![新建](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new.png)
-![显示新建内容](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-new2.png)
+![新建](https://www.ddnsto.com/doc/iOS/phone-new.png)
+![显示新建内容](https://www.ddnsto.com/doc/iOS/phone-new2.png)
 
 #### 2.3.3 左侧菜单
 
 点击首页左上角的菜单按钮即可看到设备列表以及系统相关的操作
 
-![左侧菜单](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-left.png)
+![左侧菜单](https://www.ddnsto.com/doc/iOS/phone-left.png)
 
 （1）设备列表
 
@@ -121,33 +121,33 @@ Logs文件夹中保存程序的相关日志
 
 退出登录操作
 
-![系统信息](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-setting.png)
+![系统信息](https://www.ddnsto.com/doc/iOS/phone-setting.png)
 
 （3）任务
 
 分设备显示所有当前正在执行的任务，复制、移动等操作的源设备及目的设备中都会展示该条任务
 
-![任务1](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task1.png)
-![任务2](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/phone-task2.png)
+![任务1](https://www.ddnsto.com/doc/iOS/phone-task1.png)
+![任务2](https://www.ddnsto.com/doc/iOS/phone-task2.png)
 
 #### 2.3.4 非本机设备管理相关操作
 
 多平台操作指南。点击设备列表中的”公司电脑”，可对非本机设备进行管理及文件操作，操作项与本机基本相同，但多了“备份相册”及”设备状态”两项
 
-![非本机设备](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-device.png)
+![非本机设备](https://www.ddnsto.com/doc/iOS/other-device.png)
 
 （1）备份相册
 
 点击备份相册，开始将本手机的相册备份到当前打开的设备中，备份后会在当前打开的设备中创建命名为“设备名称+的照片备份”的文件夹
 
-![备份1](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-backup1.png)
-![备份2](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-backup2.png)
+![备份1](https://www.ddnsto.com/doc/iOS/other-backup1.png)
+![备份2](https://www.ddnsto.com/doc/iOS/other-backup2.png)
 
 （2）设备状态
 
 点击可查看当前设备状态，是否连接等
 
-![是否连接](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect1.png)
+![是否连接](https://www.ddnsto.com/doc/iOS/other-connect1.png)
 
 isConnect为1表示连接成功
 
@@ -161,27 +161,27 @@ useDirect 表示是否直连
 
  1. 外网连接非直连
 
-![外网连接非直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect2.png)
+![外网连接非直连](https://www.ddnsto.com/doc/iOS/other-connect2.png)
 
  2. 内网连接直连
 
-![内网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect3.png)
+![内网连接直连](https://www.ddnsto.com/doc/iOS/other-connect3.png)
 
  3. 外网连接直连
 
-![外网连接直连](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-connect4.png)
+![外网连接直连](https://www.ddnsto.com/doc/iOS/other-connect4.png)
 
 #### 2.3.5 文件操作
 
 用户可在手机客户端管理所有在线设备的所有文件，支持跨设备的文件操作。选择设备中的任何文件或文件夹，可对该文件执行多种操作，如下图：
 
-![文件操作](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-file.png)
+![文件操作](https://www.ddnsto.com/doc/iOS/other-file.png)
 
 （1）重命名
 
 选择需要重命名的文件后，点击重命名可对文件名称进行重新编辑，点击确定后，新的名称生效
 
-![设备重命名](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-rename.png)
+![设备重命名](https://www.ddnsto.com/doc/iOS/other-rename.png)
 
 
 （2）移动
@@ -196,31 +196,31 @@ useDirect 表示是否直连
 
 易有云采用增量同步技术进行复制，不管是全新的复制，还是复制到一半的错误或取消，后续对相同文件名的文件进行重新复制时，都会快速计算增量值，并且仅复制不同部分的数据，大大缩短复制的时间。
 
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy1.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy2.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy3.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy4.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy5.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy6.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy7.png)
-![复制](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-copy8.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy1.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy2.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy3.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy4.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy5.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy6.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy7.png)
+![复制](https://www.ddnsto.com/doc/iOS/other-copy8.png)
 
 
 （4）压缩
 
 选择需要压缩的文件，点击操作项中的压缩，则可对该文件进行压缩，压缩格式为.zip。压缩完成后，在文件所在的文件夹中生成一个压缩文件
 
-![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip1.png)
-![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip2.png)
-![压缩](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-zip3.png)
+![压缩](https://www.ddnsto.com/doc/iOS/other-zip1.png)
+![压缩](https://www.ddnsto.com/doc/iOS/other-zip2.png)
+![压缩](https://www.ddnsto.com/doc/iOS/other-zip3.png)
 
 
 （5）删除
 
 点击删除，需二次确认，确认后可进行删除，删除在前台进行
 
-![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del1.png)
-![删除](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-del2.png)
+![删除](https://www.ddnsto.com/doc/iOS/other-del1.png)
+![删除](https://www.ddnsto.com/doc/iOS/other-del2.png)
 
 #### 2.3.6 文件预览
 
@@ -236,7 +236,7 @@ useDirect 表示是否直连
   1. 支持所有主流图片格式
   2. 支持左右滑动查看
 
-![图片](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-photo.png)
+![图片](https://www.ddnsto.com/doc/iOS/other-photo.png)
 
 （4）音频
 
@@ -251,8 +251,8 @@ useDirect 表示是否直连
   3. 播放倍速，支持X0.5、X1、X1.5、X2
   4. 横竖屏控制
 
-![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video1.png)
-![视频](https://github.com/koolshare/ddnsto/raw/master/doc/iOS/other-video2.png)
+![视频](https://www.ddnsto.com/doc/iOS/other-video1.png)
+![视频](https://www.ddnsto.com/doc/iOS/other-video2.png)
 
 ## 3. 常见问题
 
