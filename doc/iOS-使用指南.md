@@ -313,5 +313,5 @@ useDirect 表示是否直连
     则请确认对应的 WIFI 或 4G 网络是事打开，如以下图所示：
 
 ![打开网络](loginfailed/login-wifi.JPG)
-![失败示例](loginfailed/login-failed.png)
+![失败示例](loginfailed/login-failled.png)
 
