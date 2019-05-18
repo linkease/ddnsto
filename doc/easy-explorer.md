@@ -67,6 +67,8 @@
 
 ### 安装与绑定账号
 
+**一定要先下载到电脑上，再　finder 里面双击运行**
+
 要记得，把 EasyExplorer 移动到 Applications 里面！
 
 ![拖到 Applications](https://www.ddnsto.com/doc/img/mac01.png "拖到 Applications")
