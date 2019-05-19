@@ -7,7 +7,7 @@
 
 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
 
-# 是什么 ddnsto
+# 什么是 ddnsto
 * 可以配置一个域名，浏览器远程到家里的私有网络
 * 可以用浏览器，远程家里的电脑桌面
 * 可以为家里的路由器或 NAS 提供远程协助的能力
