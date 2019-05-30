@@ -5,6 +5,8 @@
 
 官网：https://www.ddnsto.com
 
+官网：https://www.linkease.com
+
 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
 
 # 什么是 ddnsto
@@ -31,17 +33,21 @@
 * [Lede X86 插件源码](https://github.com/koolshare/ledesoft/tree/master/easyexplorer)
 * [QNAP 插件源代码](https://github.com/koolshare/qnap-easyexplorer)
 
-# 动态 (2018-12-08)
-* 支持远程 windows/ssh/telnet 并且支持分享
-* 小程序，请搜索 koolcenter
-* iOS App 正在开发中，将重点突出远程播放功能。App 的开放，也导致了 DLNA + video_mux  功能的放弃
+# 最新 (2019-05-30)
+* 易有云支持微信授权登录，让本地运行更安全
 
-# 动态 (2019-03-03)
-* APP 内测中：http://koolshare.cn/thread-156616-1-1.html
+# 最新 (2019-05-21)
+* iOS app 上线
+* [下载地址](http://t.cn/E9lz9Mo)
 
 # 动态 APP 公测(2019-05-01)
 * 公测 1500 人已完成
 
-# 最新 (2019-05-21)
-* iOS app 上线
+# 动态 (2019-03-03)
+* APP 内测中：http://koolshare.cn/thread-156616-1-1.html
+
+# 动态 (2018-12-08)
+* 支持远程 windows/ssh/telnet 并且支持分享
+* 小程序，请搜索 koolcenter
+* iOS App 正在开发中，将重点突出远程播放功能。App 的开放，也导致了 DLNA + video_mux  功能的放弃
 
