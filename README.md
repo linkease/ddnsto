@@ -13,10 +13,12 @@
 
 因为年底与年初的备案影响，新备案迟迟无法走流程，所以易有云部分得更新之后才能使用。因为 iOS 兄弟在湖北，所以除了 iOS 之外其它的已更新。
 
-# 什么是 ddnsto
+# 什么是 DDNSTO
 * 可以配置一个域名，浏览器远程到家里的私有网络
 * 可以用浏览器，远程家里的电脑桌面
 * 可以为家里的路由器或 NAS 提供远程协助的能力
+
+## DDNSTO 开发计划
 
 # 什么是易有云
 
@@ -34,8 +36,12 @@
 * [Synology Arm](https://firmware.koolshare.cn/binary/EasyExplorerLatest/easyexplorer_arm.spk)
 * [QNAP X86](https://firmware.koolshare.cn/binary/Easy-Explorer-QNAP/LinkEase_0.3_x86_64.qpkg)
 * [QNAP 其它](https://firmware.koolshare.cn/binary/Easy-Explorer-QNAP/)
+* [手动安装请下载最新版本](https://firmware.koolshare.cn/binary/Easy-Explorer/)
 * Merlin 软件中心
+* ReadyNas TODO
 * Android TODO
+
+## 易有云开发计划
 
 # 产品相关链接
 * [易有云多平台简易教程](doc/easy-explorer.md)
