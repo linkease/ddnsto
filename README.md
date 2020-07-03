@@ -11,7 +11,16 @@
 
 # 重要通知写在前面
 
-因为年底与年初的备案影响，新备案迟迟无法走流程，所以易有云部分得更新之后才能使用。因为 iOS 兄弟在湖北，所以除了 iOS 之外其它的已更新。
+易有云 2.0 终于来到一个相对稳定的[版本](https://github.com/koolshare/linkease)。
+
+添加了众多特性：
+
+1. 多目录
+2. 多用户
+3. 手机后台自动备份相片
+4. 更友好的双向同步
+5. 历史版本等等！
+
 
 # 什么是 DDNSTO
 * 可以配置一个域名，浏览器远程到家里的私有网络
@@ -28,7 +37,7 @@
 
 易有云集成了图片查看、音视频播放器等多种功能，用户可通过流媒体方式在线浏览图片、音频、视频文件。
 
-## 易有云下载汇总
+## 易有云 1.0 下载汇总（建议使用 2.0 版本）
 * [iOS 下载地址](http://t.cn/E9lz9Mo)
 * [Windows](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.exe)
 * [MacOS](https://firmware.koolshare.cn/binary/EasyExplorerLatest/EasyExplorer.dmg)
