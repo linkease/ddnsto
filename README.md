@@ -13,7 +13,7 @@ DDNSTO 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/
 
 [易有云 2.0](https://github.com/koolshare/linkease) 终于来到一个相对稳定的版本。
 
-添加了众多特性：
+添加了众多特性，请大家关注：
 
 1. 多目录
 2. 多用户
