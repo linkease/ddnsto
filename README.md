@@ -1,17 +1,17 @@
 # LinkEase 团队
 * 团队至力于家庭私有云的解决方案
 * 让用户以最简单的操作，享受现代网络给家庭成员带来的便利
-* 目前团队已成功开发两款产品：ddnsto 与易有云，下面分别介绍
+* 目前团队已成功开发两款产品：ddnsto 与易有云2.0，下面分别介绍
 
 官网：https://www.ddnsto.com
 
 官网：https://www.linkease.com
 
-有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
+DDNSTO 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
 
 # 重要通知写在前面
 
-易有云 2.0 终于来到一个相对稳定的[版本](https://github.com/koolshare/linkease)。
+[易有云 2.0](https://github.com/koolshare/linkease) 终于来到一个相对稳定的版本。
 
 添加了众多特性：
 
