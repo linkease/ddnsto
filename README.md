@@ -2,7 +2,9 @@
 
 官网：https://www.ddnsto.com
 
-DDNSTO 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)。
+DDNSTO 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/new)
+
+DDNSTO 官网[写文档教程](develop.md)
 
 ## DDNSTO 可以干嘛？
 * 历史的 DDNS 需要申请公网IP，而 DDNSTO 通过穿透技术，不需要公网 IP 也可以访问内网设备
@@ -33,7 +35,6 @@ DDNSTO 有问题请在[这里反馈](https://github.com/koolshare/ddnsto/issues/
 易有云2.0官网：https://www.linkease.com
 
 # 相关链接
-* [DDNSTO 官网写文档教程](develop.md)
 * [ddnsto远程域名教程](http://koolshare.cn/thread-123567-1-1.html)
 * [路由器插件发布](http://koolshare.cn/thread-116500-1-1.html)
 
