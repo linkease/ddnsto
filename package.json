@@ -1,5 +1,5 @@
 {
-    "name": "linkease-doc-web",
+    "name": "ddnsto",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -17,12 +17,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/linkease/linkease-doc-web.git"
+        "url": "git+https://github.com/linkease/ddnsto.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/linkease/linkease-doc-web/issues"
+        "url": "https://github.com/linkease/ddnsto/issues"
     },
-    "homepage": "https://github.com/linkease/linkease-doc-web#readme"
+    "homepage": "https://github.com/linkease/ddnsto#readme"
 }
