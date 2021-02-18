@@ -14,10 +14,10 @@ module.exports = ctx => ({
     // 站点标题
     title: 'DDNSTO',
     // 网站的描述
-    description: 'DDNSTO 内网穿透,如此简单',
+    description: 'DDNSTO 内网穿透，如此简单',
     head: [
         [
-            'link', { rel: 'icon', href: '/logo.png' }
+            'link', { rel: 'icon', href: '/image/logo.png' }
         ]
     ],
     // 多语言
@@ -42,24 +42,27 @@ module.exports = ctx => ({
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    { text: '指南', link: '/zh/guide/' },
+                    { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '下载', link: '/zh/download/' },
                     { text: '登录后台', link: 'https://www.ddnsto.com/#/weixinlogin' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
                         {
-                            title: "测试",
+                            title: "安装指南",
                             // 显示所有页面的标题链接
                             displayAllHeaders: true,
                             // 展开状态
-                            collapsable: false,
+                            collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "介绍"],
-                                "show",
-                                "view",
+                                ["", "入门"],
+                                ["preview", "功能预览"],
+                                ["koolshare_merlin", "Koolshare Merlin"],
+                                ["koolshare_lede", "Koolshare Lede"],
+                                ["openwrt_install", "Openwrt"],
+                                ["synology", "群晖"],
+                                ["qnap", "威联通"],
                             ]
                         },
                     ]

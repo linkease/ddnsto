@@ -7,7 +7,7 @@ actionText: 立即体验 →
 actionLink: /zh/guide/
 features:
 - title: 无需公网
-  details: DDNSTO 无需公网IP，不被网络环境所限制
+  details: 当需要外网访问设备的时候，DDNSTO 无需公网IP，不被网络环境所限制
 - title: 价格低廉
   details: 无需购买域名或服务器，省去服务器年费及域名购买费用
 - title: 响应更快
