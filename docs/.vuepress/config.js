@@ -17,7 +17,7 @@ module.exports = ctx => ({
     description: 'DDNSTO 内网穿透，如此简单',
     head: [
         [
-            'link', { rel: 'icon', href: '/image/logo.png' }
+            'link', { rel: 'icon', href: '/favicon.png' }
         ]
     ],
     // 多语言
@@ -44,7 +44,7 @@ module.exports = ctx => ({
                     { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '登录后台', link: 'https://www.ddnsto.com/#/weixinlogin' },
+                    { text: '登录后台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
