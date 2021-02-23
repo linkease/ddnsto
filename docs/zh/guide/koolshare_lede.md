@@ -1,3 +1,0 @@
-### Koolshare Lede
-
-TODO
