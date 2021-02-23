@@ -14,7 +14,7 @@ module.exports = ctx => ({
     // 站点标题
     title: 'DDNSTO 内网穿透',
     // 网站的描述
-    description: 'DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程文件管理',
+    description: 'DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理',
     head: [
         [
             'link', { rel: 'icon', href: '/favicon.png' }
@@ -25,7 +25,7 @@ module.exports = ctx => ({
         '/': {
             lang: 'zh-CN',
             // title: 'DDNSTO',
-            description: 'DDNSTO内网穿透'
+            description: 'DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理'
         },
     },
     themeConfig: {
