@@ -67,6 +67,19 @@ module.exports = ctx => ({
                                 ["docker", "Docker"],
                             ]
                         },
+                    ],
+                    '/zh/docs/': [
+                      {
+                            title: "文档",
+                            // 显示所有页面的标题链接
+                            displayAllHeaders: true,
+                            // 展开状态
+                            collapsable: true,
+                            sidebarDepth: 2,
+                            children: [
+                                ["", "基础信息"],
+                            ]
+                      },
                     ]
                 }
             },
