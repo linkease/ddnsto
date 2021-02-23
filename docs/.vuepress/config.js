@@ -58,13 +58,7 @@ module.exports = ctx => ({
                             children: [
                                 ["", "快速入门"],
                                 ["preview", "功能预览"],
-                                ["koolshare_merlin", "Koolshare Merlin"],
-                                ["koolshare_lede", "Koolshare LEDE"],
-                                ["openwrt_install", "Openwrt"],
-                                ["synology", "群晖"],
-                                ["qnap", "威联通"],
-                                ["ikuai", "爱快"],
-                                ["docker", "Docker"],
+                                ["koolshare_merlin", "详细教程"],
                             ]
                         },
                     ],

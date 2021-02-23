@@ -38,33 +38,111 @@ ddnsto的优秀之处：
 
    ![image-20210201221421068](./koolshare_merlin/image-20210201221421068.png)
 
-2. 登录成功后，复制右上角令牌(Token)
+2. 登录成功后，复制右上角令牌(Token)。
 
    ![image-20210201221633684](./koolshare_merlin/image-20210201221633684.png)
 
-   ###路由器设置 
+### 路由器设置 
 
-   以KS梅林固件为例，在软件中心搜索并安装ddnsto插件。
+#### 1. KS梅林固件
+   KS梅林固件，在软件中心搜索并安装ddnsto插件。
 
    ![image-20210201222044149](./koolshare_merlin/image-20210201222044149.png)
 
-   软件中心搜索ddnsto，安装后开启并设置token
+   安装后开启并设置token。
 
    ![image-20210201222256261](./koolshare_merlin/image-20210201222256261.png)
 
+#### 2. KS LEDE固件  
+   KS LEDE固件，在酷软中心搜索并安装ddnsto插件。
+
+   ![image-2021022400000001](./koolshare_merlin/image-2021022400000001.png)
    
-
+   安装后开启并设置token。
    
+   ![image-2021022400000002](./koolshare_merlin/image-2021022400000002.png)
+   
+#### 3. OpenWrt固件 
+   OpenWrt固件开发者众多，部分固件不自带ddnsto，可通过以下任一脚本轻松安装：
 
-   ### 穿透设置
+   via curl
+```Bash
+sh -c "$(curl -sSL http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+```
+   via wget
+```Bash
+sh -c "$(wget --no-check-certificate -qO- http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+```
+   others
+```Bash
+cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
+```
+   在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成。
 
-   回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】
+   ![image-2021022400000003](./koolshare_merlin/image-2021022400000003.png)
+   
+   ![image-2021022400000004](./koolshare_merlin/image-2021022400000004.png)
+
+   或者putty、MobaXterm等软件登陆SSH，输入任一上述命令，会自动安装完成。
+
+   ![image-2021022400000005](./koolshare_merlin/image-2021022400000005.png)
+   
+   ![image-2021022400000006](./koolshare_merlin/image-2021022400000006.png)
+ 
+   ![image-2021022400000007](./koolshare_merlin/image-2021022400000007.png) 
+
+   然后找到DDNS.to内网穿透，启用并设置token。
+
+   ![image-2021022400000008](./koolshare_merlin/image-2021022400000008.png) 
+
+#### 4. 群晖固件 
+
+   从https://firmware.koolshare.cn/binary/ddnsto/synology/下载套件并上传安装。
+
+   ![image-20210204235851709](./koolshare_merlin/image-20210204235851709.png)
+
+   填入刚刚从官网复制的令牌(Token)，点击下一步完成安装。
+
+   ![image-20210204235956264](./koolshare_merlin/image-20210204235956264.png)
+
+   即可在面板看到ddnsto。
+
+   ![image-20210205000203910](./koolshare_merlin/image-20210205000203910.png)
+   
+#### 5. 威联通
+
+TODO 
+
+#### 6. 爱快/Docker
+
+1. TOKEN: 你从官网拿到的 token。
+2. DEVICE_IDX: 默认0，如果设备ID重复则为1-100之间。
+
+```
+docker run -d \
+    --name=<container name> \
+    -e TOKEN=<填入你的token>
+    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间>
+    -v /etc/localtime:/etc/localtime:ro \
+    -e PUID=<uid for user> \
+    -e PGID=<gid for user> \
+    linkease/ddnsto
+```
+
+注意要替换 "<>" 里面的内容，且不能出现 "<>"
+
+[镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
+
+
+### 穿透设置
+
+   回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】！
 
    ![image-20210201223322255](./koolshare_merlin/image-20210201223322255.png)
 
 ### 添加域名
 
-1. 用户中心出现设备后，点击添加域名映射"+"
+1. 用户中心出现设备后，点击添加域名映射"+"。
 
    ![image-20210201224437222](./koolshare_merlin/image-20210201224437222.png)
 
@@ -86,7 +164,7 @@ ddnsto的优秀之处：
 
 
 
-补充几种特殊设置说明
+补充几种特殊设置说明：
 
 - merlin shellinabox插件设置
 
@@ -189,6 +267,5 @@ A: 即使删除了设备，套餐依然还在。重新添加设备后就可以�
 现在就点"立即升级"支持我们吧！帮助我们一起把DDNSTO做的更好！
 
 ![image-20210203212255250](./koolshare_merlin/image-20210203212255250.png)
-
 
 
