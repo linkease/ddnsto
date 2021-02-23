@@ -44,7 +44,7 @@ module.exports = ctx => ({
                     { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '登录后台', link: 'https://www.kooldns.cn/app/#/weixinlogin' },
+                    { text: '登录后台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
@@ -56,10 +56,10 @@ module.exports = ctx => ({
                             collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "入门"],
+                                ["", "快速入门"],
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "Koolshare Merlin"],
-                                ["koolshare_lede", "Koolshare Lede"],
+                                ["koolshare_lede", "Koolshare LEDE"],
                                 ["openwrt_install", "Openwrt"],
                                 ["synology", "群晖"],
                                 ["qnap", "威联通"],
