@@ -44,7 +44,7 @@ module.exports = ctx => ({
                     { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '登录后台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
+                    { text: '登录后台', link: 'https://www.kooldns.cn/app/#/weixinlogin' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
