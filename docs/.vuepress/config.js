@@ -63,6 +63,8 @@ module.exports = ctx => ({
                                 ["openwrt_install", "Openwrt"],
                                 ["synology", "群晖"],
                                 ["qnap", "威联通"],
+                                ["ikuai", "爱快"],
+                                ["docker", "Docker"],
                             ]
                         },
                     ]
