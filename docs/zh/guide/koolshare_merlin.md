@@ -32,15 +32,15 @@
    OpenWrt固件开发者众多，部分固件不自带ddnsto，可通过以下任一脚本轻松安装：
 
    via curl
-```Bash
+```
 sh -c "$(curl -sSL http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
 ```
    via wget
-```Bash
+```
 sh -c "$(wget --no-check-certificate -qO- http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
 ```
    others
-```Bash
+```
 cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
 ```
    在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成。
