@@ -1,70 +1,133 @@
-## 介绍
-
-ddnsto由koolshare @小宝 开发。是一款快速稳定且简单易用的内网穿透工具。让用户在公司办公室、旅行途中都能够使用电脑或手机方便的访问家庭内的网络设备，如控制路由器开始下载最新电影、与NAS进行相册同步等操作。
-
-目前市面上的穿透工具都有各种小缺点，像花生壳需要安装客户端并且要支付几百块钱的年费、frp需要自行购买云服务器并且配置过程对小白用户来说也比较复杂。
-
-
-
-**ddnsto解决了常见穿透工具年费贵、配置复杂的问题，让小白用户几分钟就能搞定内网穿透。**
-
-
-
-ddnsto的优秀之处：
-
-1. 无需公网ip，不被网络环境限制。
-
-2. ⽆需购买域名或服务器，省去了服务器年费和带宽要求以及域名购买、备案等等繁琐操作。
-
-3. 全部的安装、配置都在浏览器完成，不需敲一行代码，对小白用户非常友好。
-
-4. 支持http2，访问家庭内部网络速度更快！
-
-    
-
-#### 交流群：
-
-​												QQ交流群1~3群已满人，请加 ④群，群号: 8592-40701
-
-![img](https://image.koolshare.cn/attachment/forum/202102/01/172721xjps861bis616qp3.jpg)
-
-
-
-## 设置步骤
-
-### 获取Token
+## 获取Token
 
 1. 打开ddnsto.com，点击右上角微信登录。
 
    ![image-20210201221421068](./koolshare_merlin/image-20210201221421068.png)
 
-2. 登录成功后，复制右上角令牌(Token)
+2. 登录成功后，复制右上角令牌(Token)。
 
    ![image-20210201221633684](./koolshare_merlin/image-20210201221633684.png)
 
-   ###路由器设置 
+## 路由器设置 
 
-   以KS梅林固件为例，在软件中心搜索并安装ddnsto插件。
+### 1. KS梅林固件
+   KS梅林固件，在软件中心搜索并安装ddnsto插件。
 
    ![image-20210201222044149](./koolshare_merlin/image-20210201222044149.png)
 
-   软件中心搜索ddnsto，安装后开启并设置token
+   安装后开启并设置token。
 
    ![image-20210201222256261](./koolshare_merlin/image-20210201222256261.png)
 
+### 2. KS LEDE固件  
+   KS LEDE固件，在酷软中心搜索并安装ddnsto插件。
+
+   ![image-2021022400000001](./koolshare_merlin/image-2021022400000001.png)
    
+   安装后开启并设置token。
+   
+   ![image-2021022400000002](./koolshare_merlin/image-2021022400000002.png)
+   
+### 3. OpenWrt固件 
+   OpenWrt固件开发者众多，部分固件不自带ddnsto，可通过以下任一脚本轻松安装：
+
+   via curl
+```Bash
+sh -c "$(curl -sSL http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+```
+   via wget
+```Bash
+sh -c "$(wget --no-check-certificate -qO- http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+```
+   others
+```Bash
+cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
+```
+   在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成。
+
+   ![image-2021022400000003](./koolshare_merlin/image-2021022400000003.png)
+   
+   ![image-2021022400000004](./koolshare_merlin/image-2021022400000004.png)
+
+   或者putty、MobaXterm等软件登陆SSH，输入任一上述命令，会自动安装完成。
+
+   ![image-2021022400000005](./koolshare_merlin/image-2021022400000005.png)
+   
+   ![image-2021022400000006](./koolshare_merlin/image-2021022400000006.png)
+ 
+   ![image-2021022400000007](./koolshare_merlin/image-2021022400000007.png) 
+
+   然后找到DDNS.to内网穿透，启用并设置token。
+
+   ![image-2021022400000008](./koolshare_merlin/image-2021022400000008.png) 
+
+### 4. 群晖固件 
+
+   从https://firmware.koolshare.cn/binary/ddnsto/synology/下载套件并上传安装。
+
+   ![image-20210204235851709](./koolshare_merlin/image-20210204235851709.png)
+
+   填入刚刚从官网复制的令牌(Token)，点击下一步完成安装。
+
+   ![image-20210204235956264](./koolshare_merlin/image-20210204235956264.png)
+
+   即可在面板看到ddnsto。
+
+   ![image-20210205000203910](./koolshare_merlin/image-20210205000203910.png)
+   
+### 5. 威联通
+
+  下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)
+
+  如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
+
+#### 离线安装
+
+   ![qnap-install](./koolshare_merlin/qnap-install.jpeg)
+
+#### 安装好了，要配置
+
+  token 从官网拿，填入提交就可以了。然后回到官网去配置域名。
+
+  注意 QNAP 的域名端口是 8080，比如配置内网地址为： http://127.0.0.1:8080
+
+   ![qnap-config](./koolshare_merlin/qnap-config.jpeg)
+
+### 6. 爱快/Docker
+
+1. TOKEN: 你从官网拿到的 token。
+2. DEVICE_IDX: 默认0，如果设备ID重复则为1-100之间。
+
+```
+docker run -d \
+    --name=<container name> \
+    -e TOKEN=<填入你的token>
+    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间>
+    -v /etc/localtime:/etc/localtime:ro \
+    -e PUID=<uid for user> \
+    -e PGID=<gid for user> \
+    linkease/ddnsto
+```
+
+注意要替换 "<>" 里面的内容，且不能出现 "<>"
+
+[镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
+
+### 7. 老毛子Padavan
+   扩展功能-花生壳内网，然后右侧选择ddnsto，启用并设置token。(Ps：某些纯净版的Padavan无法启用)
+
+   ![image-2021022400000009](./koolshare_merlin/image-2021022400000009.png)
 
    
+## 穿透设置
 
-   ### 穿透设置
-
-   回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】
+   回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】！
 
    ![image-20210201223322255](./koolshare_merlin/image-20210201223322255.png)
 
-### 添加域名
+## 添加域名
 
-1. 用户中心出现设备后，点击添加域名映射"+"
+1. 用户中心出现设备后，点击添加域名映射"+"。
 
    ![image-20210201224437222](./koolshare_merlin/image-20210201224437222.png)
 
@@ -86,7 +149,7 @@ ddnsto的优秀之处：
 
 
 
-补充几种特殊设置说明
+补充几种特殊设置说明：
 
 - merlin shellinabox插件设置
 
@@ -139,56 +202,4 @@ ddnsto的优秀之处：
 - 域名前缀也会随之改变，如现在除了原有的"ddnsto.com",还多了默认的"kooldns.cn"
 - 切换通道后ddnsto插件会有1分钟左右的初始化时间，期间绑定的域名会不可用，请稍等再尝试
 - 切换后原有的域名将不可使用，如"aaa.kooldns.cn"切换到了"aaa.ddnsto.com"之后，原有的"aaa.koolddns.cn"将不可使用。
-
-## 常见问题
-
-Q: 已支持哪些设备？
-
-A: 64m以上linux系统设备。目前已在Koolshare-Merlin、 OpenWrt固件软件中心上线
-
-​      新增支持 **Openwrt 、群晖**  ！！
-
-- Openwrt: https://firmware.koolshare.cn/binary/ddnsto/openwrt/
-- 群晖：https://firmware.koolshare.cn/binary/ddnsto/synology/ 
-  - 教程 https://koolshare.cn/thread-192120-1-1.html
-
-
-
-Q: ddnsto插件已配置， 但用户中心一直没有出现？
-
-A: 请检查token(令牌)是否配置正确，或设备是否正常连接网络。或检查设备时间，时间不正确会导致连接失败，请同步时间后等待一分钟或重启插件。
-
-
-
-Q: 域名绑定后无法访问内网服务，显示错误?
-
-A: 配置域名、切换通道后需要等待1分钟左右，如长时间后仍然无法访问，请检查内网服务是否正常运行。
-
-
-
-Q: 一定要微信登录验证才能访问？
-
-A: 为了用户数据安全，目前只允许本人使用！
-
-
-
-Q: 已购买套餐的设备不小心删除了怎么办？
-
-A: 即使删除了设备，套餐依然还在。重新添加设备后就可以绑定已购买套餐。
-
-
-
-还有任何问题都可以跟帖提问！
-
-
-
-
-
-不知不觉DDNSTO已经累积了接近4W的用户，也得到了大家的广泛好评。为了提供更好的带宽和使用体验，我们将会陆续添加更多的服务器，同时新的功能也正在加紧开发，请大家拭目以待！
-
-现在就点"立即升级"支持我们吧！帮助我们一起把DDNSTO做的更好！
-
-![image-20210203212255250](./koolshare_merlin/image-20210203212255250.png)
-
-
 

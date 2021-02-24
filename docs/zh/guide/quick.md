@@ -1,25 +1,22 @@
-## 介绍
+## 安装三步走
 
-DDNSTO 由 [koolshare](https://koolshare.cn/space-uid-2380.html) @小宝 开发，是一款快速稳定且简单易用的内网穿透工具。
-让用户在公司办公室、旅行途中都能够使用电脑或手机方便的访问家庭内的网络设备，如控制路由器开始下载最新电影、与 NAS 进行相册同步等操作。
+### Step1: 登录官网拿到 Token
 
-<<<<<<< HEAD
    ![image-20210201221633684](./koolshare_merlin/image-20210201221633684.png)
-=======
-目前市面上的穿透工具都有各种小缺点，有的需要电脑安装客户端并且要支付几百块钱的年费、frp需要自行购买云服务器并且配置过程对小白用户来说也比较复杂。
->>>>>>> jsjson
 
-**DDNSTO 解决了常见穿透工具年费贵、配置复杂的问题，让小白用户几分钟就能搞定内网穿透。**
+### Step2: 快速安装 DDNSTO 到设备
 
-DDNSTO 的优秀之处：
+有以下快速的方法：
 
-1. 无需公网ip，不被网络环境限制。
+1. Koolshare Merlin/LEDE 软件中心安装 DDNSTO
+2. [Openwrt 一键安装脚本](https://firmware.koolshare.cn/binary/ddnsto/openwrt/)
+3. 一个命令的 [Docker方式](https://github.com/linkease/docker_ddnsto)
+4. [群晖离线包](https://firmware.koolshare.cn/binary/ddnsto/synology/)
 
-2. 无需购买域名或服务器，省去了服务器年费和带宽要求以及域名购买、备案等等繁琐操作。
+安装好 DDNSTO 之后必须填入 Token
 
-3. 全部的安装、配置都在浏览器完成，不需敲一行代码，对小白用户非常友好。
+### Step3: 在官网后台设置域名
 
-<<<<<<< HEAD
 1. 用户中心出现设备后，点击添加域名映射"+"
 
    ![image-20210201224437222](./koolshare_merlin/image-20210201224437222.png)
@@ -79,25 +76,4 @@ DDNSTO 的优秀之处：
   还可以来回切换 https和http呢！
 
   ![image-20210203001606683](./koolshare_merlin/image-20210203001606683.png)
-=======
-4. 支持http2，访问家庭内部网络速度更快！
-
->>>>>>> jsjson
-
-### 交流群：
-
-​												QQ交流群1~3群已满人，请加 ④群，群号: 8592-40701
-
-![img](https://image.koolshare.cn/attachment/forum/202102/01/172721xjps861bis616qp3.jpg)
-
-
-不知不觉 DDNSTO 已经累积了接近4W的用户，也得到了大家的广泛好评。为了提供更好的带宽和使用体验，我们将会陆续添加更多的服务器，同时新的功能也正在加紧开发，请大家拭目以待！
-
-现在就点"立即升级"支持我们吧！帮助我们一起把DDNSTO做的更好！
-
-![image-20210203212255250](./koolshare_merlin/image-20210203212255250.png)
-
-## 更新日志
-
-TODO
 
