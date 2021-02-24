@@ -99,7 +99,12 @@ docker run -d \
 
 [镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
 
+### 7. 老毛子Padavan
+   扩展功能-花生壳内网，然后右侧选择ddnsto，启用并设置token。(Ps：某些纯净版的Padavan无法启用)
 
+   ![image-2021022400000009](./koolshare_merlin/image-2021022400000009.png)
+
+   
 ## 穿透设置
 
    回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】！
