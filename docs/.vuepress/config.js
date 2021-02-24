@@ -56,9 +56,12 @@ module.exports = ctx => ({
                             collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "快速入门"],
+                                ["", "介绍"],
+                                ["quick", "快速入门"],
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "详细教程"],
+                                ["opensource", "开源代码"],
+                                ["question", "常见问题"],
                             ]
                         },
                     ],
