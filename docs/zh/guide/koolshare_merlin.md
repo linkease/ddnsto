@@ -123,7 +123,7 @@ docker run -d \
 
 * 支持以下ReadyNAS存储设备：
 
-| ![ARM设备](https://github.com/iranee/readynas-aria2/blob/master/ARM_button.png) | ![x86设备](https://github.com/iranee/readynas-aria2/blob/master/x86_button.png) |![x86设备](https://github.com/iranee/readynas-aria2/blob/master/x86_button.png)  |
+| ![ARM设备](/ARM_button.png) | ![x86设备](/x86_button.png) |![x86设备](/x86_button.png)  |
 | --------         |------|-----|
 | ReadyNAS 102        | ReadyNAS 312        | ReadyNAS 626X        |
 | ReadyNAS 104        | ReadyNAS 314        | ReadyNAS 628X        |
