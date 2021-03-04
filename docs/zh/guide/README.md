@@ -17,13 +17,20 @@ DDNSTO 的优秀之处：
 
 4. 支持http2，访问家庭内部网络速度更快！
 
+### DDNSTO 历史与题外话
+
+* DDNSTO 用微信验证，是因为国家法律的一些原因，保证它不被恶意分享网站，导致服务被关停。（未来我们会有更好的方式）
+* DDNSTO 是 2017 年计划给新一代软件中心设计的，所以它超级小，具有响应网页很快的特性
+* DDNSTO 在新一代软件中心开发出来之前，会一直有免费额度；在开发完成之后，可能变成软件中心的其中一个默认模块，也还会有免费额度
+* DDNSTO 收费是因为，有个全职的人给大家提供服务，请大家支持
+
 ### LinkEase 团队
 * [KoolShare](https://koolshare.cn/space-uid-2380.html) @小宝 带队
 * 团队至力于家庭私有云的一站式解决方案
 * 让用户以最简单的操作，享受现代网络给家庭成员带来的便利
 * 目前团队已成功开发两款产品：ddnsto 与易有云2.0
 
-易有云2.0官网：https://www.linkease.com
+易有云2.0官网：[https://www.linkease.com](https://www.linkease.com)
 
 ### 交流群
 
@@ -61,4 +68,4 @@ DDNSTO 的优秀之处：
 支持多服务器
 
 #### 20170912
-第一代 DDNSTO 上线，支持 Merlin，以及 Koolshare Lede 路由器，并免费提供 3 年服务
+第一代 DDNSTO 上线，支持 Merlin，以及 Koolshare LEDE 路由器，并免费提供 3 年服务

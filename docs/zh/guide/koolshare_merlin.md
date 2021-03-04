@@ -61,6 +61,19 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
    ![image-2021022400000008](./koolshare_merlin/image-2021022400000008.png) 
 
+#### Openwrt 常见问题解决思路
+
+  1. 安装好 ddnsto 之后无法启用配置
+
+  因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：
+
+  ```
+  /etc/init.d/ddnsto disable
+  /etc/init.d/ddnsto enable
+  ```
+  
+  如果不行则尝试二：重启路由器
+
 ### 4. 群晖固件 
 
    从https://firmware.koolshare.cn/binary/ddnsto/synology/下载套件并上传安装。
@@ -112,12 +125,22 @@ docker run -d \
 
 注意要替换 "<>" 里面的内容，且不能出现 "<>"
 
+#### 爱快 Docker 常见问题
+
+1. Docker 里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器
+
 [镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
 
 ### 7. 老毛子Padavan
    扩展功能-花生壳内网，然后右侧选择ddnsto，启用并设置token。(Ps：某些纯净版的Padavan无法启用)
 
    ![image-2021022400000009](./koolshare_merlin/image-2021022400000009.png)
+
+#### Padavan 常见问题
+
+  1. 如果 Padavan 的二进制版本 < 0.2.9 版本，可能导致重启之后 ddnsto 无法用，需要自己到网站[更新二进制](https://firmware.koolshare.cn/binary/ddnsto/mipsel/ddnsto)
+
+  这个问题我还无法联系开发者更换最新版本
 
 ### 8. ReadyNAS
 
