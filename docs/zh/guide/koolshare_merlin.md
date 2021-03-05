@@ -106,6 +106,10 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
    ![qnap-config](./koolshare_merlin/qnap-config.jpeg)
 
+#### 如果安装失败，或者无法配置，请开启 QWEB 服务
+
+   ![qnap-QWEB](./koolshare_merlin/qnap-qweb.png)
+
 ### 6. 爱快/Docker
 
 1. TOKEN: 你从官网拿到的 token。
