@@ -45,8 +45,9 @@ module.exports = ctx => ({
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
                     { text: '意见反馈',  items: [
-                        { text: 'DDNSTO', link: 'https://wj.qq.com/s2/8130944/166e' },
-                        { text: '联系我们', link: 'https://wj.qq.com/s2/8108115/efbe' }
+                        { text: '私信反馈', link: 'https://wj.qq.com/s2/8130944/166e' },
+                        { text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
+                        { text: '关于我们', link: '/zh/guide/about' },
                       ] },
                     { text: '登录后台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
                 ],
@@ -64,8 +65,10 @@ module.exports = ctx => ({
                                 ["quick", "快速入门"],
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "详细教程"],
+                                ["cloudapp", "远程应用"],
                                 ["opensource", "开源代码"],
                                 ["question", "常见问题"],
+                                ["about", "联系我们"],
                             ]
                         },
                     ],
