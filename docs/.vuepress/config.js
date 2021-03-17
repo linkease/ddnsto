@@ -65,7 +65,7 @@ module.exports = ctx => ({
                                 ["quick", "快速入门"],
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "详细教程"],
-                                ["cloudapp", "远程应用"],
+                                ["cloudapp", "远程教学"],
                                 ["opensource", "开源代码"],
                                 ["question", "常见问题"],
                                 ["about", "联系我们"],
