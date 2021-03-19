@@ -153,9 +153,56 @@ TODO
 
   
 ## 4.玩转Windows RDP远程
+1.首先在被控制的电脑上启用远程桌面。
 
-  ![Windows远程](./cloudapp/cloudapp-rdp.jpeg)
+Win10：设置——系统——远程桌面——启用远程桌面  
 
+  ![Windows远程](./cloudapp/cloudapp-rdp1.jpeg)
+
+Win7：右键我的电脑——属性——左边侧栏高级系统设置——远程，在下方“远程桌面”方框下勾选“允许远程连接到此计算机”
+  
+  ![Windows远程](./cloudapp/cloudapp-rdp2.jpeg)
+
+2.查看被控制的电脑的IP和用户名/密码。
+
+“开始键+R”一起按，出来窗口输入“cmd”回车，出来终端窗口，输入“ipconfig”回车；
+
+  ![Windows远程](./cloudapp/cloudapp-rdp3.jpeg)
+
+  ![Windows远程](./cloudapp/cloudapp-rdp4.jpeg)
+
+确定自己是以太网(网线接入)还是WLAN(WiFi)，找到ip地址，记住。(查看IP方法很多，不一定是这一种)  
+  
+  ![Windows远程](./cloudapp/cloudapp-rdp5.jpeg)
+
+用户名和密码：控制面板——用户账户——用户账户，能看到当前的用户名，密码是自己设置的。
+
+PS：某些Win10用户是用的微软帐号，没启用本地帐号，那么就使用微软帐号和密码。
+
+或者简单点：开机登录的时候，显示的就是用户名。
+
+   ![Windows远程](./cloudapp/cloudapp-rdp6.jpeg) 
+ 
+3.在ddnsto可用应用列表中点击添加远程RDP，填入被控电脑的IP，用户名，密码等信息。
+
+   ![Windows远程](./cloudapp/cloudapp-rdp7.jpeg) 
+   
+4.在已添加中找到刚添加的远程RDP，点击即可进入进入RDP，操控远程电脑。 
+
+   ![Windows远程](./cloudapp/cloudapp-rdp8.jpeg)  
+   
+5.相关提醒：
+
+  a.被控电脑必须是在设置好穿透(ddnsto)的网络设备下
+  
+  PS：比如我路由器上设置好了ddnsto，我电脑是连接的我的路由器上网的
+  
+  如果是你想控制你朋友的电脑，而你朋友的电脑就是普通的接入网络，也没ddnsto，那么是不可控的
+  
+  b.被控电脑必须是开机状态，且没进入休眠状态
+
+  c.确保被控电脑接入网络，且网络是通畅的
+  
   
 ## 5.玩转远程VNC
 
