@@ -171,7 +171,7 @@ Win7：右键我的电脑——属性——左边侧栏高级系统设置——�
 
   ![Windows远程](./cloudapp/cloudapp-rdp4.jpeg)
 
-确定自己是以太网(网线接入)还是WLAN(WiFi)，找到ip地址，记住。(查看IP方法很多，不一定是这一种)  
+确定被控电脑是以太网(网线接入)还是WLAN(WiFi)，找到ip地址，记住。(查看IP方法很多，不一定是这一种)  
   
   ![Windows远程](./cloudapp/cloudapp-rdp5.jpeg)
 
@@ -205,10 +205,17 @@ PS：某些Win10用户是用的微软帐号，没启用本地帐号，那么就�
   
   
 ## 5.玩转远程VNC
+1.VNC服务端下载、安装、配置。
 
-  TODO
+https://www.realvnc.com/en/connect/download/vnc/
+
+   ![Linux-VNC](./cloudapp/cloudapp-vnc1.jpeg)  
+
+2.而ddnsto的远程VNC，充当VNC Viewer，写好参数，就能远程了。
  
- 
+   ![Linux-VNC](./cloudapp/cloudapp-vnc2.jpeg)  
+
+
 ## 6.玩转远程开机
 
   TODO
