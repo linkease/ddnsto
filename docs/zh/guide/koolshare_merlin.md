@@ -110,17 +110,25 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
    ![qnap-QWEB](./koolshare_merlin/qnap-qweb.png)
 
-### 6. 爱快/Docker
+### 6. Unraid/爱快/Docker
 
 1. TOKEN: 你从官网拿到的 token。
 2. DEVICE_IDX: 默认0，如果设备ID重复则为1-100之间。
-3. PUID/PGID 不知道可不填
+3. PUID/PGID 不知道可不填。
+
+PS：获取UID和GID，终端输入id回车即可。
+
+   ![docker](./koolshare_merlin/docker1.jpeg)
+   
+比如上图获取的UID和GID都是0。
+   
 
 ```
 docker run -d \
     --name=<container name> \
-    -e TOKEN=<填入你的token>
-    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间>
+	--network host \
+    -e TOKEN=<填入你的token> \
+    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间> \
     -v /etc/localtime:/etc/localtime:ro \
     -e PUID=<uid for user> \
     -e PGID=<gid for user> \
@@ -131,9 +139,40 @@ docker run -d \
 
 #### 爱快 Docker 常见问题
 
-1. Docker 里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器
+1. Docker 里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器。
 
 [镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
+
+#### Unraid实战ddnsto
+
+Unraid也能远程穿透，使用ddnsto超级简单：
+
+1.首先，登录Unraid的管理界面，点击docker，然后右上方有个终端的按钮，点击进去。
+
+   ![docker](./koolshare_merlin/docker2.jpeg)
+   
+2.进入终端后，输入上面提到的命令：
+
+```
+docker run -d \
+    --name=ddnsto \
+    --network host \
+    -e TOKEN=b5xxxxxxxxxx26622 \
+    -e DEVICE_IDX=0 \
+    -v /etc/localtime:/etc/localtime:ro \
+    -e PUID=0 \
+    -e PGID=0 \
+    linkease/ddnsto:latest
+```
+   ![docker](./koolshare_merlin/docker3.jpeg)
+  
+3.上面终端执行完成后，就成功安装ddnsto。(建议启用开机启动) 
+ 
+   ![docker](./koolshare_merlin/docker4.jpeg)
+ 
+4. 然后ddnsto主页添加域名映射即可，注意Unraid的端口别写错。
+
+   ![docker](./koolshare_merlin/docker5.jpeg)
 
 ### 7. 老毛子Padavan
    扩展功能-花生壳内网，然后右侧选择ddnsto，启用并设置token。(Ps：某些纯净版的Padavan无法启用)
