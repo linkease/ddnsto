@@ -82,6 +82,7 @@ module.exports = ctx => ({
                             sidebarDepth: 2,
                             children: [
                                 ["", "基础信息"],
+								["Scene", "使用场景"],
                             ]
                       },
                     ]
