@@ -45,3 +45,18 @@ PS：比如pve是https，别写成http了。
 3.畅快的远程bt下载吧。 
  
    ![scene](./scene/scene-tm3.jpeg)
+   
+### 百度云远程下载
+
+1.BaiduPCS-Web是一款可以下载百度云的插件，也能通过ddnsto控制。
+
+   ![scene](./scene/scene-bdy1.jpeg)
+   
+2.设置好BaiduPCS-Web的ddnsto远程穿透。
+   
+   ![scene](./scene/scene-bdy2.jpeg)
+   
+3.畅快的远程下载百度云吧。 
+ 
+   ![scene](./scene/scene-bdy3.jpeg)  
+   
