@@ -74,16 +74,97 @@
 
 4.然后跳转到“远程配置”，去设置远程下载。
 
-   
-### Aria2配置：群晖
+### Aria2配置：Unraid/爱快/Docker
+1.Unraid等可以docker的设备，都可以用这种方式，一键部署Aria2。
 
-TODO
+2.进入设备终端，先安装Aria2，输入如下命令：
+
+```
+docker run -d \
+    --name aria2-pro \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    --network host \
+    -e PUID=$UID \
+    -e PGID=$GID \
+    -e RPC_SECRET=<TOKEN> \
+    -e RPC_PORT=6880 \
+    -e LISTEN_PORT=6888 \
+    -v $PWD/aria2-config:/config \
+    -v $PWD/aria2-downloads:/downloads \
+    p3terx/aria2-pro
+```
+
+a. TOKEN 可为乱序的数字字母，并记住备份，后面要用。
+
+b. RPC_PORT 为端口，这里设置成6880。
+
+c. /config 配置文件路径，可根据实际情况调整。
+
+d. /downloads 为下载目录，可根据实际情况调整。
+
+  ![Docker](./cloudapp/cloudapp-aria2-docker1.jpeg)
+
+2. 设备终端，再安装AriaNg，输入如下命令：
+
+```
+docker run -d \
+    --name ariang \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    -p 6880:6880 \
+    p3terx/ariang
+```
+  
+  ![Docker](./cloudapp/cloudapp-aria2-docker2.jpeg)
+
+3. 上面执行完成，Aria2和AriaNg都安装完成。 
+  
+  ![Docker](./cloudapp/cloudapp-aria2-docker3.jpeg)  
+  
+4. 设置穿透的时候，注意端口，我命令里是用的6880端口。 
+
+  ![Docker](./cloudapp/cloudapp-aria2-docker4.jpeg)  
+  
+### Aria2配置：群晖
+群晖也能通过Docker方式安装，不过有2点要注意:
+
+1.群晖如何启用SSH，如下图所示：
+
+  ![Docker](./cloudapp/cloudapp-aria2-docker5.jpeg)
+
+2.手动建立配置文件夹和下载文件夹：
+  
+  ![Docker](./cloudapp/cloudapp-aria2-docker6.jpeg) 
+
+3.然后根据实际情况写配置目录和下载目录，2个命令安装完成： 
+  
+```
+docker run -d \
+    --name aria2-pro \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    --network host \
+    -e PUID=$UID \
+    -e PGID=$GID \
+    -e RPC_SECRET=<TOKEN> \
+    -e RPC_PORT=6880 \
+    -e LISTEN_PORT=6888 \
+    -v $PWD/aria2-config:/volume1/docker/aria2-config \
+    -v $PWD/aria2-downloads:/volume1/Data/aria2-downloads \
+    p3terx/aria2-pro
+```  
+
+```
+docker run -d \
+    --name ariang \
+    --restart unless-stopped \
+    --log-opt max-size=1m \
+    -p 6880:6880 \
+    p3terx/ariang
+```
 
 ### Aria2配置：威联通
-
-TODO
-
-### Aria2配置：爱快/Docker
 
 TODO
 
