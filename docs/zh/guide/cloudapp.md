@@ -169,8 +169,27 @@ docker run -d \
 TODO
 
 ### Aria2配置：老毛子Padavan
+1.首先确认设备Padavan固件带有Aria。(hiboyhiboyhiboy大佬固件是有的)
 
-TODO
+2.启用Aria2前，需要在设备连接的U盘或者硬盘上建立一个aira目录。(文件夹名必须是小写)
+
+3.然后启动Aria2后，打开http://aria2c.com/进行设置，默认没加密：http://192.168.1.1:6800/jsonrpc 
+
+  ![Padavan](./cloudapp/cloudapp-aria2-padavan1.jpeg) 
+  
+4.如果提示Aria2 RPC服务器错误，按照以下方法修改(如配置失败可清空aria目录重新开始配置)：
+
+如需加密请手动修改配置文件
+
+选项设置为: 配置文件中rpc-secret=xxxxxx
+
+选项设置为: http://token:xxxxxx@host:port/jsonrpc
+
+host: 指Aria2所在机器的IP
+
+port: 使用--rpc-listen-port选项设置的端口, 未设置则是6800
+
+5.然后跳转到“远程配置”，去设置远程下载。
 
 ### Aria2配置：ReadyNAS
  
