@@ -166,7 +166,7 @@ docker run -d \
 
 ### Aria2配置：威联通
 
-TODO
+威联通也可以采用Docker方式安装Aria2。(具体命令看上面"Unraid/爱快/Docker"教程)
 
 ### Aria2配置：老毛子Padavan
 1.首先确认设备Padavan固件带有Aria。(hiboyhiboyhiboy大佬固件是有的)
