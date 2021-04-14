@@ -88,6 +88,12 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
    ![image-20210205000203910](./koolshare_merlin/image-20210205000203910.png)
    
+   注意：若群晖发生下图错误，则必须通过docker安装。(因为dsm7.0目前无法安装任何第三方插件。)
+         
+   ![image-qunhui0414](./koolshare_merlin/image-qunhui0414.png)
+
+   PS：Docker安装可以参考下面的"Unraid/爱快/Docker"教程。
+   
 ### 5. 威联通
 
   下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)
