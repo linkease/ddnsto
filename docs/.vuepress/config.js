@@ -41,10 +41,14 @@ module.exports = ctx => ({
                 editLinkText: '在 GitHub 上编辑此页',
                 lastUpdated: '上次更新',
                 nav: [
-                    { text: '首页', link: '/' },
+                    { text: '首页', link: '/' },					
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '意见反馈',  items: [
+                    { text: '视频号',  items: [
+                        { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
+                        { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
+                      ] },
+                    { text: '反馈',  items: [
                         { text: '私信反馈', link: 'https://wj.qq.com/s2/8130944/166e' },
                         { text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
                         { text: '关于我们', link: '/zh/guide/about' },
