@@ -1,6 +1,6 @@
 ## 易有云团队
 
-易有云官网（未上线）：[https://www.linkease.com](https://www.linkease.com)
+易有云官网：[https://www.linkease.com](https://www.linkease.com)
 
 ### 团队介绍
 * [KoolShare](https://koolshare.cn/space-uid-2380.html) @小宝 带队
