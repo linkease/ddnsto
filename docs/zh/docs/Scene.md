@@ -1,8 +1,7 @@
-## 场景
 
-此版块，主要说一些ddnsto的使用场景，有很多朋友们，玩出了很多新花样，所以归纳一些比较常用的。
+**此版块，主要说一些ddnsto的使用场景，有很多朋友们，玩出了很多新花样，所以归纳一些比较常用的。**
 
-### 远程pve控制
+## 远程pve控制
 
 基本现在很多人的小主机都是性能强悍的，通过通过PVE或者ESXI来安装各种系统(OpenWrt、iKuai、docker等)，只要通过PVE或者EXSI安装的OpenWrt/docker/LEDE等，部署好了ddnsto，那就就能远程访问PVE或者ESXI的管理界面。
 
@@ -18,7 +17,7 @@ PS：比如pve是https，别写成http了。
 
    ![scene](./scene/scene-pve3.jpeg)
     
-### qBittorrent远程下载
+## qBittorrent远程下载
 
 1.qBittorrent，一款bt下载插件，是能通过ddnsto远程控制的，注意下端口。
 
@@ -32,7 +31,7 @@ PS：比如pve是https，别写成http了。
 
    ![scene](./scene/scene-qb3.jpeg)  
    
-### Transmission远程下载
+## Transmission远程下载
 
 1.Transmission也是一款bt下载插件，也能通过ddnsto控制。
 
@@ -46,7 +45,7 @@ PS：比如pve是https，别写成http了。
  
    ![scene](./scene/scene-tm3.jpeg)
    
-### 百度云远程下载
+## 百度云远程下载
 
 1.BaiduPCS-Web是一款可以下载百度云的插件，也能通过ddnsto控制。
 
