@@ -49,11 +49,11 @@ module.exports = ctx => ({
                         { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
                       ] },
                     { text: '反馈',  items: [
-                        { text: '私信反馈', link: 'https://wj.qq.com/s2/8130944/166e' },
-                        { text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
-                        { text: '关于我们', link: '/zh/guide/about' },
+                        { text: '私信反馈', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
+                        //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
+                        { text: '联系我们', link: '/zh/guide/about' },
                       ] },
-                    { text: '登录后台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
+                    { text: '控制台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
                 ],
                 sidebar: {
                     '/zh/guide/': [
