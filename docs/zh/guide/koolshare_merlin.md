@@ -1,6 +1,6 @@
 ## 获取Token
 
-1. 打开ddnsto.com，点击右上角微信登录。
+1. 打开https://www.ddnsto.com/，点击右上角控制台，微信登录。
 
    ![image-20210201221421068](./koolshare_merlin/image-20210201221421068.png)
 
@@ -221,7 +221,7 @@ docker run -d \
    
 ## 穿透设置
 
-   回到ddnsto.com用户中心，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】！
+   回到ddnsto.com控制台，刷新等待设备出现在界面上。如长时间没有出现请查看【常见问题】！
 
    ![image-20210201223322255](./koolshare_merlin/image-20210201223322255.png)
 
@@ -231,11 +231,11 @@ docker run -d \
 
    ![image-20210201224437222](./koolshare_merlin/image-20210201224437222.png)
 
-2. 添加域名前缀，请使用小写字母或数字，并且大于6个字符。如前缀是"kool666"，那么访问路由器的地址就是https://kool666.kooldns.cn:443 ,在目标主机一栏填入路由器LAN口IP地址，如http://192.168.50.1:80 ( 端口如果是80，可以省略端口如：http://192.168.50.1 。非80端口则不能省略，如http://192.168.50.11:5000 ，请根据实际情况填写！)，填写完毕后点击"✔️"提交。
+2. 添加域名前缀，请使用小写字母或数字，并且大于6个字符。如前缀是"kool666666"，那么访问路由器的地址就是https://kool666666.ddnsto.com:443 ,在目标主机一栏填入路由器LAN口IP地址，如http://192.168.50.1:80 ( 端口如果是80，可以省略端口如：http://192.168.50.1 。非80端口则不能省略，如http://192.168.50.11:5000 ，请根据实际情况填写！)，填写完毕后点击"添加"。
 
    ![image-20210203210534480](./koolshare_merlin/image-20210203210534480.png)
 
-   提交后可以看到完整的访问地址"https://kool666.kooldns.cn:443"已经录入了！
+   提交后可以看到完整的访问地址"https://kool666666.ddnsto.com:443"已经录入了！
 
    ![image-20210201224634676](./koolshare_merlin/image-20210201224634676.png)
 
@@ -253,7 +253,7 @@ docker run -d \
 
 - merlin shellinabox插件设置
 
-  shellinabox插件域名前缀的格式是固定的，是在你路由器的域名前缀后面添加“-cmd”，映射地址填路由器LAN口IP加端口4200。像我们前面设置的路由器前缀是kool666,则shellinabox插件域名前缀就是“kool666-cmd”，目标主机地址为http://192.168.50.1:4200
+  shellinabox插件域名前缀的格式是固定的，是在你路由器的域名前缀后面添加“-cmd”，映射地址填路由器LAN口IP加端口4200。像我们前面设置的路由器前缀是kool666666，则shellinabox插件域名前缀就是“kool666666-cmd”，目标主机地址为http://192.168.50.1:4200
 
   ![image-20210202235150872](./koolshare_merlin/image-20210202235150872.png)
 
@@ -263,23 +263,20 @@ docker run -d \
 
   ![image-20210202235804318](./koolshare_merlin/image-20210202235804318.png)
 
-- aria2远程下载设置
-
-  请参考小宝大神的[教程](https://koolshare.cn/thread-144886-1-1.html)
 
 - 群辉穿透设置(偷懒直接复制clang大神的教程了)
 
   因为使用https穿透后群辉的自动跳转会出现问题，所以需要自己补齐链接
 
-  假如群辉的IP是192.168.50.11，并且绑定了域名https://nas6666.kooldns.cn/
+  假如群辉的IP是192.168.50.11，并且绑定了域名https://nas666666.ddnsto.com/
 
   但这个链接是不能访问nas的！！！
 
   
 
   **需要在链接后加上** **webman/index.cgi 也就是说完整链接为：**
-  **https://nas6666.kooldns.cn/webman/index.cgi**
-  **用HTTP协议访问可以忽略上面的这个问题：http://nas6666.kooldns.cn:5000/ 这个就可以直接访问了，不需要手动补齐**
+  **https://nas666666.ddnsto.com/webman/index.cgi**
+  **用HTTP协议访问可以忽略上面的这个问题：http://nas6666666.ddnsto.com:5000/ 这个就可以直接访问了，不需要手动补齐**
 
   
 
@@ -291,15 +288,37 @@ docker run -d \
 
   ![image-20210203001606683](./koolshare_merlin/image-20210203001606683.png)
 
-## 通道和套餐
+  
+  
+## 设备改名
 
-为了满足ddnsto更健康的发展，需要大家多多支持！现在推出了26 元一年的套餐，每个套餐可以绑定一台设备。
+绑定了ddnsto的设备，可随意改名：
 
-同时我们也增加了新的服务器(通道)以满足更多用户的稳定使用。
+1.进入控制台后，“设备”里点击“笔”图标； 
+  
+ ![image-gaiming1](./koolshare_merlin/gaiming1.png) 
 
-切换通道后，有几点需要注意的：
+2.出来的弹窗，填写自己喜欢的名字即可。
+ 
+ ![image-gaiming2](./koolshare_merlin/gaiming2.png)  
+ 
+ 
+  
+## 通道和服务器
 
-- 域名前缀也会随之改变，如现在除了原有的"ddnsto.com",还多了默认的"kooldns.cn"
+为了ddnsto更健康的发展，需要大家多多支持！现推出了26元/年的通道，每个通道可以绑定一台设备。
+
+  ![image-tongdao1](./koolshare_merlin/tongdao0.png)
+
+同时我们也增加了新的服务器以满足更多用户的稳定使用。
+
+  ![image-tongdao1](./koolshare_merlin/tongdao1.png)
+  
+  ![image-tongdao2](./koolshare_merlin/tongdao2.png)
+
+切换服务器后，有几点需要注意的：
+
+- 域名前缀也会随之改变，如现在除了原有的"ddnsto.com",还多了"kooldns.cn"
 - 切换通道后ddnsto插件会有1分钟左右的初始化时间，期间绑定的域名会不可用，请稍等再尝试
 - 切换后原有的域名将不可使用，如"aaa.kooldns.cn"切换到了"aaa.ddnsto.com"之后，原有的"aaa.koolddns.cn"将不可使用。
 
