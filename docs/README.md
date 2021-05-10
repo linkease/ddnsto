@@ -14,3 +14,13 @@ features:
   details: 国内多个服务器支持，加上HTTP2.0的技术优势，让你拥有前所未有的远程访问体验
 footer: 版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号
 ---
+
+<script>
+  export default{
+    mounted(){
+        document.querySelector(".footer").addEventListener("click", function (e) {
+            window.open("https://beian.miit.gov.cn/", "_blank'")
+        })
+    }
+}
+</script>
