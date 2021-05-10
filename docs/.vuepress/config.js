@@ -18,6 +18,9 @@ module.exports = ctx => ({
     head: [
         [
             'link', { rel: 'icon', href: '/favicon.png' }
+        ],
+        [
+            'script', { src: './script/host.js' }
         ]
     ],
     // 多语言
@@ -41,19 +44,23 @@ module.exports = ctx => ({
                 editLinkText: '在 GitHub 上编辑此页',
                 lastUpdated: '上次更新',
                 nav: [
-                    { text: '首页', link: '/' },					
+                    { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
-                    { text: '视频号',  items: [
-                        { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
-                        { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
-                      ] },
-                    { text: '反馈',  items: [
-                        { text: '私信反馈', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
-                        //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
-                        { text: '联系我们', link: '/zh/guide/about' },
-                      ] },
-                    { text: '控制台', link: 'https://www.ddnsto.com/app/#/weixinlogin' },
+                    {
+                        text: '视频号', items: [
+                            { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
+                            { text: '头条号', link: 'https://bit.ly/3cFVAuY' },
+                        ]
+                    },
+                    {
+                        text: '反馈', items: [
+                            { text: '私信反馈', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
+                            //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
+                            { text: '联系我们', link: '/zh/guide/about' },
+                        ]
+                    },
+                    { text: '控制台', link: 'javascript:redirectloginUrl();', target: "_self" },
                 ],
                 sidebar: {
                     '/zh/guide/': [
@@ -77,7 +84,7 @@ module.exports = ctx => ({
                         },
                     ],
                     '/zh/docs/': [
-                      {
+                        {
                             title: "文档",
                             // 显示所有页面的标题链接
                             displayAllHeaders: true,
@@ -86,9 +93,9 @@ module.exports = ctx => ({
                             sidebarDepth: 2,
                             children: [
                                 ["", "基础信息"],
-								["Scene", "使用场景"],
+                                ["Scene", "使用场景"],
                             ]
-                      },
+                        },
                     ]
                 }
             },
