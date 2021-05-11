@@ -61,7 +61,7 @@ module.exports = ctx => ({
                             { text: '联系我们', link: '/zh/guide/about' },
                         ]
                     },
-                    { text: '控制台', link: 'javascript:redirectloginUrl();', target: "_self" },
+                    { text: '控制台', link: '/app/#/login', target: "_blank" },
                 ],
                 sidebar: {
                     '/zh/guide/': [
