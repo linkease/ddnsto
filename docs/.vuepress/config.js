@@ -20,7 +20,7 @@ module.exports = ctx => ({
             'link', { rel: 'icon', href: '/favicon.png' }
         ],
         [
-            'script', { src: './script/host.js' }
+            'meta', { name: "keywords", content: "DDNSTO,内网穿透,设备原理,远程下载,远程开机,远程桌面,远程文件管理" }
         ]
     ],
     // 多语言
