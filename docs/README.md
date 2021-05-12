@@ -1,8 +1,8 @@
 ---
 home: true
 #heroImage: /hero.png
-heroText: 小白远程设备管理
-tagline: 更简单，更快速，更便宜，小白也能 10 秒上手
+heroText: 远程管理，如此简单
+tagline: 多种玩法，随心所欲，探索从未停止，不止于此
 actionText: 立即体验 →
 actionLink: /zh/guide/
 features:
