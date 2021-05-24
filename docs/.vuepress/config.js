@@ -21,6 +21,9 @@ module.exports = ctx => ({
         ],
         [
             'meta', { name: "keywords", content: "DDNSTO,内网穿透,设备原理,远程下载,远程开机,远程桌面,远程文件管理" }
+        ],
+        [
+            'script', { src: "script/analytics.js" }
         ]
     ],
     // 多语言
