@@ -22,12 +22,18 @@ PS：比如pve是https，别写成http了。
 1.qBittorrent，一款bt下载插件，是能通过ddnsto远程控制的，注意下端口。
 
    ![scene](./scene/scene-qb1.jpeg)
+   
+2.打开WEB管理界面，设置——WebUI——“取消”启用跨站请求伪造(CSRF)保护。
 
-2.设置好qBittorrent的ddnsto远程穿透。
+PS：此选项需要取消，不然后面ddnsto可能连不上。   
+   
+   ![scene](./scene/scene-qb4.jpeg)
+   
+3.设置好qBittorrent的ddnsto远程穿透。
 
    ![scene](./scene/scene-qb2.jpeg)
 
-3.就能畅快的远程bt下载。
+4.就能畅快的远程bt下载。
 
    ![scene](./scene/scene-qb3.jpeg)  
    
