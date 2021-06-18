@@ -12,7 +12,6 @@ features:
   details: 无需购买域名与服务器，省去服务器年费及域名购买费用
 - title: 响应更快
   details: 国内多个服务器支持，加上HTTP2.0的技术优势，让你拥有前所未有的远程访问体验
-footer: 版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号
 ---
 
 ```
@@ -51,13 +50,23 @@ footer: 版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备200
 活动时间
 6.7 - 7.15，7.19日公布优秀文章得主，送出我们的大奖。
 ```
-
+<footer>
+  <a href="https://beian.miit.gov.cn/" target="_blank" class="" title="版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号">版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号</a>
+</footer>
 <script>
   export default{
     mounted(){
-        document.querySelector(".footer").addEventListener("click", function (e) {
-            window.open("https://beian.miit.gov.cn/", "_blank'")
-        })
     }
 }
 </script>
+<style  scoped>
+footer{
+    padding: 2.5rem;
+    border-top: 1px solid #eaecef;
+    text-align: center;
+}
+footer a{
+    color: #4e6e8e;
+    cursor: pointer;
+}
+</style>
