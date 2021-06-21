@@ -62,6 +62,7 @@ module.exports = ctx => ({
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
                             { text: '联系我们', link: '/zh/guide/about' },
+                            { text: '更新日志', link:'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
                         ]
                     },
                     { text: '控制台', link: '/app/#/login', target: "_blank" },
