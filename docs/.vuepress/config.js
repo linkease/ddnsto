@@ -50,6 +50,7 @@ module.exports = ctx => ({
                     { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
                     { text: '文档', link: '/zh/docs/' },
+                    { text: '博客', link: '/post/' },
                     {
                         text: '视频号', items: [
                             { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
@@ -111,4 +112,22 @@ module.exports = ctx => ({
         // search: false,
         // searchMaxSuggestions: 10
     },
+    plugins: [
+        [
+          '@vuepress/blog',
+          {
+            directories: [
+              {
+                // Unique ID of current classification
+                id: 'post',
+                // Target directory
+                dirname: '_posts',
+                // Path of the `entry page` (or `list page`)
+                path: '/post/', 
+                
+              },
+            ],
+          },
+        ],
+      ],
 })

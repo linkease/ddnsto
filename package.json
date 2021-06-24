@@ -9,7 +9,10 @@
     "dependencies": {
         "vuepress": "^1.8.0"
     },
-    "devDependencies": {},
+    "devDependencies": {
+        "@vuepress/plugin-blog": "^1.9.4",
+        "@vuepress/theme-blog": "^2.3.3"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "vuepress dev docs",
