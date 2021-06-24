@@ -49,7 +49,7 @@ module.exports = ctx => ({
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '安装', link: '/zh/guide/' },
-                    { text: '文档', link: '/zh/docs/' },
+                    { text: '场景', link: '/zh/docs/' },
                     {
                         text: '视频号', items: [
                             { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
@@ -90,15 +90,14 @@ module.exports = ctx => ({
                     ],
                     '/zh/docs/': [
                         {
-                            title: "文档",
+                            title: "场景",
                             // 显示所有页面的标题链接
                             displayAllHeaders: true,
                             // 展开状态
                             collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "基础信息"],
-                                ["Scene", "使用场景"],
+                                ["", "使用场景"],                                
                             ]
                         },
                     ]
