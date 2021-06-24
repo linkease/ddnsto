@@ -1,4 +1,4 @@
-module.exports = ctx => ({
+module.exports = {
     host: "0.0.0.0",
     port: 8080,
     dest: "build",
@@ -7,7 +7,8 @@ module.exports = ctx => ({
     configureWebpack: {
         resolve: {
             alias: {
-                '@assets': 'public/assets/'
+                '@assets': 'public/assets/',
+                '@components': 'components/'
             }
         }
     },
@@ -23,7 +24,7 @@ module.exports = ctx => ({
             'meta', { name: "keywords", content: "DDNSTO,内网穿透,设备原理,远程下载,远程开机,远程桌面,远程文件管理" }
         ],
         [
-            'script', { src: "script/analytics.js" }
+            'script', { src: "/script/analytics.js" }
         ]
     ],
     // 多语言
@@ -63,7 +64,7 @@ module.exports = ctx => ({
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
                             { text: '联系我们', link: '/zh/guide/about' },
-                            { text: '更新日志', link:'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
+                            { text: '更新日志', link: 'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
                         ]
                     },
                     { text: '控制台', link: '/app/#/login', target: "_blank" },
@@ -113,21 +114,26 @@ module.exports = ctx => ({
         // searchMaxSuggestions: 10
     },
     plugins: [
-        [
-          '@vuepress/blog',
-          {
-            directories: [
-              {
-                // Unique ID of current classification
-                id: 'post',
-                // Target directory
-                dirname: '_posts',
-                // Path of the `entry page` (or `list page`)
-                path: '/post/', 
-                
-              },
-            ],
-          },
+        ['@vuepress/blog',
+            {
+                directories: [
+                    {
+                        id: 'post',
+                        title: "博客",
+                        dirname: '_posts',
+                        path: '/post/',
+                        itemPermalink: '/post/:year/:month/:day/:slug',
+                        layout: "BlogLayout",
+                        pagination: {
+                            prevText: "上一页",
+                            nextText: "下一页",
+                            lengthPerPage: 10,
+                            layout: "BlogLayout",
+                        },
+                    },
+                ],
+
+            },
         ],
-      ],
-})
+    ],
+}

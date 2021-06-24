@@ -10,8 +10,7 @@
         "vuepress": "^1.8.0"
     },
     "devDependencies": {
-        "@vuepress/plugin-blog": "^1.9.4",
-        "@vuepress/theme-blog": "^2.3.3"
+        "@vuepress/plugin-blog": "^1.9.4"
     },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
