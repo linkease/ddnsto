@@ -1,4 +1,4 @@
-module.exports = ctx => ({
+module.exports = {
     host: "0.0.0.0",
     port: 8080,
     dest: "build",
@@ -7,7 +7,9 @@ module.exports = ctx => ({
     configureWebpack: {
         resolve: {
             alias: {
-                '@assets': 'public/assets/'
+                '@assets': 'public/assets/',
+                '@posts': 'public/posts/',
+                '@components': 'components/'
             }
         }
     },
@@ -23,7 +25,7 @@ module.exports = ctx => ({
             'meta', { name: "keywords", content: "DDNSTO,内网穿透,设备原理,远程下载,远程开机,远程桌面,远程文件管理" }
         ],
         [
-            'script', { src: "script/analytics.js" }
+            'script', { src: "/script/analytics.js" }
         ]
     ],
     // 多语言
@@ -48,8 +50,9 @@ module.exports = ctx => ({
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    { text: '安装', link: '/zh/guide/' },
+                    { text: '指南', link: '/zh/guide/' },
                     { text: '场景', link: '/zh/docs/' },
+                    { text: '博客', link: '/post/' },
                     {
                         text: '视频号', items: [
                             { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
@@ -62,7 +65,7 @@ module.exports = ctx => ({
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
                             { text: '联系我们', link: '/zh/guide/about' },
-                            { text: '更新日志', link:'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
+                            { text: '更新日志', link: 'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
                         ]
                     },
                     { text: '控制台', link: '/app/#/login', target: "_blank" },
@@ -110,4 +113,58 @@ module.exports = ctx => ({
         // search: false,
         // searchMaxSuggestions: 10
     },
-})
+    plugins: [
+        ['@vuepress/blog',
+            {
+                directories: [
+                    {
+                        id: 'post',
+                        title: "博客",
+                        dirname: '_posts',
+                        path: '/post/',
+                        itemPermalink: '/post/:year/:month/:day/:slug',
+                        layout: "BlogLayout",
+                        pagination: {
+                            prevText: "上一页",
+                            nextText: "下一页",
+                            lengthPerPage: 10,
+                            layout: "BlogLayout",
+                            sorter: (prev, next) => {
+                                const dayjs = require('dayjs');
+                                const prevTime = dayjs(prev.frontmatter.date);
+                                const nextTime = dayjs(next.frontmatter.date);
+                                return prevTime - nextTime > 0 ? -1 : 1;
+                            }
+                        },
+                    },
+                ],
+                frontmatters: [
+                    {
+                        // Unique ID of current classification
+                        // Decide that the frontmatter keys will be grouped under this classification
+                        id: "tag",
+                        keys: ['tag', 'tags'],
+                        // Path of the `entry page` (or `list page`)
+                        path: '/tag/',
+                        // Layout of the `entry page`
+                        title: "标签",
+                        // layout: "BlogLayout",
+                        scopeLayout: 'BlogLayout',
+                        pagination: {
+                            prevText: "上一页",
+                            nextText: "下一页",
+                            lengthPerPage: 10,
+                            layout: "BlogLayout",
+                            sorter: (prev, next) => {
+                                const dayjs = require('dayjs');
+                                const prevTime = dayjs(prev.frontmatter.date);
+                                const nextTime = dayjs(next.frontmatter.date);
+                                return prevTime - nextTime > 0 ? -1 : 1;
+                            }
+                        },
+                    },
+                ],
+            },
+        ],
+    ],
+}
