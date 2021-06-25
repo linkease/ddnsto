@@ -132,7 +132,26 @@ module.exports = {
                         },
                     },
                 ],
-
+                frontmatters: [
+                    {
+                        // Unique ID of current classification
+                        // Decide that the frontmatter keys will be grouped under this classification
+                        id: "tag",
+                        keys: ['tag', 'tags'],
+                        // Path of the `entry page` (or `list page`)
+                        path: '/tag/',
+                        // Layout of the `entry page`
+                        title: "标签",
+                        // layout: "BlogLayout",
+                        scopeLayout: 'BlogLayout',
+                        pagination: {
+                            prevText: "上一页",
+                            nextText: "下一页",
+                            lengthPerPage: 10,
+                            layout: "BlogLayout",
+                        },
+                    },
+                ],
             },
         ],
     ],

@@ -1,9 +1,7 @@
 ---
 title: frontmatter in vuepress 2
 date: 2018-11-7
-tags: 
-  - frontmatter
-  - vuepress
+tag: vue
 author: ULIVZ
 location: Hangzhou  
 ---

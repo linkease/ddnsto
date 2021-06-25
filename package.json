@@ -7,6 +7,8 @@
         "doc": "docs"
     },
     "dependencies": {
+        "sass": "^1.29.0",
+        "sass-loader": "^10.0.5",
         "vuepress": "^1.8.0"
     },
     "devDependencies": {
