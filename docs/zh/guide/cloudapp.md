@@ -253,17 +253,92 @@ TODO
 
   
 ## 4.玩转Windows RDP远程
-1.首先在被控制的电脑上启用远程桌面。
 
-Win10：设置——系统——远程桌面——启用远程桌面  
+### A.专业版开启RDP
+
+**Windows专业版或者更高级的版本是有开关的，可以直接开启电脑的RDP。**
+
+1.Win10：设置——系统——远程桌面——启用远程桌面  
 
   ![Windows远程](./cloudapp/cloudapp-rdp1.jpeg)
 
-Win7：右键我的电脑——属性——左边侧栏高级系统设置——远程，在下方“远程桌面”方框下勾选“允许远程连接到此计算机”
+2.Win7：右键我的电脑——属性——左边侧栏高级系统设置——远程，在下方“远程桌面”方框下勾选“允许远程连接到此计算机”
   
   ![Windows远程](./cloudapp/cloudapp-rdp2.jpeg)
+  
+  
+### B.家庭版开启RDP
 
-2.查看被控制的电脑的IP和用户名/密码。
+**Windows家庭版是无法直接开启电脑的RDP，所以我们要用到别的工具。**
+
+1.首先，进入网站：https://github.com/stascorp/rdpwrap/releases [点击进入](https://github.com/stascorp/rdpwrap/releases)
+
+  ![Windows远程](./cloudapp/rdp/1.jpg)
+
+2.下载RDPWrap-v1.6.2.zip到电脑，解压。
+
+3.打开工具解压目录，运行install.bat，会自动弹出窗口安装完成。
+
+  ![Windows远程](./cloudapp/rdp/2.jpg)
+  
+  ![Windows远程](./cloudapp/rdp/3.jpg)
+
+  ![Windows远程](./cloudapp/rdp/4.jpg)
+
+4.然后运行RDPConf.exe，看成功没。
+
+这样就是没成功，继续看后面的教程修复。
+  
+  ![Windows远程](./cloudapp/rdp/5.jpg)
+
+这样就成功了，可以去**C.开始设置**。 
+  ![Windows远程](./cloudapp/rdp/55.jpg) 
+
+  
+**开始修复教程：**
+
+1. 先点击uninstall.bat，卸载之前的操作。 
+  
+  ![Windows远程](./cloudapp/rdp/6.jpg)
+  
+  ![Windows远程](./cloudapp/rdp/7.jpg)
+  
+2. 打开：https://github.com/stascorp/rdpwrap/issues/1447 [点击进入](https://github.com/stascorp/rdpwrap/issues/1447)，下载rdpwrap.ini文件，替换到工具目录。
+
+  ![Windows远程](./cloudapp/rdp/8.jpg)
+
+出现这个界面，直接右键另存为。
+  
+  ![Windows远程](./cloudapp/rdp/9.jpg)  
+  
+  ![Windows远程](./cloudapp/rdp/10.jpg)
+
+选择“是”，直接替换到工具包解压文件夹内。
+  
+  ![Windows远程](./cloudapp/rdp/11.jpg)    
+
+3.win键+R键，调出运行窗口，输入cmd，确定。
+
+  ![Windows远程](./cloudapp/rdp/12.jpg)  
+
+4.cd到工具解压包的路径，回车。
+  ![Windows远程](./cloudapp/rdp/13.jpg)
+
+5.输入以下命令进行安装。
+```
+RDPWInst.exe -i rdpwrap.ini
+```
+  
+  ![Windows远程](./cloudapp/rdp/14.jpg)  
+
+6.安装完成后，再次运行RDPConf.exe，已经成功了，然后就可以继续下一步设置了。 
+
+  ![Windows远程](./cloudapp/rdp/55.jpg)   
+  
+
+### C.开始设置  
+  
+1.查看被控制的电脑的IP和用户名/密码。
 
 “开始键+R”一起按，出来窗口输入“cmd”回车，出来终端窗口，输入“ipconfig”回车；
 
@@ -283,15 +358,15 @@ PS：某些Win10用户是用的微软帐号，没启用本地帐号，那么就�
 
    ![Windows远程](./cloudapp/cloudapp-rdp6.jpeg) 
  
-3.在ddnsto可用应用列表中点击添加远程RDP，填入被控电脑的IP，用户名，密码等信息。
+2.在ddnsto可用应用列表中点击添加远程RDP，填入被控电脑的IP，用户名，密码等信息。
 
    ![Windows远程](./cloudapp/cloudapp-rdp7.jpeg) 
    
-4.在已添加中找到刚添加的远程RDP，点击即可进入进入RDP，操控远程电脑。 
+3.在已添加中找到刚添加的远程RDP，点击即可进入进入RDP，操控远程电脑。 
 
    ![Windows远程](./cloudapp/cloudapp-rdp8.jpeg)  
    
-5.相关提醒：
+4.相关提醒：
 
   a.被控电脑必须是在设置好穿透(ddnsto)的网络设备下
   
