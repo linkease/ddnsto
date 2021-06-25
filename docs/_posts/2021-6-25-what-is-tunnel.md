@@ -31,7 +31,9 @@ tags:
 
 如果未绑定通道或通道已经过期，则会连接失败。
 
-![](/assets/posts/user-device-tunnel.png)
+![](/assets/posts/data-flow.png)
 
 如果你的某台设备不需要使用，你可以暂时先不为它绑定通道。
+
+当然了，付费购买通道支持我们也是极好的！
 
