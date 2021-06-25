@@ -51,7 +51,7 @@ module.exports = {
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '指南', link: '/zh/guide/' },
-                    { text: '场景', link: '/zh/docs/' },
+                    //{ text: '场景', link: '/zh/docs/' },
                     { text: '博客', link: '/post/' },
                     {
                         text: '视频号', items: [
@@ -86,6 +86,7 @@ module.exports = {
                                 ["koolshare_merlin", "详细教程"],
                                 ["cloudapp", "远程教学"],
                                 ["opensource", "开源代码"],
+                                ["scene", "使用场景"],
                                 ["question", "常见问题"],
                                 ["about", "联系我们"],
                             ]
