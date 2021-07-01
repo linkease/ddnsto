@@ -129,6 +129,13 @@ module.exports = {
                             nextText: "下一页",
                             lengthPerPage: 10,
                             layout: "BlogLayout",
+                            // 排序
+                            sorter: (prev, next) => {
+                                const dayjs = require('dayjs');
+                                const prevTime = dayjs(prev.frontmatter.date);
+                                const nextTime = dayjs(next.frontmatter.date);
+                                return prevTime - nextTime > 0 ? -1 : 1;
+                            }
                         },
                     },
                 ],
