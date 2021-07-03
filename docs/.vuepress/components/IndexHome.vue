@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="f">
-                <img :src="home_pic2" alt="">
+                <img :src="home_pic4" alt="">
             </div>
         </div>
         <div class="player item">
@@ -175,8 +175,14 @@ export default {
         .r {
             flex: 0 0 100%;
             max-width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
             img {
                 max-width: 100%;
+                max-height: 100%;
             }
         }
     }
