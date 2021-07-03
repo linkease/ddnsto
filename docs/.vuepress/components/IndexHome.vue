@@ -1,17 +1,22 @@
 <template>
     <div id="main">
         <div class="banner item" :style="bannerStyle">
-            <h3 class="title">
-                随时随地抵达你的<br />
-                私人网络
-            </h3>
-            <div class="desc">
-                简单、快速的内网穿透工具，不受<br />
-                网络限制，全局掌控您的私人设备
+            <div class="f">
+                <h3 class="title">
+                    随时随地抵达你的<br />
+                    私人网络
+                </h3>
+                <div class="desc">
+                    简单、快速的内网穿透工具，不受<br />
+                    网络限制，全局掌控您的私人设备
+                </div>
+                <router-link to="/zh/guide/quick.html" class="experience">
+                    免费体验
+                </router-link>
             </div>
-            <router-link to="/zh/guide/quick.html" class="experience">
-                免费体验
-            </router-link>
+            <div class="r">
+                <img :src="banner_icon" alt="">
+            </div>
 
         </div>
 
@@ -76,7 +81,8 @@
 </template>
 
 <script>
-import banner from "../public/assets/home/home_bg.jpg"
+import banner from "../public/assets/home/home_bannerbg.png"
+import banner_icon from "../public/assets/home/home_bannericon.png"
 import home_pic1 from "../public/assets/home/home_pic1.png"
 import home_pic2 from "../public/assets/home/home_pic2.png"
 import home_pic3 from "../public/assets/home/home_pic3.png"
@@ -90,7 +96,7 @@ export default {
             home_pic2,
             home_pic3,
             home_pic4,
-
+            banner_icon,
         }
     },
     computed: {
@@ -122,7 +128,7 @@ export default {
     margin-top: 3.125rem;
     .item {
         width: 100%;
-        padding: 0 5.625rem;
+        padding: 0 10%;
         margin-bottom: 5.625rem;
     }
     .banner {
@@ -134,38 +140,49 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         align-content: center;
-        justify-content: flex-start;
-        h3.title {
-            width: 100%;
-            color: #000;
-            font-size: 2.375rem;
-            font-family: PingFangSC-Semibold, PingFang SC;
-            font-weight: 600;
-            margin: 0;
+        .f {
+            flex: 0 0 100%;
+            max-width: 50%;
+            h3.title {
+                width: 100%;
+                color: #000;
+                font-size: 2.375rem;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                margin: 0;
+            }
+            .desc {
+                width: 100%;
+                font-size: 1.275rem;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: rgba(0, 0, 0, 0.83);
+                margin: 1.875rem 0;
+            }
+            a.experience {
+                display: inline-block;
+                width: 9.25rem;
+                line-height: 3rem;
+                background-color: #0255fe;
+                text-align: center;
+                border-radius: 3.125rem;
+                color: #fff;
+            }
+            a.experience:hover {
+                opacity: 0.8;
+            }
         }
-        .desc {
-            width: 100%;
-            font-size: 1.275rem;
-            font-family: PingFangSC-Regular, PingFang SC;
-            font-weight: 400;
-            color: rgba(0, 0, 0, 0.83);
-            margin: 1.875rem 0;
-        }
-        a.experience {
-            width: 9.25rem;
-            line-height: 3rem;
-            background-color: #0255fe;
-            text-align: center;
-            border-radius: 3.125rem;
-            color: #fff;
-        }
-        a.experience:hover {
-            opacity: 0.8;
+        .r {
+            flex: 0 0 100%;
+            max-width: 50%;
+            img {
+                max-width: 100%;
+            }
         }
     }
     .player {
         width: 100%;
-        height: 46.125rem;
+        height: 32.5rem;
         text-align: center;
         display: flex;
         flex-wrap: wrap;
@@ -187,6 +204,8 @@ export default {
         align-items: center;
         img {
             max-width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 0 10px 5px #f8f8f8;
         }
         .r {
             display: flex;
@@ -221,7 +240,6 @@ export default {
             }
             .title {
                 width: 100%;
-                height: 3.9375rem;
                 font-size: 2.375rem;
                 font-family: PingFangSC-Semibold, PingFang SC;
                 font-weight: 600;
@@ -230,7 +248,6 @@ export default {
             }
             .desc {
                 width: 100%;
-                height: 5rem;
                 font-size: 1.0625rem;
                 font-family: PingFangSC-Regular, PingFang SC;
                 font-weight: 400;
@@ -270,10 +287,20 @@ export default {
         .item {
             width: 100%;
             padding: 0 1.875rem;
-            margin-bottom: 0;
+            margin-bottom: 1.25rem;
         }
         .banner {
-            justify-content: center;
+            .f {
+                max-width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+            }
+            .r {
+                display: none;
+            }
         }
         .player {
             display: none;

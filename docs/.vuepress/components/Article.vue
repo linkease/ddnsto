@@ -141,10 +141,11 @@ li {
                 border: 1px solid;
                 border-radius: 3px;
                 margin-left: 0;
-                color: #3eaf7c;
+                font-size: 14px;
+                color: #0255fe;
             }
             a.tag:hover {
-                color: #0255fe;
+                opacity: 0.9;
             }
         }
     }
