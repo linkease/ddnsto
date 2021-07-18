@@ -118,6 +118,10 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
 ### 6. Unraid/爱快/Docker
 
+**Docker方式安装ddnsto，包括并不限于Unraid/爱快/群晖等，只要有Docker的设备都成，一些Linux发行版等。**
+
+所以说Docker方式基本算是适合全设备，操作也比较简单，下面开始教程：
+
 1. TOKEN: 你从官网拿到的 token。
 2. DEVICE_IDX: 默认0，如果设备ID重复则为1-100之间。
 3. PUID/PGID 不知道可不填。
@@ -148,6 +152,20 @@ docker run -d \
 1. Docker 里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器。
 
 [镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
+
+2. Docker在某些Linux发行版，可能要加上“sudo”前缀才能运行，按提示输入Linux的密码，命令如下：
+
+```
+sudo docker run -d \
+    --name=<container name> \
+	--network host \
+    -e TOKEN=<填入你的token> \
+    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间> \
+    -v /etc/localtime:/etc/localtime:ro \
+    -e PUID=<uid for user> \
+    -e PGID=<gid for user> \
+    linkease/ddnsto
+```
 
 #### Unraid实战ddnsto
 
