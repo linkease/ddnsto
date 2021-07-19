@@ -1,5 +1,5 @@
 ---
-title: 六月活动：分享经验赢大奖！
+title: 六月活动：分享经验赢大奖！(获奖已公布)
 date: 2021-6-7
 tag: 活动
 tags: 
@@ -7,7 +7,7 @@ tags:
 description: 感谢ddnsto及易有云用户们一路以来的支持，为了促进用户之间的经验交流和推广，六月我们进行一场推广送大奖活动！ 
 ---
 
-# 六月活动：分享经验赢大奖！
+# 六月活动：分享经验赢大奖！(获奖已公布，查看文章末尾)
 
 感谢ddnsto及易有云用户们一路以来的支持，为了促进用户之间的经验交流和推广，六月我们进行一场推广送大奖活动！
 
@@ -47,3 +47,88 @@ description: 感谢ddnsto及易有云用户们一路以来的支持，为了促�
 
 ## 活动时间
 6.7 - 7.15，7.19日公布优秀文章得主，送出我们的大奖。
+
+
+
+# 获奖公布
+- 一等奖： 
+
+  作者：6421049**【文章】，所在群：微信DDNSTO&易有云⑤群
+  
+  https://www.bilibili.com/read/cv11939064
+
+
+- 二等奖： 
+
+  作者：QQ640278** 【视频】,所在群：DDNSTO.易有云.⑤群
+
+  https://www.bilibili.com/video/BV1uq4y1L7fX/
+
+- 三等奖： 
+
+  作者：bbis 【文章】,所在群：微信DDNSTO&易有云1群 
+
+  https://koolshare.cn/thread-197040-1-1.html
+   
+
+
+
+感谢以下参与投稿的朋友们：
+```
+1、作者：QQ640278**
+所在群：DDNSTO.易有云.⑤群
+视频地址：
+以下都是同一个视频，多个网站发布：
+哗哩哗哩
+https://www.bilibili.com/video/BV1uq4y1L7fX/
+西瓜视频
+https://www.ixigua.com/6971317138430624286
+百家号
+https://haokan.baidu.com/v?vid=6920268117191316864
+抖音（播放量4万）
+https://v.douyin.com/e9rw9EE
+
+
+2、文章地址：https://post.smzdm.com/p/aqxmko9v/
+作者：llpp99** ，所在群：微信DDNSTO&易有云1群
+
+
+3、 
+文章地址：https://www.right.com.cn/forum/forum.php?mod=viewthread&tid=4250057&page=1#pid11559623
+作者：QQ号3699926**
+所在群：565252506  DDNSTO.易有云.⑤群 
+
+
+4、youtube地址：https://youtu.be/tIYoDm43mPg
+优酷地址：https://v.youku.com/v_show/id_XNTE2NjA2NTYwNA==.html?spm=a2h0c.8166622.PhoneSokuUgc_3.dtitle
+爱奇艺地址：https://www.iqiyi.com/v_1prv7sbiuj4.html
+作者：TB339** 所在群：DDNSTO&易有云①群
+
+5、文章地址：https://post.smzdm.com/p/alxxlv0g/
+作者：5958343**
+所在群：DDNSTO.易有云.⑤群, 群号565252506
+
+
+6、文章地址:https://b23.tv/HTgNtd
+作者：10507817**，所在群：&易有云4群
+
+
+7、文章地址：https://zhuanlan.zhihu.com/p/382002879作者：342096431（qq号）
+所在群：DDNSTO.易有云1群
+作者：微信ID 或 QQ号，所在群：微信DDNSTO&易有云4群 
+
+
+
+8、文章地址：https://koolshare.cn/thread-197040-1-1.html
+作者：bbis 
+所在群：微信DDNSTO&易有云1群  and 微信群 【推广-DDNSTO&易有云
+
+
+9、文章地址：
+https://mp.weixin.qq.com/s/p333r00dJw820jG3RdBQHg
+作者：秋名山不翻**(公众号)  
+
+
+10、文章地址：https://www.bilibili.com/read/cv11939064
+作者：6421049**，所在群：微信DDNSTO&易有云⑤群
+```
