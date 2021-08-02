@@ -85,8 +85,8 @@ module.exports = {
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "详细教程"],
                                 ["cloudapp", "远程教学"],
+                                ["scene", "更多玩法"],
                                 ["opensource", "开源代码"],
-                                ["scene", "使用场景"],
                                 ["question", "常见问题"],
                                 ["about", "联系我们"],
                             ]
