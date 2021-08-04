@@ -7,9 +7,12 @@ A：不可以，ddnsto会提供域名。
 
 #### Q：域名http和https能同时访问吗？
 
-A：不可以，设置的时候请看清是https还是http。
+A：可以，如果要同时访问，https和http地址端口不一样，可点击"显示http/https"切换查看。
 
+   ![question](./question/question10.jpg)  
+   ![question](./question/question11.jpg)   
 
+   
 #### Q：特殊设备访问需要填写端口？
 
 A：是的，比如PVE虚拟机，默认端口是8006，就必须加上端口。
@@ -29,15 +32,6 @@ A: 配置域名、切换通道后需要等待1分钟左右，如长时间后仍�
 
 A: 为了用户数据安全，目前只允许本人使用！
 A: Synology Drive 要用，必须先在浏览器当中验证一次
-
-
-
-
-## 套餐类
-
-#### Q: 已购买套餐的设备不小心删除了怎么办？
-
-A: 即使删除了设备，套餐依然还在。重新添加设备后就可以绑定已购买套餐。
 
 
 
@@ -65,7 +59,8 @@ A：登录进ddnsto控制台，绑定的设备的右边有三个点，点击解�
    ![question](./question/question5.jpg)
    ![question](./question/question6.jpg)  
    ![question](./question/question7.jpg)  
- 
+
+   
 #### Q：购买新通道？
 
  A：登录进ddnsto控制台，绑定设备后，右边会有切换通道的图标，点击出现弹窗，点击购买新通道，按需购买通道。
@@ -73,6 +68,11 @@ A：登录进ddnsto控制台，绑定的设备的右边有三个点，点击解�
    ![question](./question/question5.jpg)
    ![question](./question/question6.jpg)  
    ![question](./question/question8.jpg)  
+ 
+ 
+#### Q: 已购买通道的设备不小心删除了怎么办？
+
+A: 即使删除了设备，通道依然还在。重新添加设备后就可以绑定已购买通道。 
  
  
  
