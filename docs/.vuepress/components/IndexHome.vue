@@ -21,57 +21,62 @@
             </div>
         </div>
         <div class="body">
-            <div class="container">
-                <div class="f cover">
-                    <img :src="home_pic1" alt="">
+            <div class="block">
+                <div class="container">
+                    <div class="f cover">
+                        <img :src="home_pic1" alt="">
+                    </div>
+                    <div class="r introduction k">
+                        <h3 class="number"><span class="color-ff022a">01</span></h3>
+                        <h3 class="title">无需公网</h3>
+                        <div class="desc">
+                            当需要外网访问设备的时候，DDNSTO无需公网IP，<br />
+                            不被网络环境所限制。
+                        </div>
+                    </div>
                 </div>
-                <div class="r introduction">
-                    <h3 class="number"><span class="color-ff022a">01</span></h3>
-                    <h3 class="title">无需公网</h3>
-                    <div class="desc">
-                        当需要外网访问设备的时候，DDNSTO无需公网IP，<br />
-                        不被网络环境所限制。
+                <div class="container">
+                    <div class="f introduction j">
+                        <h3 class="number"><span class="color-0060ff">02</span></h3>
+                        <h3 class="title">我们支持多种设备</h3>
+                        <div class="desc">
+                            我们支持各种设备：梅林路由器固件、OpenWrt、<br />群晖、威联通、Docker…
+                        </div>
+                    </div>
+                    <div class="r cover">
+                        <img :src="home_pic2" alt="">
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="f cover">
+                        <img :src="home_pic3" alt="">
+                    </div>
+                    <div class="r introduction k">
+                        <h3 class="number"><span class="color-ff9e00">03</span></h3>
+                        <h3 class="title">多种远程应用</h3>
+                        <div class="desc">
+                            远程登录SSH、远程桌面RDP/VNC、远程下载 aria2… <br />
+                            多种远程应用只需一个浏览器。
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="f introduction j">
+                        <h3 class="number"><span class="color-42d1c3">04</span></h3>
+                        <h3 class="title">更快的响应</h3>
+                        <div class="desc">
+                            国内多个服务器支持，加上HTTP2.0的技术优势，<br />
+                            让你拥有前所未有的远程访问体验。
+                        </div>
+                    </div>
+                    <div class="r cover">
+                        <img :src="home_pic4" alt="">
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="f introduction">
-                    <h3 class="number"><span class="color-0060ff">02</span></h3>
-                    <h3 class="title">我们支持多种设备</h3>
-                    <div class="desc">
-                        我们支持各种设备：梅林路由器固件、OpenWrt、<br />群晖、威联通、Docker…
-                    </div>
-                </div>
-                <div class="r cover">
-                    <img :src="home_pic2" alt="">
-                </div>
-            </div>
-            <div class="container">
-                <div class="f cover">
-                    <img :src="home_pic3" alt="">
-                </div>
-                <div class="r introduction">
-                    <h3 class="number"><span class="color-ff9e00">03</span></h3>
-                    <h3 class="title">多种远程应用</h3>
-                    <div class="desc">
-                        远程登录SSH、远程桌面RDP/VNC、远程下载 aria2… <br />
-                        多种远程应用只需一个浏览器。
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="f introduction">
-                    <h3 class="number"><span class="color-42d1c3">04</span></h3>
-                    <h3 class="title">更快的响应</h3>
-                    <div class="desc">
-                        国内多个服务器支持，加上HTTP2.0的技术优势，<br />
-                        让你拥有前所未有的远程访问体验。
-                    </div>
-                </div>
-                <div class="r cover">
-                    <img :src="home_pic4" alt="">
-                </div>
-            </div>
+        </div>
+
+        <div class="body">
             <div class="player">
                 <iframe :src="playerUrl" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
             </div>
@@ -134,6 +139,7 @@ export default {
         background-color: #f3edf5;
         background-size: cover;
         .body {
+            max-width: 1174px;
             position: relative;
             height: 100%;
             flex-wrap: nowrap;
@@ -190,13 +196,16 @@ export default {
         }
     }
     .body {
-        max-width: 1440px;
+        max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        .block {
+            max-width: 1174px;
+        }
         .player {
             width: 100%;
             height: 32.5rem;
@@ -283,6 +292,12 @@ export default {
                 margin: 0 auto;
                 max-width: 400px;
             }
+            .j {
+                margin-right: 338px;
+            }
+            .k {
+                margin-left: 214px;
+            }
         }
     }
 }
@@ -312,3 +327,5 @@ export default {
     }
 }
 </style>
+
+    

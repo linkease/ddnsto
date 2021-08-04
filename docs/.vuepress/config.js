@@ -101,7 +101,7 @@ module.exports = {
                             collapsable: true,
                             sidebarDepth: 2,
                             children: [
-                                ["", "使用场景"],                                
+                                ["", "使用场景"],
                             ]
                         },
                     ]
