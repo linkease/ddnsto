@@ -63,7 +63,7 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
 #### Openwrt 常见问题解决思路
 
-  1. 安装好 ddnsto 之后无法启用配置
+  *安装好ddnsto之后无法启用配置
 
   因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：
 
@@ -74,21 +74,25 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
   
   如果不行则尝试二：重启路由器
 
+  
+  
 ### 4. 群晖固件 
 
-   从https://firmware.koolshare.cn/binary/ddnsto/synology/下载套件并上传安装。
+   1.下载对应自己版本的 [synology插件](https://firmware.koolshare.cn/binary/ddnsto/synology/)并上传安装；
+  
+  *请根据自己群晖的CPU型号以及DSM版本选择相对应的插件(DSM7.0用户，请先卸载旧版ddnsto套件)
 
    ![image-20210204235851709](./koolshare_merlin/image-20210204235851709.png)
 
-   填入刚刚从官网复制的令牌(Token)，点击下一步完成安装。
+   2.填入刚刚从官网复制的令牌(Token)，点击下一步完成安装；
 
    ![image-20210204235956264](./koolshare_merlin/image-20210204235956264.png)
 
-   即可在面板看到ddnsto。
+   3.即可在面板看到ddnsto(DSM7.0不会显示在面板)。
 
    ![image-20210205000203910](./koolshare_merlin/image-20210205000203910.png)
    
-   注意：若群晖发生下图错误，则必须通过docker安装。(因为dsm7.0目前无法安装任何第三方插件。)
+   注意：若群晖发生下图错误，则必须通过docker安装。
          
    ![image-qunhui0414](./koolshare_merlin/image-qunhui0414.png)
 
@@ -96,23 +100,21 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
    
 ### 5. 威联通
 
-  下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)
+  1.下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)进行手动安装；
 
-  如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
-
-#### 离线安装
+  *如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
 
    ![qnap-install](./koolshare_merlin/qnap-install.jpeg)
 
-#### 安装好了，要配置
+  2.安装好了，要配置：
 
   token 从官网拿，填入提交就可以了。然后回到官网去配置域名。
 
-  注意 QNAP 的域名端口是 8080，比如配置内网地址为： http://127.0.0.1:8080
+  注意 QNAP 的域名端口是 8080，比如配置内网地址为：http://127.0.0.1:8080。
 
    ![qnap-config](./koolshare_merlin/qnap-config.jpeg)
 
-#### 如果安装失败，或者无法配置，请开启 QWEB 服务
+#### 如果安装失败，或者无法配置，请开启 QWEB 服务。
 
    ![qnap-QWEB](./koolshare_merlin/qnap-qweb.png)
 
