@@ -96,4 +96,26 @@ B：如果和群晖在同一局域网下，不用验证ddnsto身份。
 
    ![synology](./synology/synology-15.jpg) 
 
+### DS Photo
+
+先在群晖里安装并配置好Photo Station套件；
+
+   ![synology](./synology/synology-16.jpg)
+ 
+**因为Ds photo访问的http的80端口，所以有个特殊设置：**
+
+进入ddnsto控制台，添加一个穿透设置，目前主机地址为你的群晖IP，不要写端口;
+
+PS：新增的ddnsto的域名不要带下划线等符号，如dsm_xyz，这种是不行的，DS photo不识别。只能纯数字字母组合。
+
+   ![synology](./synology/synology-17.jpg)  
+ 
+然后切换ddnsto域名的https为http，复制地址：dsm808080.kooldns.cn:5000 (不要http://)。
+ 
+   ![synology](./synology/synology-18.jpg)  
+ 
+然后下载安装DS photo的App，打开App，地址栏填入刚刚复制的dsm808080.kooldns.cn:5000，帐号和密码均为群晖登录帐号和密码，不勾选HTTPS，登录就ok。   
+
+   ![synology](./synology/synology-19.jpg)   
+   
    
