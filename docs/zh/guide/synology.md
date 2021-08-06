@@ -5,11 +5,20 @@
 
 众所周知，ddnsto远程穿透超级简单，4M带宽足够使用，于是就有朋友想着利用ddnsto支持群晖App。
 
-先说前提，群晖设备已经配置好ddnsto穿透，前面详细教程有说到，群晖设置ddnsto要配置端口，才能正常访问。
+**1.先说前提，群晖设备已经配置好ddnsto穿透，前面详细教程有说到，群晖设置ddnsto要配置端口，才能正常访问。**
 
    ![synology](./synology/synology-1.jpg)
 
-接下来开始准备工作，如图我的ddnsto群晖域名是 https://dsm0805.kooldns.cn:443 ，将这段 dsm0805.kooldns.cn 复制(就是去掉完整域名前面的https://和尾部的端口)。
+**2.接下来开始准备工作，如图我的ddnsto群晖域名是 https://dsm0805.kooldns.cn:443 ，将这段 dsm0805.kooldns.cn 复制(就是去掉完整域名前面的https://和尾部的端口)。**
+
+**3.ddnsto身份验证：**
+
+A：如果是在外网(指不是和群晖设备在同一局域网或者蜂窝数据下)，需要浏览器打开https://www.ddnsto.com/进入控制台，验证身份登录。
+
+B：如果和群晖在同一局域网下，不用验证ddnsto身份。
+
+**4.准备工作做完，就可以开始下面的教程远程穿透群晖App了。**
+
 
 ### Synology Drive
 
