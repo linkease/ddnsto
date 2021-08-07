@@ -1,9 +1,9 @@
 
 **此版块，主要说一些ddnsto玩转群晖的玩法，归纳一些比较常用的。**
 
-## 远程穿透群晖App
+## 远程穿透群晖App/程序
 
-众所周知，ddnsto远程穿透超级简单，4M带宽足够使用，于是就有朋友想着利用ddnsto支持群晖App。
+众所周知，ddnsto远程穿透超级简单，4M带宽足够使用，于是就有朋友想着利用ddnsto支持群晖App/PC客户端。
 
 
 
@@ -21,7 +21,7 @@ B：如果和群晖在同一局域网下，不用验证ddnsto身份。
 
 
 
-## 开始穿透
+## 开始穿透(App)
 
 ### Synology Drive
 
@@ -108,5 +108,25 @@ B：如果和群晖在同一局域网下，不用验证ddnsto身份。
 然后下载安装DS photo的App，打开App，地址栏填入80端口的ddnsto域名(去掉https://和尾部端口)+带上5000端口：dsm808080.kooldns.cn:5000，帐号和密码均为群晖登录帐号和密码，不勾选HTTPS，登录就ok。   
 
    ![synology](./synology/synology-17.jpg)   
+
    
+## 开始穿透(PC客户端)
+
+### Synology Surveillance Station Client
+
+先在电脑上Synology Surveillance Station套件；
+
+   ![synology](./synology/synology-18.jpg)
    
+打开Synology Surveillance Station Client，地址栏填入5000端口的ddnsto域名(去掉https://)：dsm0805.kooldns.cn:443，帐号和密码均为群晖登录帐号和密码，登录就ok。   
+
+ps:另外的Live View和Timeline设置也一样。
+
+   ![synology](./synology/synology-19.jpg) 
+
+   
+### Synology Drive Client
+
+TODO
+
+  
