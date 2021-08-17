@@ -3,7 +3,7 @@
 
 ## 远程穿透群晖App/程序
 
-众所周知，ddnsto远程穿透超级简单，4M带宽足够使用，于是就有朋友想着利用ddnsto支持群晖App/PC客户端。
+众所周知，ddnsto远程穿透超级简单，4M带宽足够使用，于是就有朋友想着利用ddnsto支持群晖App。
 
 
 
@@ -127,6 +127,10 @@ ps:另外的Live View和Timeline设置也一样。
    
 ### Synology Drive Client
 
-TODO
+目前建议用群晖自家的QucikConnect。
+
+ddnsto远程穿透这个程序，目前没找到特别简单的方法。敬请期待后续更新...
+
+
 
   
