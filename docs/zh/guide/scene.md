@@ -1,6 +1,35 @@
 
 **此版块，主要说一些ddnsto的更多玩法，有很多朋友们，玩出了很多新花样，所以归纳一些比较常用的。**
 
+## 远程穿透Jellyfin
+
+Jellyfin是一个自由的软件媒体系统，用于控制和管理媒体和流媒体。
+
+现在伙伴们的设备多样化性能也很强悍，所以有些伙伴部署了Jellyfin，打造个人媒体中心。那么我们也来穿透下，做成能远程能外网访问的个人媒体中心。
+
+1.直接开始设置ddnsto，注意端口，若没有改默认端口那就是8096；
+   ![scene](./scene/Jellyfin1.jpg)
+
+2.这样我们就能畅快的远程浏览个人媒体中心了。   
+
+   ![scene](./scene/Jellyfin2.jpg)
+   
+###  穿透Jellyfin APP
+
+Jellyfin是有APP的，也能远程穿透，设置非常简单；
+
+1.先进行ddnsto身份验证：
+
+A：如果是在外网(指不是和部署Jellyfin设备在同一局域网或者蜂窝数据下)，需要浏览器打开https://www.ddnsto.com/进入控制台，验证身份登录。
+
+B：如果在同一局域网下，不用验证ddnsto身份。
+
+2.然后直接输入之前设置ddnsto穿透网址(去掉尾部端口)，回车即可穿透Jellyfin。
+
+   ![scene](./scene/Jellyfin3.jpg)
+
+   
+   
 ## 远程pve控制
 
 基本现在很多人的小主机都是性能强悍的，通过通过PVE或者ESXI来安装各种系统(OpenWrt、iKuai、docker等)，只要通过PVE或者EXSI安装的OpenWrt/docker/LEDE等，部署好了ddnsto，那就就能远程访问PVE或者ESXI的管理界面。
