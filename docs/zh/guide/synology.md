@@ -32,6 +32,18 @@ B：如果和群晖在同一局域网下，不用验证ddnsto身份。
 然后下载安装Synology Drive的App，打开App，地址栏填入5000端口的ddnsto域名(去掉https://和尾部端口)：dsm0805.kooldns.cn，帐号和密码均为群晖登录帐号和密码，不勾选HTTPS，登录就ok。   
 
    ![synology](./synology/synology-3.jpg)
+
+
+### Drive X
+
+先在群晖里安装并配置好Synology Drive套件；
+
+   ![synology](./synology/synology-2.jpg)
+   
+然后下载安装Drive X的App(群晖官网下载，目前仅有安卓版)，打开App，地址栏填入5000端口的ddnsto域名(去掉https://和尾部端口)：dsm0805.kooldns.cn，帐号和密码均为群晖登录帐号和密码，不勾选HTTPS，登录就ok。   
+
+   ![synology](./synology/synology-33.jpg)   
+
    
    
 ### Synology Photos
