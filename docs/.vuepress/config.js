@@ -84,6 +84,7 @@ module.exports = {
                                 ["quick", "快速入门"],
                                 ["preview", "功能预览"],
                                 ["koolshare_merlin", "详细教程"],
+								["Authentication", "身份验证"],
                                 ["cloudapp", "远程教学"],
 								["synology", "群晖玩法"],
                                 ["scene", "更多玩法"],
