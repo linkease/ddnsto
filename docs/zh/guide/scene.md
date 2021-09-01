@@ -20,7 +20,7 @@ Jellyfin是有APP的，也能远程穿透，设置非常简单；
 
 1.先进行ddnsto身份验证：
 
-A：如果是在外网(指不是和部署Jellyfin设备在同一局域网或者蜂窝数据下)，需要浏览器打开https://www.ddnsto.com/进入控制台，验证身份登录。
+A：如果是在外网(指不是和群晖设备在同一局域网或者蜂窝数据下)，需要[身份验证](https://www.ddnsto.com/zh/guide/Authentication.html)。
 
 B：如果在同一局域网下，不用验证ddnsto身份。
 

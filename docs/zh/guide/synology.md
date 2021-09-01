@@ -15,9 +15,9 @@
   
 **2.ddnsto身份验证：**
 
-A：如果是在外网(指不是和群晖设备在同一局域网或者蜂窝数据下)，需要浏览器打开https://www.ddnsto.com/进入控制台，验证身份登录。
+A：如果是在外网(指不是和群晖设备在同一局域网或者蜂窝数据下)，需要[身份验证](https://www.ddnsto.com/zh/guide/Authentication.html)。
 
-B：如果和群晖在同一局域网下，不用验证ddnsto身份。
+B：如果在同一局域网下，不用验证ddnsto身份。
 
 
 
