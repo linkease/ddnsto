@@ -117,7 +117,7 @@ export default {
         display: flex;
         flex-wrap: wrap;
         .content_text {
-            width: 1384px;
+            width: 1116px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -130,6 +130,8 @@ export default {
                 flex-wrap: wrap;
                 width: 1020px;
                 .content_list {
+                    margin: 0;
+                    padding: 0;
                     .content_title {
                         font-size: 16px;
                         font-family: PingFangSC-Semibold, PingFang SC;
@@ -171,14 +173,33 @@ li {
 }
 </style>
 <style lang="scss" scoped>
+@media screen and(max-width:1440px) {
+    .footer {
+        .footer-content {
+            .content_text {
+                width: 0 10%;
+                .content_block {
+                    width: 100%;
+                    padding: 14px 142px;
+                    .content_list {
+                        flex: 0 0 100%;
+                        max-width: 25%;
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and(max-width:1300px) {
     .footer {
         .footer-content {
             .content_text {
-                width: 100%;
+                width: 0 10%;
                 .content_block {
                     width: 100%;
-                    padding: 20px;
+                    padding: 14px 80px;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
@@ -194,10 +215,10 @@ li {
     .footer {
         .footer-content {
             .content_text {
-                width: 100%;
+                width: 0 100%;
                 .content_block {
                     width: 100%;
-                    padding: 20px;
+                    padding: 14px 20px;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 33.333%;
