@@ -60,7 +60,7 @@ export default {
                     childer: [
                         {
                             label: "问题反馈",
-                            value: "https://github.com/linkease/linkease/issues"
+                            value: "https://github.com/linkease/doc.linkease.com/issues"
                         },
                         {
                             label: "商务洽谈",
@@ -74,7 +74,7 @@ export default {
                     childer: [
                         {
                             label: "关于我们",
-                            value: "https://doc.linkease.com/zh/guide/linkease_client/about.html"
+                            value: "https://doc.linkease.com/zh/guide/about/"
                         },
                         {
                             label: "联系我们",
