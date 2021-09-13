@@ -3,18 +3,20 @@
         <NavLayout></NavLayout>
         <IndexHome></IndexHome>
         <IndexHomeMobile></IndexHomeMobile>
-        <footer>
-            <a :href="gvUrl" target="_blank" class="" title="版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号">版权所有 2021 易有云网络科技有限责任公司 | 粤ICP备20024441号</a>
-        </footer>
+        <FooterComponent />
     </div>
 </template>
 <script>
+import FooterComponent from "./FooterComponent.vue"
 export default {
     computed: {
         gvUrl() {
             return "https://beian.miit.gov.cn/"
         },
     },
+    components: {
+        FooterComponent
+    }
 }
 </script>
 <style lang="scss" scoped>
