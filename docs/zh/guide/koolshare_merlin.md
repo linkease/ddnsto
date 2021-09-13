@@ -63,7 +63,7 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
 #### Openwrt 常见问题解决思路
 
-  1. 安装好 ddnsto 之后无法启用配置
+  *安装好ddnsto之后无法启用配置
 
   因为 Openwrt 15 版本跟最新的插件不兼容导致，解决办法尝试一：
 
@@ -74,21 +74,25 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
   
   如果不行则尝试二：重启路由器
 
+  
+  
 ### 4. 群晖固件 
 
-   从https://firmware.koolshare.cn/binary/ddnsto/synology/下载套件并上传安装。
+   1.下载对应自己版本的 [synology插件](https://firmware.koolshare.cn/binary/ddnsto/synology/)并上传安装；
+  
+  *请根据自己群晖的CPU型号以及DSM版本选择相对应的插件(DSM7.0用户，请先卸载旧版ddnsto套件)
 
    ![image-20210204235851709](./koolshare_merlin/image-20210204235851709.png)
 
-   填入刚刚从官网复制的令牌(Token)，点击下一步完成安装。
+   2.填入刚刚从官网复制的令牌(Token)，点击下一步完成安装；
 
    ![image-20210204235956264](./koolshare_merlin/image-20210204235956264.png)
 
-   即可在面板看到ddnsto。
+   3.即可在面板看到ddnsto(DSM7.0不会显示在面板)。
 
    ![image-20210205000203910](./koolshare_merlin/image-20210205000203910.png)
    
-   注意：若群晖发生下图错误，则必须通过docker安装。(因为dsm7.0目前无法安装任何第三方插件。)
+   注意：若群晖发生下图错误，则必须通过docker安装。
          
    ![image-qunhui0414](./koolshare_merlin/image-qunhui0414.png)
 
@@ -96,23 +100,21 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
    
 ### 5. 威联通
 
-  下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)
+  1.下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)进行手动安装；
 
-  如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
-
-#### 离线安装
+  *如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
 
    ![qnap-install](./koolshare_merlin/qnap-install.jpeg)
 
-#### 安装好了，要配置
+  2.安装好了，要配置：
 
   token 从官网拿，填入提交就可以了。然后回到官网去配置域名。
 
-  注意 QNAP 的域名端口是 8080，比如配置内网地址为： http://127.0.0.1:8080
+  注意 QNAP 的域名端口是 8080，比如配置内网地址为：http://127.0.0.1:8080。
 
    ![qnap-config](./koolshare_merlin/qnap-config.jpeg)
 
-#### 如果安装失败，或者无法配置，请开启 QWEB 服务
+#### 如果安装失败，或者无法配置，请开启 QWEB 服务。
 
    ![qnap-QWEB](./koolshare_merlin/qnap-qweb.png)
 
@@ -122,50 +124,63 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
 
 所以说Docker方式基本算是适合全设备，操作也比较简单，下面开始教程：
 
-1. TOKEN: 你从官网拿到的 token。
-2. DEVICE_IDX: 默认0，如果设备ID重复则为1-100之间。
-3. PUID/PGID 不知道可不填。
+**终端运行以下命令：(先不要直接复制，看下面的说明)**
+```
+docker run -d \
+    --name=ddnsto \
+	--network host \
+    -e TOKEN=<填入你的token> \
+    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间> \
+    -v /etc/localtime:/etc/localtime:ro \
+    -e PUID=<uid for user> \
+    -e PGID=<gid for user> \
+    linkease/ddnsto
+```
 
-PS：获取UID和GID，终端输入id回车即可。
+1. <填入你的token>: 填写从ddnsto控制台拿到的 token。
+2. DEVICE_IDX: 默认0，如果设备ID重复则改为1-100之间。
+3. PUID/PGID：获取方式：终端输入id即可。
 
    ![docker](./koolshare_merlin/docker1.jpeg)
    
 比如上图获取的UID和GID都是0。
    
+4.注意要替换 "<>" 里面的内容，且不能出现 "<>"。
 
+5.准备工作做好了，比如我的TOKEN为abcdefg-8888-8888-1111-abcdefghijk，那我的终端命令就是：
 ```
 docker run -d \
-    --name=<container name> \
+    --name=ddnsto \
 	--network host \
-    -e TOKEN=<填入你的token> \
-    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间> \
+    -e TOKEN=abcdefg-8888-8888-1111-abcdefghijk \
+    -e DEVICE_IDX=0 \
     -v /etc/localtime:/etc/localtime:ro \
-    -e PUID=<uid for user> \
-    -e PGID=<gid for user> \
+    -e PUID=0 \
+    -e PGID=0 \
     linkease/ddnsto
 ```
 
-注意要替换 "<>" 里面的内容，且不能出现 "<>"
-
-#### 爱快 Docker 常见问题
-
-1. Docker 里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器。
-
-[镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
-
-2. Docker在某些Linux发行版，可能要加上“sudo”前缀才能运行，按提示输入Linux的密码，命令如下：
+6.Docker在某些Linux发行版，可能要加上“sudo”前缀才能运行，按提示输入Linux的密码，命令如下：
 
 ```
 sudo docker run -d \
-    --name=<container name> \
+    --name=ddnsto \
 	--network host \
-    -e TOKEN=<填入你的token> \
-    -e DEVICE_IDX=<默认0，如果设备ID重复则为1-100之间> \
+    -e TOKEN=abcdefg-8888-8888-1111-abcdefghijk \
+    -e DEVICE_IDX=0 \
     -v /etc/localtime:/etc/localtime:ro \
-    -e PUID=<uid for user> \
-    -e PGID=<gid for user> \
+    -e PUID=0 \
+    -e PGID=0 \
     linkease/ddnsto
 ```
+
+#### Docker常见问题
+
+Docker里面的网关设置，不能为路由器的网关，保证 Docker 里面有网络才能访问 ddnsto 服务器。
+
+[镜像地址](https://hub.docker.com/r/linkease/ddnsto/)
+
+
 
 #### Unraid实战ddnsto
 
@@ -257,11 +272,25 @@ docker run -d \
 
    ![image-20210201224634676](./koolshare_merlin/image-20210201224634676.png)
 
-   成功添加后请稍等1分钟左右即可正常访问。如果提交后立刻访问，可能会看到下面的错误页面，此时插件还正在重启。
+
+
+**群晖穿透设置有点不一样：**
+
+假如我群晖主机IP是http://127.0.0.1/，那就后面就加个5000端口，那么就是http://127.0.0.1:5000/；
+
+  ![image-20210203001606683](./koolshare_merlin/synology0805-1.jpg) 
+
+这样设置成功，访问域名就能正常访问NAS了。
+  
+  ![image-20210203001606683](./koolshare_merlin/synology0805-2.jpg) 
+  
+  ![image-20210203001606683](./koolshare_merlin/synology0805-3.jpg)        
+
+3. 成功添加后请稍等1分钟左右即可正常访问。如果提交后立刻访问，可能会看到下面的错误页面，此时插件还正在重启。
 
    ![image-20210202233021317](./koolshare_merlin/image-20210202233021317.png)
 
-3. 通过访问绑定的域名即可访问路由器，首次访问可能需要微信登录验证。
+4. 通过访问绑定的域名即可访问路由器，首次访问可能需要微信登录验证。
 
    ![image-20210201232105052](./koolshare_merlin/image-20210201232105052.png)
 
@@ -280,31 +309,6 @@ docker run -d \
   成功！
 
   ![image-20210202235804318](./koolshare_merlin/image-20210202235804318.png)
-
-
-- 群辉穿透设置(偷懒直接复制clang大神的教程了)
-
-  因为使用https穿透后群辉的自动跳转会出现问题，所以需要自己补齐链接
-
-  假如群辉的IP是192.168.50.11，并且绑定了域名https://nas666666.ddnsto.com/
-
-  但这个链接是不能访问nas的！！！
-
-  
-
-  **需要在链接后加上** **webman/index.cgi 也就是说完整链接为：**
-  **https://nas666666.ddnsto.com/webman/index.cgi**
-  **用HTTP协议访问可以忽略上面的这个问题：http://nas6666666.ddnsto.com:5000/ 这个就可以直接访问了，不需要手动补齐**
-
-  
-
-  点击切换到http即可方便的切换
-
-  ![image-20210203001526915](./koolshare_merlin/image-20210203001526915.png)
-
-  还可以来回切换 https和http呢！
-
-  ![image-20210203001606683](./koolshare_merlin/image-20210203001606683.png)
 
   
   

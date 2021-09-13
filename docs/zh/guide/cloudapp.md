@@ -75,9 +75,11 @@
 4.然后跳转到“远程配置”，去设置远程下载。
 
 ### Aria2配置：Unraid/爱快/Docker
-1.Unraid等可以docker的设备，都可以用这种方式，一键部署Aria2。
+1.Unraid、爱快、群晖、威联通等可以docker的设备，都可以用这种方式，一键部署Aria2。
 
-2.进入设备终端，先安装Aria2，输入如下命令：
+PS：群晖稍微有点不一样，具体看下方的“群晖”教程。
+
+2.进入设备终端，先安装Aria2，输入如下命令(先别直接输入，看下面的说明)：
 
 ```
 docker run -d \
@@ -95,7 +97,7 @@ docker run -d \
     p3terx/aria2-pro
 ```
 
-a. TOKEN 可为乱序的数字字母，并记住备份，后面要用。
+a. TOKEN 是令牌，可为乱序的数字字母，并记住备份，后面要用。
 
 b. RPC_PORT 为端口，这里设置成6880。
 
@@ -103,31 +105,37 @@ c. /config 配置文件路径，可根据实际情况调整。
 
 d. /downloads 为下载目录，可根据实际情况调整。
 
-  ![Docker](./cloudapp/cloudapp-aria2-docker1.jpeg)
 
-2. 设备终端，再安装AriaNg，输入如下命令：
+**比如我的令牌是asdjxxxxxxxxxxxxxxxxxxxxxmsdf，下载目录为/mnt/sda1/aria2，RPC端口为6880，其余不改，那么我的命令就是：**
 
 ```
 docker run -d \
-    --name ariang \
+    --name aria2-pro \
     --restart unless-stopped \
     --log-opt max-size=1m \
-    -p 6880:6880 \
-    p3terx/ariang
+    --network host \
+    -e PUID=$UID \
+    -e PGID=$GID \
+    -e RPC_SECRET=asdjxxxxxxxxxxxxxxxxxxxxxmsdf \
+    -e RPC_PORT=6880 \
+    -e LISTEN_PORT=6888 \
+    -v $PWD/aria2-config:/config \
+    -v $PWD/aria2-downloads:/mnt/sda1/aria2 \
+    p3terx/aria2-pro
 ```
-  
-  ![Docker](./cloudapp/cloudapp-aria2-docker2.jpeg)
 
-3. 上面执行完成，Aria2和AriaNg都安装完成。 
+  ![Docker](./cloudapp/cloudapp-aria2-docker1.jpg)
+
+3. 上面执行完成，Aria2安装完成。 
   
-  ![Docker](./cloudapp/cloudapp-aria2-docker3.jpeg)  
+  ![Docker](./cloudapp/cloudapp-aria2-docker2.jpg)  
   
 4. 设置穿透的时候，注意端口，我命令里是用的6880端口。 
 
   ![Docker](./cloudapp/cloudapp-aria2-docker4.jpeg)  
   
 ### Aria2配置：群晖
-群晖也能通过Docker方式安装，不过有2点要注意:
+群晖通过Docker方式安装Aria2，大体和上面"Unraid/爱快/Docker"教程一样，不过有2点要注意:
 
 1.群晖如何启用SSH，如下图所示：
 
@@ -155,14 +163,9 @@ docker run -d \
     p3terx/aria2-pro
 ```  
 
-```
-docker run -d \
-    --name ariang \
-    --restart unless-stopped \
-    --log-opt max-size=1m \
-    -p 6880:6880 \
-    p3terx/ariang
-```
+注意更改令牌 TOKEN 信息。
+
+
 
 ### Aria2配置：威联通
 
