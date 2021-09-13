@@ -50,9 +50,9 @@ module.exports = {
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    { text: '指南', link: '/zh/guide/' },
+                    { text: '指南', link: 'https://doc.linkease.com/zh/guide/ddnsto/' },
                     //{ text: '场景', link: '/zh/docs/' },
-                    { text: '博客', link: '/post/' },
+                    { text: '博客', link: 'https://doc.linkease.com/post/' },
                     {
                         text: '视频号', items: [
                             { text: '哔哩哔哩', link: 'https://space.bilibili.com/626572404' },
@@ -64,7 +64,7 @@ module.exports = {
                             { text: '问题反馈', link: 'https://github.com/linkease/ddnsto/issues' },
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
-                            { text: '联系我们', link: '/zh/guide/about' },
+                            { text: '联系我们', link: 'https://doc.linkease.com/zh/guide/linkease_client/about.html' },
                             { text: '更新日志', link: 'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
                         ]
                     },
