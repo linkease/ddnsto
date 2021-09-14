@@ -50,7 +50,7 @@ export default {
                     title: "购买渠道",
                     childer: [
                         {
-                            label: "官方淘宝店",
+                            label: "KoolCenter淘宝店",
                             value: "https://koolcenter.taobao.com/"
                         }
                     ]
@@ -64,7 +64,7 @@ export default {
                         },
                         {
                             label: "商务洽谈",
-                            value: "xiaobao@linkease.com"
+                            value: "mailto:xiaobao@linkease.com"
                         }
 
                     ]
@@ -78,7 +78,7 @@ export default {
                         },
                         {
                             label: "联系我们",
-                            value: "xiaobao@linkease.com"
+                            value: "mailto:xiaobao@linkease.com"
                         }
                     ]
                 },
@@ -86,8 +86,8 @@ export default {
                     title: "合作伙伴",
                     childer: [
                         {
-                            label: "koolcenter",
-                            value: "#"
+                            label: "KoolCenter",
+                            value: "https://www.koolcenter.com/"
                         },
                     ]
                 }
