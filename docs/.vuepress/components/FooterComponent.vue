@@ -60,7 +60,7 @@ export default {
                     childer: [
                         {
                             label: "问题反馈",
-                            value: "https://github.com/linkease/doc.linkease.com/issues"
+                            value: "https://github.com/linkease/ddnsto/issues"
                         },
                         {
                             label: "商务洽谈",

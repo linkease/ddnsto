@@ -61,7 +61,7 @@ module.exports = {
                     },
                     {
                         text: '反馈', items: [
-                            { text: '问题反馈', link: 'https://github.com/linkease/doc.linkease.com/issues' },
+                            { text: '问题反馈', link: 'https://github.com/linkease/ddnsto/issues' },
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
 							{ text: '更新日志', link: 'https://github.com/linkease/ddnsto/blob/master/CHANGELOG.md' },
