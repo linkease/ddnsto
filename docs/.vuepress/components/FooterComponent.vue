@@ -107,7 +107,7 @@ export default {
 }
 .footer {
     margin-top: 100px;
-    background-color: #f4f4f4;
+    // background-color: #f4f4f4;
     min-height: 234px;
     display: flex;
     justify-content: center;
