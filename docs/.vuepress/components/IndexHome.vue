@@ -245,6 +245,7 @@ export default {
                 align-items: center;
                 align-content: center;
                 justify-content: flex-end;
+                max-width: 436px;
             }
             .f,
             .r {
@@ -303,15 +304,35 @@ export default {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and (max-width: 719px) {
-    #main {
-        display: none;
-    }
-}
 @media screen and (max-width: 1440px) {
     #main {
         .body {
             max-width: 1080px;
+            .container {
+                // flex-wrap: nowrap;
+                img {
+                }
+                .j {
+                    margin-right: 214px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1066px) {
+    #main {
+        .body {
+            max-width: 1080px;
+            .container {
+                img {
+                }
+                .k {
+                    margin-left: 160px;
+                }
+                .j {
+                    margin-right: 160px;
+                }
+            }
         }
     }
 }
@@ -322,8 +343,20 @@ export default {
             .container {
                 img {
                 }
+                .k {
+                    margin-left: 160px;
+                }
+                .j {
+                    margin-right: 200px;
+                    margin-bottom: 20px;
+                }
             }
         }
+    }
+}
+@media screen and (max-width: 719px) {
+    #main {
+        display: none;
     }
 }
 </style>

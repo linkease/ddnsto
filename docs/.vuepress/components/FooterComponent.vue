@@ -173,78 +173,114 @@ li {
 }
 </style>
 <style lang="scss" scoped>
-@media screen and(max-width:1440px) {
+@media screen and (max-width: 1440px) {
     .footer {
         .footer-content {
             .content_text {
-                width: 0 10%;
+                width: 100%;
                 .content_block {
-                    width: 100%;
-                    padding: 14px 142px;
+                    max-width: 100%;
+                    flex-wrap: nowrap;
+                    padding: 0;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
+                        margin-bottom: 12px;
                     }
                 }
             }
         }
     }
 }
-@media screen and(max-width:1300px) {
+@media screen and (max-width: 1300px) {
     .footer {
         .footer-content {
             .content_text {
-                width: 0 10%;
+                width: 100%;
                 .content_block {
-                    width: 100%;
-                    padding: 14px 80px;
+                    max-width: 100%;
+                    flex-wrap: nowrap;
+                    padding: 0 10px;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
+                        margin-bottom: 12px;
                     }
                 }
+            }
+            .content_info {
+                padding-left: 10px;
             }
         }
     }
 }
-@media screen and(max-width:1100px) {
+@media screen and (max-width: 1100px) {
     .footer {
         .footer-content {
             .content_text {
-                width: 0 100%;
+                width: 100%;
+                // margin: 0 80px;
                 .content_block {
-                    width: 100%;
-                    padding: 14px 20px;
+                    max-width: 100%;
+                    flex-wrap: wrap;
+                    padding: 0 10px;
                     .content_list {
                         flex: 0 0 100%;
-                        max-width: 33.333%;
+                        max-width: 25%;
                         margin: 0;
                         padding: 0;
+                        margin-bottom: 12px;
                     }
                 }
             }
         }
     }
 }
-@media screen and(max-width:900px) {
+@media screen and(max-width:1024px) {
+    .footer {
+        .footer-content {
+            .content_text {
+                width: 100%;
+                .content_block {
+                    max-width: 100%;
+                    flex-wrap: wrap;
+                    padding: 0 10px;
+                    .content_list {
+                        flex: 0 0 100%;
+                        max-width: 25%;
+                        margin: 0;
+                        padding: 0;
+                        margin-bottom: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 900px) {
     .footer {
         .footer-content {
             .content_text {
                 width: 100%;
                 .content_block {
                     width: 100%;
-                    padding: 20px;
+                    padding: 0 30px;
+                    flex-wrap: wrap;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 50%;
                         margin: 0;
                         padding: 0;
+                        margin-bottom: 12px;
                     }
                 }
+            }
+            .content_info {
+                padding-left: 30px;
             }
         }
     }
