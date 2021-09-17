@@ -30,7 +30,7 @@ export default {
                     childer: [
                         {
                             label: "易有云APP",
-                            value: "https://www.linkease.com",
+                            value: "https://app.linkease.com/",
                         },
                         {
                             label: "DDNSTO",
