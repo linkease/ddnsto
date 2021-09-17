@@ -29,12 +29,8 @@ export default {
                     title: "所有产品",
                     childer: [
                         {
-                            label: "易有云",
+                            label: "易有云APP",
                             value: "https://www.linkease.com",
-                        },
-                        {
-                            label: "EasePi",
-                            value: "https://easepi.linkease.com",
                         },
                         {
                             label: "DDNSTO",
@@ -43,6 +39,10 @@ export default {
                         {
                             label: "iStore",
                             value: "https://github.com/linkease/istore",
+                        },
+                        {
+                            label: "EasePi",
+                            value: "https://easepi.linkease.com",
                         }
                     ]
                 },
