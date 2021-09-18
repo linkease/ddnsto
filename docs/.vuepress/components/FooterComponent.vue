@@ -38,7 +38,7 @@ export default {
                         },
                         {
                             label: "iStore",
-                            value: "https://github.com/linkease/istore",
+                            value: "https://doc.linkease.com/zh/guide/istore/",
                         },
                         {
                             label: "EasePi",
@@ -122,8 +122,12 @@ export default {
             justify-content: space-between;
             flex-wrap: wrap;
             flex: 0 0 100%;
-            border-bottom: 1.5px solid;
+            border-bottom: 1.5px solid rgba(0, 0, 0, 0.7);
             margin-bottom: 10px;
+            border-top: 1.5px solid rgba(0, 0, 0, 0.7);
+            padding-top: 24px;
+            padding-bottom: 14px;
+
             .content_block {
                 display: flex;
                 justify-content: space-between;
@@ -178,6 +182,7 @@ li {
         .footer-content {
             .content_text {
                 width: 100%;
+                padding-bottom: 0px;
                 .content_block {
                     max-width: 100%;
                     flex-wrap: nowrap;
@@ -248,13 +253,16 @@ li {
                 .content_block {
                     max-width: 100%;
                     flex-wrap: wrap;
-                    padding: 0 10px;
+                    padding: 0 120px;
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
                         margin-bottom: 12px;
+                        .content_title {
+                            padding-bottom: 8px;
+                        }
                     }
                 }
             }
@@ -268,7 +276,7 @@ li {
                 width: 100%;
                 .content_block {
                     width: 100%;
-                    padding: 0 30px;
+                    padding: 0 20px;
                     flex-wrap: wrap;
                     .content_list {
                         flex: 0 0 100%;
@@ -280,7 +288,7 @@ li {
                 }
             }
             .content_info {
-                padding-left: 30px;
+                padding-left: 20px;
             }
         }
     }
