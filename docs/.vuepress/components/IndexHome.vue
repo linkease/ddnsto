@@ -11,9 +11,9 @@
                         简单、快速的内网穿透工具，不受<br />
                         网络限制，全局掌控您的私人设备
                     </div>
-                    <router-link to="/zh/guide/quick.html" class="experience">
+                    <a href="http://doc.linkease.com/zh/guide/ddnsto/" class="experience" target="_blank">
                         免费体验
-                    </router-link>
+                    </a>
                 </div>
                 <div class="r">
                     <img :src="banner_icon" alt="">
