@@ -33,15 +33,15 @@
 
    via curl
 ```
-sh -c "$(curl -sSL http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+sh -c "$(curl -sSL http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh)"
 ```
    via wget
 ```
-sh -c "$(wget --no-check-certificate -qO- http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh)"
+sh -c "$(wget --no-check-certificate -qO- http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh)"
 ```
    others
 ```
-cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
+cd /tmp; wget --no-check-certificate http://fw.koolcenter.com/binary/ddnsto/openwrt/install_ddnsto.sh; sh ./install_ddnsto.sh
 ```
    在OpenWrt TTYD终端中输入任一上述命令，会自动安装完成。
 
@@ -78,7 +78,7 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
   
 ### 4. 群晖固件 
 
-   1.下载对应自己版本的 [synology插件](https://firmware.koolshare.cn/binary/ddnsto/synology/)并上传安装；
+   1.下载对应自己版本的 [synology插件](https://fw.koolcenter.com/binary/ddnsto/synology/)并上传安装；
   
   *请根据自己群晖的CPU型号以及DSM版本选择相对应的插件(DSM7.0用户，请先卸载旧版ddnsto套件)
 
@@ -100,7 +100,7 @@ cd /tmp; wget --no-check-certificate http://firmware.koolshare.cn/binary/ddnsto/
    
 ### 5. 威联通
 
-  1.下载对应自己版本的 [QNAP插件](https://firmware.koolshare.cn/binary/ddnsto/qnap/)进行手动安装；
+  1.下载对应自己版本的 [QNAP插件](https://fw.koolcenter.com/binary/ddnsto/qnap/)进行手动安装；
 
   *如果不知道自己的平台，一般来说是 DDNSTO_xxx_x86_64.qpkg
 
@@ -220,7 +220,7 @@ docker run -d \
 
 #### Padavan 常见问题
 
-  1. 如果 Padavan 的二进制版本 < 0.2.9 版本，可能导致重启之后 ddnsto 无法用，需要自己到网站[更新二进制](https://firmware.koolshare.cn/binary/ddnsto/mipsel/ddnsto)
+  1. 如果 Padavan 的二进制版本 < 0.2.9 版本，可能导致重启之后 ddnsto 无法用，需要自己到网站[更新二进制](https://fw.koolcenter.com/binary/ddnsto/mipsel/ddnsto)
 
   这个问题我还无法联系开发者更换最新版本
 
@@ -243,7 +243,7 @@ docker run -d \
 |        -            | ReadyNAS 528X        | ReadyNAS 4312        |
 
 #### 安装程序
-* 1， [下载](https://firmware.koolshare.cn/binary/ddnsto/readynas/ddnsto_all.deb)以 **.deb** 结尾的安装程序
+* 1， [下载](https://fw.koolcenter.com/binary/ddnsto/readynas/ddnsto_all.deb)以 **.deb** 结尾的安装程序
 * 2， 进入ReadyNAS管理界面，点进 **应用程序**
 * 3， 选择上传并安装应用程序
 

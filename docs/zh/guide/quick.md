@@ -9,9 +9,9 @@
 有以下快速的方法：
 
 1. Koolshare Merlin/LEDE 软件中心安装 DDNSTO
-2. [Openwrt 一键安装脚本](https://firmware.koolshare.cn/binary/ddnsto/openwrt/)
+2. [Openwrt 一键安装脚本](https://fw.koolcenter.com/binary/ddnsto/openwrt/)
 3. 一个命令的 [Docker方式](https://github.com/linkease/docker_ddnsto)
-4. [群晖离线包](https://firmware.koolshare.cn/binary/ddnsto/synology/)
+4. [群晖离线包](https://fw.koolcenter.com/binary/ddnsto/synology/)
 
 安装好 DDNSTO 之后必须填入 Token
 
