@@ -1,0 +1,13 @@
+# I have no idea
+.idea
+
+# nodejs
+node_modules
+build
+build.zip
+package-lock.json
+.DS_Store
+build.tar.gz
+depoly.sh
+/build_DDNSTO
+/build_DDNSTO.zip
