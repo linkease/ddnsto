@@ -1,24 +1,10 @@
 <template>
     <div id="main" class="desktop">
-        <div class="banner" :style="bannerStyle">
-            <div class="body">
-                <div class="f">
-                    <h3 class="title">
-                        随时随地抵达你的<br />
-                        私人网络
-                    </h3>
-                    <div class="desc">
-                        简单、快速的内网穿透工具，不受<br />
-                        网络限制，全局掌控您的私人设备
-                    </div>
-                    <a href="http://doc.linkease.com/zh/guide/ddnsto/" class="experience" target="_blank">
-                        免费体验
-                    </a>
-                </div>
-                <div class="r">
-                    <img :src="banner_icon" alt="">
-                </div>
-            </div>
+        <div class="banner">
+            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="homeBanner" alt=""></a>
+        </div>
+        <div class="part1">
+            <img :src="homeDdnsto" alt="">
         </div>
         <div class="body">
             <div class="block">
@@ -75,33 +61,114 @@
                 </div>
             </div>
         </div>
-
-        <div class="body">
-            <div class="player">
-                <iframe :src="playerUrl" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        <div class="prise">
+            <div class="tit">
+                <h3 class="number"><span class="color-42d1c3 part5 f">05</span></h3>
+                <div class="prise_title">DDNSTO价格说明</div>
             </div>
+            <div class="prise_aisle">
+                <div class="aisle">
+                    <div class="aisle_tit">免费通道</div>
+                    <div class="aisle_number">
+                        <span class="number">0</span>
+                        <span>元/月</span>
+                        <span>(每个用户可以试用1条免费通道)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>4 Mbps带宽</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>5 个域名数量</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aisle">
+                    <div class="aisle_tit">免费通道</div>
+                    <div class="aisle_number">
+                        <span class="number">0</span>
+                        <span>元/月</span>
+                        <span>(每个用户可以试用1条免费通道)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>4 Mbps带宽</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>5 个域名数量</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aisle">
+                    <div class="aisle_tit">免费通道</div>
+                    <div class="aisle_number">
+                        <span class="number">0</span>
+                        <span>元/月</span>
+                        <span>(每个用户可以试用1条免费通道)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>4 Mbps带宽</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>5 个域名数量</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
         </div>
 
     </div>
 </template>
 
 <script>
-import banner from "../public/assets/home/home_bannerbg.png"
-import banner_icon from "../public/assets/home/home_bannericon.png"
+// import banner from "../public/assets/home/home_bannerbg.png"
+// import banner_icon from "../public/assets/home/home_bannericon.png"
 import home_pic1 from "../public/assets/home/home_pic1.png"
 import home_pic2 from "../public/assets/home/home_pic2.png"
 import home_pic3 from "../public/assets/home/home_pic3.png"
 import home_pic4 from "../public/assets/home/home_pic4.png"
 
+import homeBanner from "../public/assets/home/banner.png"
+import homeDdnsto from "../public/assets/home/ddnsto.png"
+import icon_check from "../public/assets/home/icon_check.png"
+import icon_dot from "../public/assets/home/icon_dot.png"
 export default {
     data() {
         return {
-            banner,
             home_pic1,
             home_pic2,
             home_pic3,
             home_pic4,
-            banner_icon,
+            homeBanner,
+            homeDdnsto,
+            icon_check,
+            icon_dot
+
         }
     },
     computed: {
@@ -111,11 +178,11 @@ export default {
         gvUrl() {
             return "https://beian.miit.gov.cn/"
         },
-        bannerStyle() {
-            return {
-                backgroundImage: `url(${this.banner})`
-            }
-        }
+        // bannerStyle() {
+        //     return {
+        //         backgroundImage: `url(${this.banner})`
+        //     }
+        // }
     },
 }
 </script>
@@ -127,27 +194,33 @@ export default {
     word-wrap: break-word;
     outline: 0;
 }
+
 #main {
     width: 100%;
     position: relative;
     margin-top: 3.125rem;
+
     .banner {
-        width: 100%;
-        // height: 35.5rem;
-        // height: 26.625rem;
-        padding: 3.125rem 0;
-        background-color: #f3edf5;
-        background-size: cover;
-        .body {
-            max-width: 1174px;
-            position: relative;
-            height: 100%;
-            flex-wrap: nowrap;
-            justify-content: space-between;
+        max-width: 100%;
+        position: relative;
+        height: 100%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+
+        a {
+            display: block;
+
+            img {
+                max-width: 100%;
+            }
         }
+
+
         .f {
             flex: 0 0 100%;
             max-width: 50%;
+
             h3.title {
                 width: 100%;
                 color: #000;
@@ -156,6 +229,7 @@ export default {
                 font-weight: 600;
                 margin: 0;
             }
+
             .desc {
                 width: 100%;
                 font-size: 1.275rem;
@@ -164,6 +238,7 @@ export default {
                 color: rgba(0, 0, 0, 0.83);
                 margin: 1.875rem 0;
             }
+
             a.experience {
                 display: inline-block;
                 width: 9.25rem;
@@ -173,10 +248,12 @@ export default {
                 border-radius: 3.125rem;
                 color: #fff;
             }
+
             a.experience:hover {
                 opacity: 0.8;
             }
         }
+
         .r {
             // flex: 0 0 100%;
             // max-width: 50%;
@@ -185,6 +262,7 @@ export default {
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
+
             img {
                 width: 32.75rem;
                 height: 23.25rem;
@@ -195,6 +273,94 @@ export default {
             }
         }
     }
+
+    .part1 {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .prise {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .tit {
+            .number {}
+
+            .prise_title {
+                font-size: 40px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.83);
+                line-height: 84px;
+            }
+
+        }
+
+        .prise_aisle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .aisle {
+                flex: 0 0 30%;
+                height: 957px;
+                background: #F6F8FA;
+                border-radius: 8px;
+                text-align: center;
+                padding: 0 60px;
+                margin-bottom: 1rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                padding: 0 81px;
+
+                .aisle_tit {
+                    font-size: 28px;
+                    color: rgba(0, 0, 0, 0.83);
+                    margin-top: 120px;
+                }
+
+                .aisle_number {
+                    margin-bottom: 40px;
+
+                    .number {
+                        font-size: 100px;
+                        color: rgba(0, 0, 0, 0.83);
+
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 18px;
+                        color: rgba(0, 0, 0, 0.63);
+                    }
+                }
+
+                .function {
+                    text-align: left;
+
+                    .list {
+                        margin: 20px 0;
+
+                        img {
+                            width: 24px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-family: PingFangSC-Medium, PingFang SC;
+                            color: rgba(0, 0, 0, 0.63);
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
     .body {
         max-width: 1400px;
         margin-left: auto;
@@ -203,9 +369,11 @@ export default {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+
         .block {
-            max-width: 1174px;
+            max-width: 100%;
         }
+
         .player {
             width: 100%;
             height: 32.5rem;
@@ -215,6 +383,7 @@ export default {
             align-items: center;
             justify-content: center;
             margin-top: 5.625rem;
+
             iframe {
                 width: 100%;
                 height: 100%;
@@ -225,6 +394,7 @@ export default {
                 margin: 0 auto;
             }
         }
+
         .container {
             display: flex;
             flex-wrap: wrap;
@@ -232,6 +402,7 @@ export default {
             justify-content: space-evenly;
             margin-top: 5.625rem;
             width: 100%;
+
             img {
                 max-width: 100%;
                 border-radius: 1rem;
@@ -239,6 +410,7 @@ export default {
                 max-width: 27.5625rem;
                 max-height: 17.4375rem;
             }
+
             .r {
                 display: flex;
                 flex-wrap: wrap;
@@ -247,6 +419,7 @@ export default {
                 justify-content: flex-end;
                 max-width: 436px;
             }
+
             .f,
             .r {
                 .number {
@@ -259,9 +432,11 @@ export default {
                     color: #ff022a;
                     margin: 0;
                 }
+
                 span.color-ff022a {
                     color: #ff022a;
                 }
+
                 span.color-0060ff {
                     color: #0060ff;
                 }
@@ -269,9 +444,11 @@ export default {
                 span.color-ff9e00 {
                     color: #ff9e00;
                 }
+
                 span.color-42d1c3 {
                     color: #42d1c3;
                 }
+
                 .title {
                     width: 100%;
                     font-size: 2.375rem;
@@ -280,6 +457,7 @@ export default {
                     color: rgba(0, 0, 0, 0.83);
                     margin: 0.625rem 0;
                 }
+
                 .desc {
                     width: 100%;
                     font-size: 1.0625rem;
@@ -288,19 +466,28 @@ export default {
                     color: rgba(0, 0, 0, 0.83);
                 }
             }
+
             .introduction {
                 width: 400px;
                 margin: 0 auto;
                 max-width: 400px;
             }
+
             .j {
                 margin-right: 338px;
             }
+
             .k {
                 margin-left: 214px;
             }
         }
     }
+}
+
+.part5 {
+    font-size: 3.75rem;
+    font-family: PingFangSC-Medium, PingFang SC;
+    color: #A4A4A4;
 }
 </style>
 <style lang="scss" scoped>
@@ -308,10 +495,12 @@ export default {
     #main {
         .body {
             max-width: 1080px;
+
             .container {
+
                 // flex-wrap: nowrap;
-                img {
-                }
+                img {}
+
                 .j {
                     margin-right: 214px;
                 }
@@ -319,16 +508,19 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 1066px) {
     #main {
         .body {
             max-width: 1080px;
+
             .container {
-                img {
-                }
+                img {}
+
                 .k {
                     margin-left: 160px;
                 }
+
                 .j {
                     margin-right: 160px;
                 }
@@ -336,16 +528,19 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 1024px) {
     #main {
         .body {
             max-width: 768px;
+
             .container {
-                img {
-                }
+                img {}
+
                 .k {
                     margin-left: 160px;
                 }
+
                 .j {
                     margin-right: 200px;
                     margin-bottom: 20px;
@@ -354,6 +549,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 719px) {
     #main {
         display: none;
