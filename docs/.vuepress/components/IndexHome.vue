@@ -176,8 +176,6 @@
                 </div>
             </div>
 
-
-
         </div>
 
     </div>
@@ -211,6 +209,7 @@ export default {
 
         }
     },
+
 }
 </script>
 <style lang="scss" scoped>
@@ -236,7 +235,6 @@ export default {
         display: block;
         width: 100%;
 
-
         a {
             display: block;
 
@@ -246,7 +244,6 @@ export default {
                 display: block;
             }
         }
-
 
         .f {
             flex: 0 0 100%;
@@ -319,7 +316,8 @@ export default {
         margin-top: 100px;
 
         .tit {
-            .number {}
+            .number {
+            }
 
             .prise_title {
                 font-size: 40px;
@@ -329,7 +327,6 @@ export default {
                 line-height: 84px;
                 margin-bottom: 152px;
             }
-
         }
 
         .prise_aisle {
@@ -341,7 +338,7 @@ export default {
             .aisle {
                 flex: 0 0 30%;
                 height: 957px;
-                background: #F6F8FA;
+                background: #f6f8fa;
                 border-radius: 8px;
                 text-align: center;
                 padding: 0 60px;
@@ -372,7 +369,6 @@ export default {
                     .number {
                         font-size: 100px;
                         color: rgba(0, 0, 0, 0.83);
-
                     }
 
                     span {
@@ -400,13 +396,9 @@ export default {
                             color: rgba(0, 0, 0, 0.63);
                         }
                     }
-
                 }
-
             }
         }
-
-
     }
 
     .body {
@@ -535,7 +527,7 @@ export default {
 .part5 {
     font-size: 3.75rem;
     font-family: PingFangSC-Medium, PingFang SC;
-    color: #A4A4A4;
+    color: #a4a4a4;
 }
 </style>
 <style lang="scss" scoped>
@@ -545,9 +537,9 @@ export default {
             max-width: 1080px;
 
             .container {
-
                 // flex-wrap: nowrap;
-                img {}
+                img {
+                }
 
                 .j {
                     margin-right: 214px;
@@ -563,7 +555,8 @@ export default {
             max-width: 1080px;
 
             .container {
-                img {}
+                img {
+                }
 
                 .k {
                     margin-left: 160px;
@@ -582,7 +575,8 @@ export default {
             margin: 0 74px;
 
             .tit {
-                .number {}
+                .number {
+                }
 
                 .prise_title {
                     font-size: 40px;
@@ -592,14 +586,13 @@ export default {
                     line-height: 84px;
                     margin-bottom: 152px;
                 }
-
             }
 
             .prise_aisle {
                 .aisle {
                     flex: 0 0 50%;
                     max-width: calc(50% - 20px);
-                    background: #F6F8FA;
+                    background: #f6f8fa;
                     border-radius: 8px;
                     text-align: center;
                     padding: 0 60px;
@@ -608,11 +601,8 @@ export default {
                     padding: 0 81px;
                     position: relative;
                     margin-bottom: 200px;
-
                 }
             }
-
-
         }
     }
 }
@@ -623,7 +613,8 @@ export default {
             max-width: 768px;
 
             .container {
-                img {}
+                img {
+                }
 
                 .k {
                     margin-left: 160px;
@@ -635,7 +626,6 @@ export default {
                 }
             }
         }
-
     }
 }
 
@@ -645,20 +635,33 @@ export default {
             .prise_aisle {
                 .aisle {
                     height: auto;
+                    .aisle_tit {
+                        margin-top: 80px;
+                    }
 
                     .aisle_number {
                         .number {
                             font-size: 40px;
                         }
                     }
-
                 }
             }
         }
-
     }
 }
-
+@media screen and (max-width: 950px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    .aisle_tit {
+                        margin-top: 70px;
+                    }
+                }
+            }
+        }
+    }
+}
 @media screen and (max-width: 920px) {
     #main {
         .prise {
@@ -671,14 +674,48 @@ export default {
                             font-size: 40px;
                         }
                     }
-
                 }
             }
         }
     }
-
 }
+@media screen and (max-width: 850px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    .aisle_tit {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    height: auto;
+                    padding: 0;
+                    .aisle_tit {
+                        margin-top: 30px;
+                    }
 
+                    .aisle_number {
+                        .number {
+                            font-size: 40px;
+                        }
+                    }
+                    .function {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 719px) {
     #main {

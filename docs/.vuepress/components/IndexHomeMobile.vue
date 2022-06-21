@@ -184,8 +184,6 @@
                 </div>
             </div>
 
-
-
         </div>
     </div>
 </template>
@@ -329,7 +327,8 @@ export default {
         margin-top: 100px;
 
         .tit {
-            .number {}
+            .number {
+            }
 
             .prise_title {
                 font-size: 40px;
@@ -339,7 +338,6 @@ export default {
                 line-height: 84px;
                 margin-bottom: 54px;
             }
-
         }
 
         .prise_aisle {
@@ -351,7 +349,7 @@ export default {
             .aisle {
                 flex: 0 0 100%;
                 // height: 957px;
-                background: #F6F8FA;
+                background: #f6f8fa;
                 border-radius: 8px;
                 text-align: center;
                 margin-bottom: 1rem;
@@ -381,7 +379,6 @@ export default {
                     .number {
                         font-size: 40px;
                         color: rgba(0, 0, 0, 0.83);
-
                     }
 
                     span {
@@ -409,19 +406,15 @@ export default {
                             color: rgba(0, 0, 0, 0.63);
                         }
                     }
-
                 }
-
             }
         }
-
-
     }
 
     .part5 {
         font-size: 3.75rem;
         font-family: PingFangSC-Medium, PingFang SC;
-        color: #A4A4A4;
+        color: #a4a4a4;
     }
 }
 
@@ -430,7 +423,137 @@ export default {
         .prise_aisle {
             .aisle {
                 padding: 0;
+            }
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    height: auto;
+                    padding: 0;
 
+                    .aisle_number {
+                        .number {
+                            font-size: 40px;
+                        }
+                    }
+                    .function {
+                        padding: 0 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    .aisle_tit {
+                        margin-top: 110px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    margin-bottom: 180px;
+                    .aisle_tit {
+                        margin-top: 58px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px) {
+    #main {
+        .prise {
+            .tit {
+                .prise_title {
+                    font-size: 30px;
+                }
+            }
+            margin: 0 20px;
+            .prise_aisle {
+                .aisle {
+                    margin-bottom: 280px;
+                    .aisle_tit {
+                        margin-top: 80px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 400px) {
+    #main {
+        .prise {
+            margin: 0 20px;
+            .tit {
+                .prise_title {
+                    line-height: 60px;
+                }
+            }
+            .prise_aisle {
+                .aisle {
+                    margin-bottom: 180px;
+                    .image {
+                        top: -88px;
+                    }
+                    .aisle_tit {
+                        margin-top: 90px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #main {
+        .prise {
+            margin: 0 20px;
+            .tit {
+                .number {
+                }
+
+                .prise_title {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            .prise_aisle {
+                .aisle {
+                    padding: 0;
+                    .image {
+                    }
+
+                    .aisle_tit {
+                        font-size: 18px;
+                    }
+
+                    .aisle_number {
+                        .number {
+                            font-size: 20px;
+                        }
+
+                        span {
+                            display: block;
+                            font-size: 14px;
+                        }
+                    }
+                }
             }
         }
     }
