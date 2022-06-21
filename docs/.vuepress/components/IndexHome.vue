@@ -146,8 +146,6 @@
 </template>
 
 <script>
-// import banner from "../public/assets/home/home_bannerbg.png"
-// import banner_icon from "../public/assets/home/home_bannericon.png"
 import home_pic1 from "../public/assets/home/home_pic1.png"
 import home_pic2 from "../public/assets/home/home_pic2.png"
 import home_pic3 from "../public/assets/home/home_pic3.png"
@@ -178,11 +176,6 @@ export default {
         gvUrl() {
             return "https://beian.miit.gov.cn/"
         },
-        // bannerStyle() {
-        //     return {
-        //         backgroundImage: `url(${this.banner})`
-        //     }
-        // }
     },
 }
 </script>
