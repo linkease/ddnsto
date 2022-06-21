@@ -3,11 +3,13 @@
         <NavLayout></NavLayout>
         <IndexHome></IndexHome>
         <IndexHomeMobile></IndexHomeMobile>
+        <PriseComponent></PriseComponent>
         <FooterComponent />
     </div>
 </template>
 <script>
 import FooterComponent from "./FooterComponent.vue"
+import PriseComponent from "./Prise.vue"
 export default {
     computed: {
         gvUrl() {
@@ -15,7 +17,10 @@ export default {
         },
     },
     components: {
+        PriseComponent,
         FooterComponent
+    },
+    mounted() {
     }
 }
 </script>
