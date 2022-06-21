@@ -1,8 +1,14 @@
 <template>
     <div id="main" class="mobile">
-        <router-link to="/zh/guide/quick.html" class="banner">
+        <!-- <router-link to="/zh/guide/quick.html" class="banner">
             <img :src="banner" alt="">
-        </router-link>
+        </router-link> -->
+        <div class="banner">
+            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="homeBanner" alt=""></a>
+        </div>
+        <div class="part1">
+            <img :src="homeDdnsto" alt="">
+        </div>
         <div class="container">
             <div class="cover">
                 <img :src="home_pic1" alt="">
@@ -62,27 +68,159 @@
                 </div>
             </div>
         </div>
+
+        <div class="prise">
+            <div class="tit">
+                <h3 class="number"><span class="color-42d1c3 part5 f">05</span></h3>
+                <div class="prise_title">DDNSTO价格说明</div>
+            </div>
+            <div class="prise_aisle">
+                <div class="aisle">
+                    <div class="aisle_tit">免费通道</div>
+                    <div class="aisle_number">
+                        <span class="number">0</span>
+                        <span>元/月</span>
+                        <span>(每个用户可以试用1条免费通道)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>4 Mbps带宽</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>5 个自定义域名</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aisle">
+                    <img :src="prise1" alt="" class="image">
+                    <div class="aisle_tit">会员通道</div>
+                    <div class="aisle_number">
+                        <span class="number">4.33</span>
+                        <span>元/月</span>
+                        <span>(按月支付)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>4 Mbps带宽</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>12 个自定义域名</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程桌面</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程下载</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="aisle">
+                    <img :src="prise2" alt="" class="image">
+                    <div class="aisle_tit">高级通道</div>
+                    <div class="aisle_number">
+                        <span class="number">14.9</span>
+                        <span>元/月</span>
+                        <span>(按月支付)</span>
+                    </div>
+                    <div class="function">
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>8 Mbps带宽（即将上线）</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>15 个自定义域名</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程SSH</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程桌面</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程下载</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>websocket支持</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>8 Mbps</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>第三方客户端RDP（开发中）</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>APP相册备份（开发中）</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>APP文件管理（开发中）</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
 </template>
 
 <script>
 
-import banner from "../public/assets/home/modbile_home_banner.png"
 import home_pic1 from "../public/assets/home/home_pic1.png"
 import home_pic2 from "../public/assets/home/home_pic2.png"
 import home_pic3 from "../public/assets/home/home_pic3.png"
 import home_pic4 from "../public/assets/home/home_pic4.png"
+
+import homeBanner from "../public/assets/home/banner.png"
+import homeDdnsto from "../public/assets/home/ddnsto.png"
+import icon_check from "../public/assets/home/icon_check.png"
+import icon_dot from "../public/assets/home/icon_dot.png"
+import prise1 from "../public/assets/home/prise1.png"
+import prise2 from "../public/assets/home/prise2.png"
 export default {
     data() {
         return {
-            banner,
             home_pic1,
             home_pic2,
             home_pic3,
             home_pic4,
+            homeBanner,
+            homeDdnsto,
+            icon_check,
+            icon_dot,
+            prise1,
+            prise2
+
         }
-    }
+    },
 }
+
 </script>
 <style lang="scss" scoped>
 #main * {
@@ -92,28 +230,43 @@ export default {
     word-wrap: break-word;
     outline: 0;
 }
+
 @media screen and (min-width: 719px) {
     #main {
         display: none;
     }
 }
+
 #main {
     width: 100%;
     position: relative;
     margin-top: 3.125rem;
+
     .banner {
         position: relative;
         width: 100%;
+        display: block;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+
+    .part1 {
         img {
             max-width: 100%;
         }
     }
+
     .container {
         width: 100%;
+
         .cover {
             width: 100%;
             padding: 1.25rem;
             text-align: center;
+
             img {
                 margin: 0 auto;
                 max-width: 100%;
@@ -121,16 +274,19 @@ export default {
                 box-shadow: 0 0 10px 5px #f8f8f8;
             }
         }
+
         .introduction {
             padding: 0 20px;
             text-align: center;
             margin-bottom: 20px;
+
             h3.title {
                 margin: 20px 0;
                 font-size: 32px;
                 font-family: PingFangSC-Semibold, PingFang SC;
                 font-weight: 600;
                 color: rgba(0, 0, 0, 0.83);
+
                 .number {
                     width: 38px;
                     font-size: 32px;
@@ -138,9 +294,11 @@ export default {
                     font-weight: 500;
                     color: #ff022a;
                 }
+
                 span.color-ff022a {
                     color: #ff022a;
                 }
+
                 span.color-0060ff {
                     color: #0060ff;
                 }
@@ -148,15 +306,131 @@ export default {
                 span.color-ff9e00 {
                     color: #ff9e00;
                 }
+
                 span.color-42d1c3 {
                     color: #42d1c3;
                 }
             }
+
             .desc {
                 font-size: 18px;
                 font-family: PingFangSC-Regular, PingFang SC;
                 font-weight: 400;
                 color: rgba(0, 0, 0, 0.83);
+            }
+        }
+    }
+
+    .prise {
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0 74px;
+        margin-top: 100px;
+
+        .tit {
+            .number {}
+
+            .prise_title {
+                font-size: 40px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                color: rgba(0, 0, 0, 0.83);
+                line-height: 84px;
+                margin-bottom: 54px;
+            }
+
+        }
+
+        .prise_aisle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            .aisle {
+                flex: 0 0 100%;
+                // height: 957px;
+                background: #F6F8FA;
+                border-radius: 8px;
+                text-align: center;
+                margin-bottom: 1rem;
+                font-family: PingFangSC-Medium, PingFang SC;
+                position: relative;
+                margin-bottom: 200px;
+
+                .image {
+                    width: 90%;
+                    position: absolute;
+                    top: -110px;
+                    left: 22px;
+                    right: 0;
+                    bottom: 0;
+                }
+
+                .aisle_tit {
+                    font-size: 28px;
+                    color: rgba(0, 0, 0, 0.83);
+                    margin-top: 200px;
+                }
+
+                .aisle_number {
+                    margin-bottom: 40px;
+                    margin-top: 18px;
+
+                    .number {
+                        font-size: 40px;
+                        color: rgba(0, 0, 0, 0.83);
+
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 18px;
+                        color: rgba(0, 0, 0, 0.63);
+                    }
+                }
+
+                .function {
+                    text-align: left;
+                    padding: 0 140px;
+
+                    .list {
+                        margin: 20px 0;
+
+                        img {
+                            width: 24px;
+                            margin-right: 8px;
+                        }
+
+                        span {
+                            font-size: 18px;
+                            font-family: PingFangSC-Medium, PingFang SC;
+                            color: rgba(0, 0, 0, 0.63);
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+    }
+
+    .part5 {
+        font-size: 3.75rem;
+        font-family: PingFangSC-Medium, PingFang SC;
+        color: #A4A4A4;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    #main {
+        .prise_aisle {
+            .aisle {
+                padding: 0;
+
             }
         }
     }

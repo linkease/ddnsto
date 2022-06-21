@@ -51,6 +51,7 @@ module.exports = {
                 nav: [
                     { text: '首页', link: '/' },
                     { text: '指南', link: 'https://doc.linkease.com/zh/guide/ddnsto/' },
+                    { text: '价格', link: '/#allprise' },
                     //{ text: '场景', link: '/zh/docs/' },
                     { text: '博客', link: 'https://doc.linkease.com/post/' },
                     {

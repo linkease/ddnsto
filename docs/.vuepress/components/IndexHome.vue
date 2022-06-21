@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="prise">
+        <div class="prise" id="allprise">
             <div class="tit">
                 <h3 class="number"><span class="color-42d1c3 part5 f">05</span></h3>
                 <div class="prise_title">DDNSTO价格说明</div>
@@ -81,7 +81,7 @@
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
-                            <span>5 个域名数量</span>
+                            <span>5 个自定义域名</span>
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
@@ -91,11 +91,12 @@
 
                 </div>
                 <div class="aisle">
-                    <div class="aisle_tit">免费通道</div>
+                    <img :src="prise1" alt="" class="image">
+                    <div class="aisle_tit">会员通道</div>
                     <div class="aisle_number">
-                        <span class="number">0</span>
+                        <span class="number">4.33</span>
                         <span>元/月</span>
-                        <span>(每个用户可以试用1条免费通道)</span>
+                        <span>(按月支付)</span>
                     </div>
                     <div class="function">
                         <div class="list">
@@ -104,34 +105,71 @@
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
-                            <span>5 个域名数量</span>
+                            <span>12 个自定义域名</span>
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
                             <span>远程SSH</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程桌面</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程下载</span>
                         </div>
                     </div>
 
                 </div>
                 <div class="aisle">
-                    <div class="aisle_tit">免费通道</div>
+                    <img :src="prise2" alt="" class="image">
+                    <div class="aisle_tit">高级通道</div>
                     <div class="aisle_number">
-                        <span class="number">0</span>
+                        <span class="number">14.9</span>
                         <span>元/月</span>
-                        <span>(每个用户可以试用1条免费通道)</span>
+                        <span>(按月支付)</span>
                     </div>
                     <div class="function">
                         <div class="list">
                             <img :src="icon_check" alt="">
-                            <span>4 Mbps带宽</span>
+                            <span>8 Mbps带宽（即将上线）</span>
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
-                            <span>5 个域名数量</span>
+                            <span>15 个自定义域名</span>
                         </div>
                         <div class="list">
                             <img :src="icon_check" alt="">
                             <span>远程SSH</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程桌面</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>远程下载</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>websocket支持</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_check" alt="">
+                            <span>8 Mbps</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>第三方客户端RDP（开发中）</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>APP相册备份（开发中）</span>
+                        </div>
+                        <div class="list">
+                            <img :src="icon_dot" alt="">
+                            <span>APP文件管理（开发中）</span>
                         </div>
                     </div>
 
@@ -155,6 +193,8 @@ import homeBanner from "../public/assets/home/banner.png"
 import homeDdnsto from "../public/assets/home/ddnsto.png"
 import icon_check from "../public/assets/home/icon_check.png"
 import icon_dot from "../public/assets/home/icon_dot.png"
+import prise1 from "../public/assets/home/prise1.png"
+import prise2 from "../public/assets/home/prise2.png"
 export default {
     data() {
         return {
@@ -165,17 +205,11 @@ export default {
             homeBanner,
             homeDdnsto,
             icon_check,
-            icon_dot
+            icon_dot,
+            prise1,
+            prise2
 
         }
-    },
-    computed: {
-        playerUrl() {
-            return "https://player.bilibili.com/player.html?aid=931397239&bvid=BV1GM4y1g7Lz&cid=361664839&page=1"
-        },
-        gvUrl() {
-            return "https://beian.miit.gov.cn/"
-        },
     },
 }
 </script>
@@ -199,6 +233,8 @@ export default {
         height: 100%;
         flex-wrap: nowrap;
         justify-content: space-between;
+        display: block;
+        width: 100%;
 
 
         a {
@@ -206,6 +242,8 @@ export default {
 
             img {
                 max-width: 100%;
+                height: auto;
+                display: block;
             }
         }
 
@@ -277,6 +315,7 @@ export default {
         max-width: 1400px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0 20px;
 
         .tit {
             .number {}
@@ -287,6 +326,7 @@ export default {
                 font-weight: 600;
                 color: rgba(0, 0, 0, 0.83);
                 line-height: 84px;
+                margin-bottom: 152px;
             }
 
         }
@@ -295,6 +335,7 @@ export default {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
 
             .aisle {
                 flex: 0 0 30%;
@@ -305,16 +346,27 @@ export default {
                 padding: 0 60px;
                 margin-bottom: 1rem;
                 font-family: PingFangSC-Medium, PingFang SC;
-                padding: 0 81px;
+                position: relative;
+                margin-bottom: 200px;
+
+                .image {
+                    width: 90%;
+                    position: absolute;
+                    top: -110px;
+                    left: 22px;
+                    right: 0;
+                    bottom: 0;
+                }
 
                 .aisle_tit {
                     font-size: 28px;
                     color: rgba(0, 0, 0, 0.83);
-                    margin-top: 120px;
+                    margin-top: 130px;
                 }
 
                 .aisle_number {
                     margin-bottom: 40px;
+                    margin-top: 18px;
 
                     .number {
                         font-size: 100px;
@@ -331,12 +383,14 @@ export default {
 
                 .function {
                     text-align: left;
+                    width: 100%;
 
                     .list {
                         margin: 20px 0;
 
                         img {
                             width: 24px;
+                            margin-right: 8px;
                         }
 
                         span {
@@ -519,6 +573,46 @@ export default {
                 }
             }
         }
+
+        .prise {
+            max-width: 1400px;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 0 74px;
+
+            .tit {
+                .number {}
+
+                .prise_title {
+                    font-size: 40px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    color: rgba(0, 0, 0, 0.83);
+                    line-height: 84px;
+                    margin-bottom: 152px;
+                }
+
+            }
+
+            .prise_aisle {
+                .aisle {
+                    flex: 0 0 50%;
+                    max-width: calc(50% - 20px);
+                    background: #F6F8FA;
+                    border-radius: 8px;
+                    text-align: center;
+                    padding: 0 60px;
+                    margin-bottom: 1rem;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    padding: 0 81px;
+                    position: relative;
+                    margin-bottom: 200px;
+
+                }
+            }
+
+
+        }
     }
 }
 
@@ -540,8 +634,50 @@ export default {
                 }
             }
         }
+
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    height: auto;
+
+                    .aisle_number {
+                        .number {
+                            font-size: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 920px) {
+    #main {
+        .prise {
+            .prise_aisle {
+                .aisle {
+                    height: auto;
+
+                    .aisle_number {
+                        .number {
+                            font-size: 40px;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
 
 @media screen and (max-width: 719px) {
     #main {
