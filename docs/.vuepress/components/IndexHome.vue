@@ -316,6 +316,7 @@ export default {
         margin-left: auto;
         margin-right: auto;
         padding: 0 20px;
+        margin-top: 100px;
 
         .tit {
             .number {}
