@@ -12,16 +12,16 @@ DDNSTO在保护用户数据安全同时也要避免恶意分享不良内容带�
 
 PS：这是最原始的方法，如果是纯手机端操作，很不方便，那么就说到第二种方法了。
 
-#### B.易有云APP——验证DDNSTO。[易有云下载地址](https://www.ddnsto.com/linkease/download/#/)
+#### B.易有云软件——验证DDNSTO。[易有云下载地址](https://www.ddnsto.com/linkease/download/#/)
 
 |平台|支持验证DDNSTO的版本|
 | :----: | :----: |
 | 安卓 | v2.8.2及更高版本 |
 | iOS | v1.1.5及更高版本 |
 
-PS：若是易有云APP新用户，下载最新版，然后注册登录；老用户直接更新最新版本即可。
+PS：若是易有云软件新用户，下载最新版，然后注册登录；老用户直接更新最新版本即可。
 
-打开易有云APP——我的，能看到“验证DDNSTO”即可。
+打开易有云软件——我的，能看到“验证DDNSTO”即可。
 
    ![Authentication](./Authentication/Authentication0.jpg)
    
@@ -33,13 +33,13 @@ PS：若是易有云APP新用户，下载最新版，然后注册登录；老用
  
    ![Authentication](./Authentication/Authentication2.jpg)
    
-#### 2.打开“易有云APP——我的”，右上角二维码扫码，会提示绑定成功，然后点击“验证DDNSTO”，会提示已经绑定的账号和当前的IP；   
+#### 2.打开“易有云软件——我的”，右上角二维码扫码，会提示绑定成功，然后点击“验证DDNSTO”，会提示已经绑定的账号和当前的IP；   
 
    ![Authentication](./Authentication/Authentication3.jpg)
 
    ![Authentication](./Authentication/Authentication4.jpg)   
 
-#### 3.绑定成功后，以后需要DDNSTO身份验证的时候，直接打开“易有云APP——我的——验证DDNSTO——验证”即可。
+#### 3.绑定成功后，以后需要DDNSTO身份验证的时候，直接打开“易有云软件——我的——验证DDNSTO——验证”即可。
 
    
    

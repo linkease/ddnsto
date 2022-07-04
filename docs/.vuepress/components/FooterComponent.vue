@@ -29,7 +29,7 @@ export default {
                     title: "所有产品",
                     childer: [
                         {
-                            label: "易有云APP",
+                            label: "易有云软件",
                             value: "https://app.linkease.com/",
                         },
                         {
@@ -64,7 +64,7 @@ export default {
                         },
                         {
                             label: "商务洽谈",
-                            value: "mailto:xiaobao@linkease.com"
+                            value: "mailto:admin@linkease.com"
                         }
 
                     ]
@@ -78,7 +78,7 @@ export default {
                         },
                         {
                             label: "联系我们",
-                            value: "mailto:xiaobao@linkease.com"
+                            value: "mailto:admin@linkease.com"
                         }
                     ]
                 },
