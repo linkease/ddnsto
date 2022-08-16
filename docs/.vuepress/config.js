@@ -14,7 +14,7 @@ module.exports = {
         }
     },
     // 站点标题
-    title: 'DDNSTO 内网穿透',
+    title: '我的家庭设备',
     // 网站的描述
     description: 'DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理',
     head: [
@@ -50,7 +50,7 @@ module.exports = {
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
-                    { text: '指南', link: 'https://doc.linkease.com/zh/guide/ddnsto/' },
+                    { text: '文档', link: 'https://doc.linkease.com/zh/guide/ddnsto/' },
                     // { text: '价格', link: '/#allprise', target: '_self', rel: 'allprise' },
                     //{ text: '场景', link: '/zh/docs/' },
                     { text: '博客', link: 'https://doc.linkease.com/post/' },
@@ -61,7 +61,7 @@ module.exports = {
                         ]
                     },
                     {
-                        text: '反馈', items: [
+                        text: '关于我们', items: [
                             { text: '问题反馈', link: 'https://github.com/linkease/ddnsto/issues' },
                             { text: '问卷调查', link: 'https://wj.qq.com/s2/8425787/8a6b/' },
                             //{ text: '公开吐槽', link: 'https://support.qq.com/products/311539' },
