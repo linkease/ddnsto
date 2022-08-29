@@ -198,8 +198,7 @@ export default {
         margin-top: 100px;
 
         .tit {
-            .number {
-            }
+            .number {}
 
             .prise_title {
                 font-size: 40px;
@@ -419,9 +418,9 @@ export default {
             max-width: 1080px;
 
             .container {
+
                 // flex-wrap: nowrap;
-                img {
-                }
+                img {}
 
                 .j {
                     margin-right: 214px;
@@ -437,8 +436,7 @@ export default {
             max-width: 1080px;
 
             .container {
-                img {
-                }
+                img {}
 
                 .k {
                     margin-left: 160px;
@@ -457,8 +455,7 @@ export default {
             margin: 0 74px;
 
             .tit {
-                .number {
-                }
+                .number {}
 
                 .prise_title {
                     font-size: 40px;
@@ -495,8 +492,7 @@ export default {
             max-width: 768px;
 
             .container {
-                img {
-                }
+                img {}
 
                 .k {
                     margin-left: 160px;
@@ -517,6 +513,7 @@ export default {
             .prise_aisle {
                 .aisle {
                     height: auto;
+
                     .aisle_tit {
                         margin-top: 80px;
                     }
@@ -531,6 +528,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 950px) {
     #main {
         .prise {
@@ -544,6 +542,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 920px) {
     #main {
         .prise {
@@ -561,6 +560,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 850px) {
     #main {
         .prise {
@@ -574,6 +574,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 800px) {
     #main {
         .prise {
@@ -581,6 +582,7 @@ export default {
                 .aisle {
                     height: auto;
                     padding: 0;
+
                     .aisle_tit {
                         margin-top: 30px;
                     }
@@ -590,6 +592,7 @@ export default {
                             font-size: 40px;
                         }
                     }
+
                     .function {
                         padding: 0 20px;
                     }
