@@ -40,7 +40,7 @@
                                 </div>
                                 <div class="list_top_tit">运维人员低成本硬件方案</div>
                             </div>
-                            <div class="list_info">
+                            <div class="list_info text">
                                 如果您需要管理大量异地设备，我们提供优惠的通道打包价格。如果您的异地环境内已有设备不具备安装DDNSTO的条件，需要额外硬件来支持远程管理，我们同样能提供低成本软硬件一体的DDNSTO设备来满足您的需求。
                                 那么DDNSTO 可以为您的硬件产品解决以上问题。
                             </div>
@@ -263,13 +263,7 @@
 </template>
 <script>
 export default {
-    computed: {
 
-    },
-    components: {
-    },
-    mounted() {
-    }
 }
 </script>
 <style lang="scss" scoped>
@@ -387,11 +381,9 @@ export default {
         margin-bottom: 68px;
 
         .product_top {
-            margin-bottom: 120px;
             text-align: center;
 
             .top_tit {
-                height: 30px;
                 font-size: 30px;
                 font-weight: bold;
                 color: #000000;
@@ -422,7 +414,7 @@ export default {
                     font-size: 44px;
                     font-weight: bold;
                     color: #010101;
-                    line-height: 30px;
+                    // line-height: 30px;
                     margin-top: 120px;
                 }
 
@@ -495,6 +487,457 @@ export default {
 
     p {
         margin: 0;
+    }
+}
+</style>
+
+<style lang="scss" scoped>
+@media screen and (max-width: 1500px) {
+    #main {
+        .partner {
+            padding: 0 20px;
+        }
+
+        .product {
+            padding: 0 20px;
+        }
+
+        .connect {
+            padding: 0 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 1400px) {
+        #main {
+            .partner {
+                padding: 0 20px;
+
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_info {
+                                height: 278px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        #main {
+            .product {
+
+
+                .product_content {
+                    display: block;
+
+                    .content_text {
+                        margin: 0 auto;
+                        margin-bottom: 100px;
+                        // width: 100%;
+                    }
+
+                    .content_img {
+                        text-align: center;
+
+                        img {
+                            margin: 0 auto;
+                            margin-top: 100px;
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        #main {
+            .partner {
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_info {
+                                height: 328px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        #main {
+            .partner {
+                padding: 0 160px;
+
+                .partner_content {
+                    .partner_content_list {
+                        flex: 0 0 100%;
+                        margin-bottom: 20px;
+
+                        .list_text {
+                            .list_info {
+                                height: 160px;
+                            }
+
+                            .text {
+                                height: 200px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        #main {
+            .partner {
+                padding: 0 40px;
+
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_info {
+                                height: 180px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .product {
+                .product_top {
+                    margin-bottom: 40px;
+                }
+
+                .product_content {
+                    .content_text {
+                        .text_tit {
+                            font-size: 26px;
+                            margin-top: 50px;
+                        }
+                    }
+
+                    .content_img {
+                        img {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 720px) {
+        #main {
+            .partner {
+                padding: 0 10px;
+
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_info {
+                                height: 160px;
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .product {
+                padding: 0 10px;
+
+                .product_content {
+                    .content_text {
+                        width: 100%;
+                    }
+
+                    .content_img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 550px) {
+        #main {
+            .partner {
+                padding: 0 10px;
+
+                .partner_top {
+                    .partner_tit {
+                        font-size: 24px;
+                    }
+
+                    .partner_info {
+                        font-size: 16px;
+                    }
+
+                    .partner_subtitle {
+                        font-size: 18px;
+                        margin-top: 24px;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_top {
+                                .list_top_tit {
+                                    font-size: 20px;
+                                }
+                            }
+
+                            .list_info {
+                                height: 188px;
+                            }
+
+                            .list_item {
+                                p {
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+
+                    }
+                }
+            }
+
+            .product {
+                .product_top {
+                    margin-bottom: 80px;
+
+                    .top_tit {
+                        font-size: 22px;
+                    }
+                }
+
+                .product_content {
+                    .content_text {
+                        margin-bottom: 40px;
+
+                        .text_parameter {
+                            margin: 18px 0;
+                        }
+
+                        .text_tit {
+                            font-size: 22px;
+                            margin-top: 20px;
+                        }
+
+                        .text_item {
+                            margin: 18px 0;
+
+                            p {
+                                font-size: 20px;
+
+                            }
+                        }
+
+                        .text_tip {
+                            font-size: 16px;
+                        }
+                    }
+
+
+                    .content_img {
+                        img {
+                            margin-top: 10px;
+                        }
+
+                    }
+                }
+            }
+
+            .connect {
+                margin-bottom: 100px;
+                margin-top: 60px;
+
+                p {
+                    font-size: 20px;
+                }
+            }
+
+            .tit {
+                font-size: 20px;
+            }
+
+            .info {
+                font-size: 16px;
+            }
+
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        #main {
+            .partner {
+                .partner_content {
+                    .partner_content_list {
+                        .list_text {
+                            .list_info {
+                                height: 220px;
+                            }
+
+                            .text {
+                                height: 240px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 300px) {
+    #main {
+        .partner {
+            margin-bottom: 30px;
+
+            .partner_top {
+                .partner_tit {
+                    font-size: 20px;
+                }
+
+                .partner_info {
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+
+                .partner_subtitle {
+                    font-size: 14px;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+            }
+
+            .partner_content {
+                .partner_content_list {
+                    .list_text {
+                        padding: 0 10px;
+
+                        .list_top {
+                            margin-bottom: 20px;
+
+                            .list_top_tit {
+                                font-size: 18px;
+                            }
+                        }
+
+                        .list_info {
+                            height: 218px;
+                            font-size: 16px;
+                        }
+
+                        .text {
+                            height: 302px;
+                        }
+
+                        .list_item {
+                            p {
+                                font-size: 18px;
+                                margin: 0;
+                                line-height: 36px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .product {
+            .product_top {
+                margin-bottom: 28px;
+
+                .top_tit {
+                    font-size: 20px;
+                }
+            }
+
+            .product_content {
+                .content_text {
+                    margin-bottom: 40px;
+
+                    .text_parameter {
+                        margin: 18px 0;
+                    }
+
+                    .text_tit {
+                        font-size: 20px;
+                        margin-top: 0px;
+                    }
+
+                    .text_function {
+                        margin: 24px 0;
+                    }
+
+                    .text_item {
+                        margin: 18px 0;
+
+                        p {
+                            font-size: 20px;
+
+                        }
+                    }
+
+                    .text_tip {
+                        font-size: 16px;
+                    }
+                }
+
+
+                .content_img {
+                    img {
+                        margin-top: 10px;
+                    }
+
+                }
+            }
+        }
+
+        .connect {
+            margin-bottom: 80px;
+            margin-top: 40px;
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                font-size: 18px;
+            }
+        }
+
+        .tit {
+            font-size: 20px;
+        }
+
+        .info {
+            font-size: 14px;
+        }
+
     }
 }
 </style>
