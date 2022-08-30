@@ -61,7 +61,7 @@ module.exports = {
                         ]
                     },
                     {
-                        text: "合作伙伴",
+                        text: "合作洽谈",
                         // value: "/about",
                         // target: "_self",
                         link: "/zh/partner/"

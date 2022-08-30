@@ -596,6 +596,23 @@ export default {
                 }
             }
 
+            .product {
+                .product_content {
+                    .content_text {
+                        .text_tit {
+                            margin-top: 80px;
+                        }
+
+                    }
+
+                    .content_img {
+                        img {
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+
         }
     }
 
