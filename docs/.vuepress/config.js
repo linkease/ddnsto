@@ -1,3 +1,17 @@
+// npm run build --domain=kooldns.com
+const getBeianDomain = () => {
+    const domain = process.env.npm_config_domain || ""
+    switch (domain) {
+        case "kooldns.cn":
+            return "粤ICP备20024441号-1"
+        case "kooldns.com":
+            return "粤ICP备20024441号-3"
+        case "tocmcc.cn":
+            return "粤ICP备20024441号-6"
+        default:
+            return "粤ICP备20024441号"
+    }
+}
 module.exports = {
     host: "0.0.0.0",
     port: 8080,
@@ -14,7 +28,7 @@ module.exports = {
         }
     },
     // 站点标题
-    title: '我的家庭设备',
+    title: 'DDNSTO远程控制',
     // 网站的描述
     description: 'DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理',
     head: [
@@ -124,6 +138,7 @@ module.exports = {
         // 搜索
         // search: false,
         // searchMaxSuggestions: 10
+        beian: getBeianDomain()
     },
     plugins: [
         ['@vuepress/blog',
@@ -179,4 +194,5 @@ module.exports = {
             },
         ],
     ],
+
 }

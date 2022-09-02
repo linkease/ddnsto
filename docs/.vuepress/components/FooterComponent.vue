@@ -13,8 +13,8 @@
                     </template>
                 </div>
             </div>
-            <div class="content_info" title="易有云网络科技有限责任公司 Copyright © 2019-2021  备案号： 粤ICP备20024441号">易有云网络科技有限责任公司 Copyright © 2019-2021<br />
-                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： 粤ICP备20024441号</a>
+            <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2021  备案号： ${beianValue}`">易有云网络科技有限责任公司 Copyright © 2019-2021<br />
+                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{beianValue}}</a>
             </div>
         </div>
     </div>
@@ -93,7 +93,12 @@ export default {
                 }
             ]
         }
-    }
+    },
+    computed: {
+        beianValue(){
+            return this.$themeConfig.beian
+        }
+    },
 }
 </script>
 
@@ -163,6 +168,7 @@ export default {
             flex: 0 0 100%;
             font-size: 12px;
             color: #8e8e8e;
+            margin: 1rem 0;
             a {
                 color: #8e8e8e;
             }
