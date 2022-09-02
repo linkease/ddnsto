@@ -867,7 +867,7 @@ export default {
                         }
 
                         .list_info {
-                            height: 218px;
+                            height: 240px;
                             font-size: 16px;
                         }
 
