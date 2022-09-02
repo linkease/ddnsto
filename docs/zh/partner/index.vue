@@ -97,12 +97,12 @@
                             </div>
                         </div>
                         <div class="text_price">
-                            <div class="price_tit tit">价格范围：TODO</div>
-                            <div class="price_info info">市面已经存在的产品：TODO1，TODO2，TODO3</div>
+                            <div class="price_tit tit">价格范围：30-120元</div>
+                            <!-- <div class="price_info info">市面已经存在的产品：TODO1，TODO2，TODO3</div> -->
                         </div>
                         <div class="text_function">
-                            <div class="function_tit tit">性能及推荐的 DDNSTO 功能</div>
-                            <div class="function_info info">因为 MIPSEL 是 64M/128M 内存，内存小导致并发能力弱。但是超级省电，普通远程运维功能足够！</div>
+                            <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
+                            <div class="function_info info">因为MIPSEL是64M/128M内存，内存小导致并发能力弱。但是超级省电，普通远程运维功能足够！</div>
                         </div>
                         <div class="text_item">
                             <p>远程开机</p>
@@ -120,7 +120,7 @@
 
                 <div class="product_content">
                     <div class="content_img">
-                        <img src="" alt="">
+                        <img src="./img/MT7621.png" alt="">
                     </div>
                     <div class="content_text">
                         <div class="text_tit">MT7621 MIPSEL</div>
@@ -131,11 +131,11 @@
                             </div>
                         </div>
                         <div class="text_price">
-                            <div class="price_tit tit">价格范围：TODO</div>
-                            <div class="price_info info">市面已经存在的产品：TODO1，TODO2，TODO3</div>
+                            <div class="price_tit tit">价格范围：100-300元</div>
+                            <div class="price_info info">市面已经存在的产品：小娱C5</div>
                         </div>
                         <div class="text_function">
-                            <div class="function_tit tit">性能及推荐的 DDNSTO 功能</div>
+                            <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
                             <div class="function_info info">因为 MIPSEL 是 64M/128M 内存，内存小导致并发能力弱。但是超级省电，普通远程运维功能足够！</div>
                         </div>
                         <div class="text_item">
@@ -165,11 +165,11 @@
                             </div>
                         </div>
                         <div class="text_price">
-                            <div class="price_tit tit">价格范围：249-319 元</div>
+                            <div class="price_tit tit">价格范围：249-319元</div>
                             <div class="price_info info">市面已经存在的产品：R2S</div>
                         </div>
                         <div class="text_function">
-                            <div class="function_tit tit">性能及推荐的 DDNSTO 功能：</div>
+                            <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
                             <div class="function_info info"></div>
                         </div>
                         <div class="text_item">
@@ -203,11 +203,11 @@
                             </div>
                         </div>
                         <div class="text_price">
-                            <div class="price_tit tit">价格范围：580-599 元</div>
+                            <div class="price_tit tit">价格范围：580-599元</div>
                             <div class="price_info info">市面已经存在的产品：EasePi ARS2</div>
                         </div>
                         <div class="text_function">
-                            <div class="function_tit tit">性能及推荐的 DDNSTO 功能：</div>
+                            <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
                             <div class="function_info info"></div>
                         </div>
                         <div class="text_item">
@@ -239,7 +239,7 @@
                             <div class="price_info info">市面已经存在的产品：R68S</div>
                         </div>
                         <div class="text_function">
-                            <div class="function_tit tit">性能及推荐的 DDNSTO 功能：</div>
+                            <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
                             <div class="function_info info"></div>
                         </div>
                         <div class="text_item">
