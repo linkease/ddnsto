@@ -320,6 +320,13 @@ export default {
                 flex: 0 0 32.33%;
                 background: #E5E5E5;
                 border-radius: 10px;
+                border: 2px solid transparent;
+
+                &:hover {
+                    border: 2px solid #4A72F5;
+                    background: #FFF;
+                    transition: 0.3s;
+                }
 
                 .list_text {
                     padding: 0 36px;
@@ -369,10 +376,7 @@ export default {
 
             }
 
-            .partner_content_list:hover {
-                border: 2px solid #4A72F5;
-                background: #FFF;
-            }
+
 
         }
     }
