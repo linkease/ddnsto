@@ -75,6 +75,12 @@ module.exports = {
                         ]
                     },
                     {
+                        text: "合作洽谈",
+                        // value: "/about",
+                        // target: "_self",
+                        link: "/zh/partner/"
+                    },
+                    {
                         text: '关于我们',
                         // items: [
                         //     { text: '问题反馈', link: 'https://github.com/linkease/ddnsto/issues' },
