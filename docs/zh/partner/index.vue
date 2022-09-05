@@ -98,7 +98,7 @@
                         </div>
                         <div class="text_price">
                             <div class="price_tit tit">价格范围：30-120元</div>
-                            <!-- <div class="price_info info">市面已经存在的产品：TODO1，TODO2，TODO3</div> -->
+                            <div class="price_info info">市面已经存在的产品：小米路由器4A</div>
                         </div>
                         <div class="text_function">
                             <div class="function_tit tit">性能及推荐的DDNSTO功能：</div>
@@ -203,7 +203,7 @@
                             </div>
                         </div>
                         <div class="text_price">
-                            <div class="price_tit tit">价格范围：580-599元</div>
+                            <div class="price_tit tit">价格范围：420-599元</div>
                             <div class="price_info info">市面已经存在的产品：EasePi ARS2</div>
                         </div>
                         <div class="text_function">
@@ -253,6 +253,7 @@
                         <img src="./img/RK3568.png" alt="">
                     </div>
                 </div>
+
             </div>
             <div class="connect">
                 <p>如果你有合作想法，请尽快联系我们</p>
