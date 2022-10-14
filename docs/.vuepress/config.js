@@ -64,6 +64,7 @@ module.exports = {
                 lastUpdated: '上次更新',
                 nav: [
                     { text: '首页', link: '/' },
+                    { text: '价格', link: 'https://doc.linkease.com/zh/guide/ddnsto/pay.html' },
                     { text: '文档', link: 'https://doc.linkease.com/zh/guide/ddnsto/' },
                     // { text: '价格', link: '/#allprise', target: '_self', rel: 'allprise' },
                     //{ text: '场景', link: '/zh/docs/' },
