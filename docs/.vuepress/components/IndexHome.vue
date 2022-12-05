@@ -1,7 +1,7 @@
 <template>
     <div id="main" class="desktop">
         <div class="banner">
-            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="homeBanner" alt=""></a>
+            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="bannerImage" alt=""></a>
         </div>
         <div class="part1">
             <img :src="homeDdnsto" alt="">
@@ -90,6 +90,19 @@ export default {
             prise2
 
         }
+    },
+    computed: {
+        bannerImage() {
+            switch (this.$themeConfig.domain) {
+                case "kooldns.cn":
+                case "kooldns.com":
+                    return "/assets/banner/banner2@2x.png"
+                case "tocmcc.cn":
+                    return "/assets/banner/banner3@2x.png"
+            }
+            // ddnsto.com
+            return "/assets/banner/banner1@2x.png"
+        },
     },
 
 }

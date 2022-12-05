@@ -1,7 +1,13 @@
 // npm run build --domain=kooldns.com
+// npm run build --domain=kooldns.com
+const getBulldDomain = () => {
+    // "kooldns.cn"
+    // "kooldns.com"
+    // "tocmcc.cn"
+    return process.env.npm_config_domain || "ddnsto.com"
+}
 const getBeianDomain = () => {
-    const domain = process.env.npm_config_domain || ""
-    switch (domain) {
+    switch (getBulldDomain()) {
         case "kooldns.cn":
             return "粤ICP备20024441号-1"
         case "kooldns.com":
@@ -12,6 +18,7 @@ const getBeianDomain = () => {
             return "粤ICP备20024441号"
     }
 }
+
 module.exports = {
     host: "0.0.0.0",
     port: 8080,
@@ -139,7 +146,8 @@ module.exports = {
         // 搜索
         // search: false,
         // searchMaxSuggestions: 10
-        beian: getBeianDomain()
+        beian: getBeianDomain(),
+        domain: getBulldDomain()
     },
     plugins: [
         ['@vuepress/blog',

@@ -4,7 +4,7 @@
             <img :src="banner" alt="">
         </router-link> -->
         <div class="banner">
-            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="homeBanner" alt=""></a>
+            <a href="http://doc.linkease.com/zh/guide/ddnsto/"><img :src="bannerImage" alt=""></a>
         </div>
         <div class="part1">
             <img :src="homeDdnsto" alt="">
@@ -217,6 +217,19 @@ export default {
 
         }
     },
+    computed: {
+        bannerImage() {
+            switch (this.$themeConfig.domain) {
+                case "kooldns.cn":
+                case "kooldns.com":
+                    return "/assets/banner/banner2@2x.png"
+                case "tocmcc.cn":
+                    return "/assets/banner/banner3@2x.png"
+            }
+            // ddnsto.com
+            return "/assets/banner/banner1@2x.png"
+        },
+    },
 }
 
 </script>
@@ -327,8 +340,7 @@ export default {
         margin-top: 100px;
 
         .tit {
-            .number {
-            }
+            .number {}
 
             .prise_title {
                 font-size: 40px;
@@ -427,6 +439,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 620px) {
     #main {
         .prise {
@@ -440,6 +453,7 @@ export default {
                             font-size: 40px;
                         }
                     }
+
                     .function {
                         padding: 0 20px;
                     }
@@ -448,6 +462,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 600px) {
     #main {
         .prise {
@@ -461,12 +476,14 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 500px) {
     #main {
         .prise {
             .prise_aisle {
                 .aisle {
                     margin-bottom: 180px;
+
                     .aisle_tit {
                         margin-top: 58px;
                     }
@@ -475,6 +492,7 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 430px) {
     #main {
         .prise {
@@ -483,10 +501,13 @@ export default {
                     font-size: 30px;
                 }
             }
+
             margin: 0 20px;
+
             .prise_aisle {
                 .aisle {
                     margin-bottom: 280px;
+
                     .aisle_tit {
                         margin-top: 80px;
                     }
@@ -495,21 +516,26 @@ export default {
         }
     }
 }
+
 @media screen and (max-width: 400px) {
     #main {
         .prise {
             margin: 0 20px;
+
             .tit {
                 .prise_title {
                     line-height: 60px;
                 }
             }
+
             .prise_aisle {
                 .aisle {
                     margin-bottom: 180px;
+
                     .image {
                         top: -88px;
                     }
+
                     .aisle_tit {
                         margin-top: 90px;
                     }
@@ -523,9 +549,9 @@ export default {
     #main {
         .prise {
             margin: 0 20px;
+
             .tit {
-                .number {
-                }
+                .number {}
 
                 .prise_title {
                     font-size: 20px;
@@ -536,8 +562,8 @@ export default {
             .prise_aisle {
                 .aisle {
                     padding: 0;
-                    .image {
-                    }
+
+                    .image {}
 
                     .aisle_tit {
                         font-size: 18px;
