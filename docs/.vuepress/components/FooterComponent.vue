@@ -3,18 +3,20 @@
         <div class="footer-content max-width">
             <div class="content_text">
                 <div class="content_block">
-                    <template v-for="(item,i) in menus">
+                    <template v-for="(item, i) in menus">
                         <ul class="content_list" :key="i">
-                            <li class="content_title" :title="item.title">{{item.title}}</li>
-                            <template v-for="(ole,k) in item.childer">
-                                <li :key="k"><a :href="ole.value" :title="ole.label" target="_blank">{{ole.label}}</a></li>
+                            <li class="content_title" :title="item.title">{{ item.title }}</li>
+                            <template v-for="(ole, k) in item.childer">
+                                <li :key="k"><a :href="ole.value" :title="ole.label" target="_blank">{{ ole.label }}</a>
+                                </li>
                             </template>
                         </ul>
                     </template>
                 </div>
             </div>
-            <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2021  备案号： ${beianValue}`">易有云网络科技有限责任公司 Copyright © 2019-2021<br />
-                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{beianValue}}</a>
+            <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2023  备案号： ${beianValue}`">易有云网络科技有限责任公司
+                Copyright © 2019-2023<br />
+                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }}</a>
             </div>
         </div>
     </div>
@@ -74,7 +76,7 @@ export default {
                     childer: [
                         {
                             label: "关于我们",
-                            value: "https://doc.linkease.com/zh/guide/about/"
+                            value: "https://www.linkease.com/about/"
                         },
                         {
                             label: "联系我们",
@@ -95,7 +97,7 @@ export default {
         }
     },
     computed: {
-        beianValue(){
+        beianValue() {
             return this.$themeConfig.beian
         }
     },
@@ -110,6 +112,7 @@ export default {
     word-wrap: break-word;
     outline: none;
 }
+
 .footer {
     margin-top: 100px;
     // background-color: #f4f4f4;
@@ -118,9 +121,11 @@ export default {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     .footer-content {
         display: flex;
         flex-wrap: wrap;
+
         .content_text {
             width: 1116px;
             display: flex;
@@ -138,9 +143,11 @@ export default {
                 justify-content: space-between;
                 flex-wrap: wrap;
                 width: 1020px;
+
                 .content_list {
                     margin: 0;
                     padding: 0;
+
                     .content_title {
                         font-size: 16px;
                         font-family: PingFangSC-Semibold, PingFang SC;
@@ -149,6 +156,7 @@ export default {
                         line-height: 22px;
                         padding-bottom: 22px;
                     }
+
                     a {
                         display: block;
                         font-size: 14px;
@@ -158,26 +166,31 @@ export default {
                         line-height: 20px;
                         margin-bottom: 8px;
                     }
+
                     a:hover {
                         color: #0060ff;
                     }
                 }
             }
         }
+
         .content_info {
             flex: 0 0 100%;
             font-size: 12px;
             color: #8e8e8e;
             margin: 1rem 0;
+
             a {
                 color: #8e8e8e;
             }
+
             a:hover {
                 color: #0060ff;
             }
         }
     }
 }
+
 li {
     list-style: none;
 }
@@ -189,10 +202,12 @@ li {
             .content_text {
                 width: 100%;
                 padding-bottom: 0px;
+
                 .content_block {
                     max-width: 100%;
                     flex-wrap: nowrap;
                     padding: 0;
+
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
@@ -205,15 +220,18 @@ li {
         }
     }
 }
+
 @media screen and (max-width: 1300px) {
     .footer {
         .footer-content {
             .content_text {
                 width: 100%;
+
                 .content_block {
                     max-width: 100%;
                     flex-wrap: nowrap;
                     padding: 0 10px;
+
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
@@ -223,22 +241,26 @@ li {
                     }
                 }
             }
+
             .content_info {
                 padding-left: 10px;
             }
         }
     }
 }
+
 @media screen and (max-width: 1100px) {
     .footer {
         .footer-content {
             .content_text {
                 width: 100%;
+
                 // margin: 0 80px;
                 .content_block {
                     max-width: 100%;
                     flex-wrap: wrap;
                     padding: 0 10px;
+
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
@@ -251,21 +273,25 @@ li {
         }
     }
 }
+
 @media screen and(max-width:1024px) {
     .footer {
         .footer-content {
             .content_text {
                 width: 100%;
+
                 .content_block {
                     max-width: 100%;
                     flex-wrap: wrap;
                     padding: 0 120px;
+
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 25%;
                         margin: 0;
                         padding: 0;
                         margin-bottom: 12px;
+
                         .content_title {
                             padding-bottom: 8px;
                         }
@@ -275,15 +301,18 @@ li {
         }
     }
 }
+
 @media screen and (max-width: 900px) {
     .footer {
         .footer-content {
             .content_text {
                 width: 100%;
+
                 .content_block {
                     width: 100%;
                     padding: 0 20px;
                     flex-wrap: wrap;
+
                     .content_list {
                         flex: 0 0 100%;
                         max-width: 50%;
@@ -293,6 +322,7 @@ li {
                     }
                 }
             }
+
             .content_info {
                 padding-left: 20px;
             }
