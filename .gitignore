@@ -1,7 +1,6 @@
 node_modules
 build
 build.zip
-package-lock.json
 .DS_Store
 build.tar.gz
 depoly.sh
