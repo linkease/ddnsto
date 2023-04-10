@@ -49,10 +49,10 @@ module.exports = {
             'script', { src: "/script/analytics.js" }
         ],
         [
-            'script', { src: "https://assets.koolcenter.com/linkease-navigation-script/main.js?v=5", defer: true },
+            'script', { src: "https://assets.koolcenter.com/linkease-navigation-script/main.js?v=6", defer: true },
         ],
         [
-            'link', { rel: 'stylesheet', href: 'https://assets.koolcenter.com/linkease-navigation-script/main.css?v=5' }
+            'link', { rel: 'stylesheet', href: 'https://assets.koolcenter.com/linkease-navigation-script/main.css?v=6' }
         ]
     ],
     // 多语言

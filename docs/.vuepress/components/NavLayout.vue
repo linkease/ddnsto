@@ -10,8 +10,6 @@
                 <slot name="sidebar-bottom" />
             </template>
         </Sidebar>
-        <!-- 电梯导航 -->
-        <NavigationMenus :menus="menus" />
     </div>
 </template>
 
@@ -21,12 +19,6 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '@vuepress/theme-default/util'
-import { NavigationMenus, MenuObjectQQ, MenuObjectWechatConsult, MenuObjectEmail } from "linkease-web-navigation";
-import "linkease-web-navigation/lib/linkease-web-navigation.css"
-const wechatMenu = {
-    ...MenuObjectWechatConsult
-}
-wechatMenu.text = "请在 控制台 - 玩家交流页查看二维码"
 export default {
     name: 'NavLayout',
     components: {
@@ -34,18 +26,11 @@ export default {
         Page,
         Sidebar,
         Navbar,
-        NavigationMenus,
-
     },
 
     data() {
         return {
             isSidebarOpen: false,
-            menus: [
-                MenuObjectQQ,
-                wechatMenu,
-                MenuObjectEmail
-            ]
         }
     },
 
