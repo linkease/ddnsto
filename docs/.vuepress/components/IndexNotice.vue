@@ -45,7 +45,7 @@ export default {
     },
   },
   created() {
-    axios.post("/api/announcement/announcements", {}).then((res) => {
+    axios.get("/api/announcement/announcements", {}).then((res) => {
       if (res.status === 200) {
         this.noticeList = res.data;
       }
