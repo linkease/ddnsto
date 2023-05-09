@@ -18,16 +18,6 @@
 
       <a v-else href="http://doc.linkease.com/zh/guide/ddnsto/">
         <img :src="bannerImage" alt="" />
-        <div class="banner-link">
-          <div
-            class="item"
-            v-for="(item, index) in linkList"
-            :key="index"
-            @click="openLink(item.url)"
-          >
-            {{ item.text }}
-          </div>
-        </div>
       </a>
     </div>
     <div class="part1">
