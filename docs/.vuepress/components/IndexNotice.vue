@@ -8,7 +8,7 @@
         :key="index"
         @click="openLink(item.url)"
       >
-        <span
+        <span :class="item.url ? 'underLine' : 'line'"
           >{{ index + 1 + "." }}{{ "【" + item.title + "】" }}
           {{ item.detail }}</span
         >
@@ -89,7 +89,7 @@ export default {
       display: flex;
       padding: 16px 0;
       align-items: center;
-      cursor: pointer;
+
       span {
         word-break: break-all;
         text-overflow: ellipsis;
@@ -97,6 +97,13 @@ export default {
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
         overflow: hidden;
+      }
+      .underLine {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .underLine:hover {
+        color: #1663fe;
       }
       img {
         width: 20px;
