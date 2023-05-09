@@ -4,7 +4,18 @@ const getBulldDomain = () => {
   // "kooldns.cn"
   // "kooldns.com"
   // "tocmcc.cn"
-  return process.env.npm_config_domain || "ddnsto.com";
+  return process.env.npm_config_domain || "";
+};
+const getBeianDomainUrl = () => {
+  switch (getBulldDomain()) {
+    case "kooldns.cn":
+    case "kooldns.com":
+    case "tocmcc.cn":
+    case "ddnsto.com":
+      return "https://www.ddnsto.com/app/#/login";
+    default:
+      return "/app/#/login";
+  }
 };
 const getBeianDomain = () => {
   switch (getBulldDomain()) {
@@ -18,7 +29,6 @@ const getBeianDomain = () => {
       return "粤ICP备20024441号";
   }
 };
-
 module.exports = {
   host: "0.0.0.0",
   port: 8080,
@@ -137,7 +147,7 @@ module.exports = {
           },
           {
             text: "控制台",
-            link: "https://www.ddnsto.com/app/#/login",
+            link: getBeianDomainUrl(),
             target: "_blank",
           },
         ],
