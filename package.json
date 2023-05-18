@@ -1,32 +1,32 @@
 {
-    "name": "ddnsto",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "directories": {
-        "doc": "docs"
-    },
-    "dependencies": {
-        "sass": "^1.29.0",
-        "sass-loader": "^10.0.5",
-        "vuepress": "^1.8.0"
-    },
-    "devDependencies": {
-        "@vuepress/plugin-blog": "^1.9.4"
-    },
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "vuepress dev docs",
-        "build": "vuepress build docs"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/linkease/ddnsto.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/linkease/ddnsto/issues"
-    },
-    "homepage": "https://github.com/linkease/ddnsto#readme"
+  "name": "ddnsto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "sass": "^1.29.0",
+    "sass-loader": "^10.0.5",
+    "vuepress": "^1.8.0"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-blog": "^1.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkease/ddnsto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/linkease/ddnsto/issues"
+  },
+  "homepage": "https://github.com/linkease/ddnsto#readme"
 }
