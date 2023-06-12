@@ -73,6 +73,9 @@ module.exports = {
     ],
     ["script", { src: "/script/analytics.js" }],
     [
+      'script', { src: "/script/google-analytics.js" }
+    ],
+    [
       "script",
       {
         src: "https://assets.koolcenter.com/linkease-navigation-script/main.js?v=6",
