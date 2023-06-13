@@ -29,6 +29,20 @@ const getBeianDomain = () => {
       return "粤ICP备20024441号";
   }
 };
+const getTitle = () => {
+  switch (getBulldDomain()) {
+    case "ddnsto.com":
+      return "DDNSTO - 深圳市易有云网络科技有限责任公司";
+    case "kooldns.cn":
+      return "DDNSTO远程控制";
+    case "kooldns.com":
+      return "DDNSTO远程控制";
+    case "tocmcc.cn":
+      return "DDNSTO-家庭网络监控";
+    default:
+      return "DDNSTO远程控制";
+  }
+};
 module.exports = {
   host: "0.0.0.0",
   port: 8080,
@@ -57,7 +71,7 @@ module.exports = {
     },
   },
   // 站点标题
-  title: "DDNSTO远程控制",
+  title: getTitle(),
   // 网站的描述
   description:
     "DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理",
