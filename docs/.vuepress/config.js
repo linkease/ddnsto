@@ -38,7 +38,7 @@ const getTitle = () => {
     case "kooldns.com":
       return "DDNSTO远程控制";
     case "tocmcc.cn":
-      return "DDNSTO-家庭网络监控";
+      return "DDNSTO远程控制";
     default:
       return "DDNSTO远程控制";
   }
