@@ -32,7 +32,7 @@ const getBeianDomain = () => {
 const getTitle = () => {
   switch (getBulldDomain()) {
     case "ddnsto.com":
-      return "DDNSTO - 深圳市易有云网络科技有限责任公司";
+      return "DDNSTO高效管理设备";
     case "kooldns.cn":
       return "DDNSTO远程控制";
     case "kooldns.com":
