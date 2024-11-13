@@ -12,7 +12,7 @@ const getBeianDomainUrl = () => {
     case "kooldns.com":
     case "tocmcc.cn":
     case "ddnsto.com":
-      return "https://www.ddnsto.com/app/#/login";
+      return "https://web.ddnsto.com/app/#/login";
     default:
       return "/app/#/login";
   }
@@ -52,7 +52,7 @@ module.exports = {
   devServer: {
     proxy: {
       "/api": {
-        target: "https://www.ddnsto.com/api",
+        target: "https://web.ddnsto.com/api",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
