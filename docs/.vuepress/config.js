@@ -14,7 +14,7 @@ const getBeianDomainUrl = () => {
     case "ddnsto.com":
       return "https://web.ddnsto.com/app/#/login";
     default:
-      return "/app/#/login";
+      return "https://web.ddnsto.com/app/#/login";
   }
 };
 const getBeianDomain = () => {
