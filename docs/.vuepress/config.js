@@ -25,6 +25,8 @@ const getBeianDomain = () => {
       return "粤ICP备20024441号-3";
     case "tocmcc.cn":
       return "粤ICP备20024441号-6";
+    case "toany.net":
+      return "粤ICP备20024441号-13";
     default:
       return "粤ICP备20024441号";
   }
@@ -39,6 +41,8 @@ const getTitle = () => {
       return "DDNSTO远程控制";
     case "tocmcc.cn":
       return "DDNSTO远程控制";
+    case "toany.net":
+      return "触达你的服务器";
     default:
       return "DDNSTO远程控制";
   }
