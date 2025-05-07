@@ -12,6 +12,7 @@ const getBeianDomainUrl = () => {
     case "kooldns.com":
     case "tocmcc.cn":
     case "ddnsto.com":
+    case "ddnsto.vip":
       return "https://web.ddnsto.com/app/#/login";
     default:
       return "https://web.ddnsto.com/app/#/login";
@@ -27,6 +28,8 @@ const getBeianDomain = () => {
       return "粤ICP备20024441号-6";
     case "toany.net":
       return "粤ICP备20024441号-13";
+    case "ddnsto.vip":
+      return "粤ICP备20024441号-14"
     default:
       return "粤ICP备20024441号";
   }
@@ -43,6 +46,8 @@ const getTitle = () => {
       return "DDNSTO远程控制";
     case "toany.net":
       return "触达你的服务器";
+    case "ddnsto.vip":
+      return "设备控制专家"
     default:
       return "DDNSTO远程控制";
   }

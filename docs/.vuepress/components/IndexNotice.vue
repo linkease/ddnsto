@@ -2,16 +2,9 @@
   <div id="main" class="desktop">
     <div class="notice-box">
       <p>最新公告</p>
-      <div
-        class="item"
-        v-for="(item, index) in noticeList"
-        :key="index"
-        @click="openLink(item.url)"
-      >
-        <span :class="item.url ? 'underLine' : 'line'"
-          >{{ index + 1 + "." }}{{ "【" + item.title + "】" }}
-          {{ item.detail }}</span
-        >
+      <div class="item" v-for="(item, index) in noticeList" :key="index" @click="openLink(item.url)">
+        <span :class="item.url ? 'underLine' : 'line'">{{ index + 1 + "." }}{{ "【" + item.title + "】" }}
+          {{ item.detail }}</span>
         <img v-if="item.url" :src="Arrow" />
       </div>
     </div>
@@ -44,7 +37,7 @@ export default {
       return "/assets/banner/banner_new@2x.png";
     },
   },
-  created() {
+  mounted() {
     axios.get("/api/announcement/announcements", {}).then((res) => {
       if (res.status === 200) {
         this.noticeList = res.data;
@@ -68,15 +61,18 @@ export default {
   word-wrap: break-word;
   outline: 0;
 }
+
 #main {
   width: 100%;
   position: relative;
   margin-top: 5.125rem;
   display: flex;
   justify-content: center;
+
   .notice-box {
     display: flex;
     flex-direction: column;
+
     p {
       font-size: 20px;
       font-family: PingFangSC-Medium, PingFang SC;
@@ -84,6 +80,7 @@ export default {
       color: rgba(0, 0, 0, 0.83);
       line-height: 28px;
     }
+
     .item {
       border-bottom: 1px solid #f4f4f4;
       display: flex;
@@ -98,13 +95,16 @@ export default {
         -webkit-line-clamp: 2;
         overflow: hidden;
       }
+
       .underLine {
         text-decoration: underline;
         cursor: pointer;
       }
+
       .underLine:hover {
         color: #1663fe;
       }
+
       img {
         width: 20px;
         height: 20px;
@@ -112,10 +112,12 @@ export default {
     }
   }
 }
+
 @media screen and (min-width: 860px) {
   #main {
     .notice-box {
       width: 800px;
+
       .item {
         span {
           display: inline-block;
@@ -125,6 +127,7 @@ export default {
     }
   }
 }
+
 @media screen and (max-width: 860px) {
   #main {
     .notice-box {
