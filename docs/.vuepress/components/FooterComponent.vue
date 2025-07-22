@@ -15,8 +15,8 @@
                 </div>
             </div>
             <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2023  备案号： ${beianValue}`">易有云网络科技有限责任公司
-                Copyright © 2019-2023<br />
-                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }}</a>
+                Copyright © 2019-2025<br />
+                <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }} 增值电信业务经营许可 粤B2-20251165</a>
             </div>
         </div>
     </div>
