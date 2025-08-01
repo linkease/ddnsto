@@ -14,8 +14,7 @@
                     </template>
                 </div>
             </div>
-            <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2025  备案号： ${beianValue} 增值电信业务经营许可 粤B2-20251165`">易有云网络科技有限责任公司
-                Copyright © 2019-2025<br />
+            <div class="content_info" :title="`Copyright © 2019-2025 深圳市易有云网络科技有限责任公司 版权所有  备案号： ${beianValue} 增值电信业务经营许可 粤B2-20251165`">Copyright © 2019-2025 深圳市易有云网络科技有限责任公司 版权所有<br />
                 <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }}</a>
                 <a href="https://assets.koolcenter.com/linkease/VTBOL.pdf" style="margin-left: 8px;" target="_blank">增值电信业务经营许可 粤B2-20251165</a>
             </div>
