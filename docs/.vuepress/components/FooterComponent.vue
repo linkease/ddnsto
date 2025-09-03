@@ -14,10 +14,10 @@
                     </template>
                 </div>
             </div>
-            <div class="content_info" :title="`Copyright © 2019-${new Date().getFullYear()} 深圳市易有云网络科技有限责任公司 版权所有  备案号： ${beianValue} 增值电信业务经营许可 粤B2-20251165  公司地址：深圳市南山区高新南环路29号留学生创业大厦一期 2001 联系电话：13316474667`">Copyright © 2019-{{ new Date().getFullYear() }} 深圳市易有云网络科技有限责任公司 版权所有<br />
+            <div class="content_info" :title="`Copyright © 2019-${new Date().getFullYear()} 深圳市易有云网络科技有限责任公司 版权所有  备案号： ${beianValue} 增值电信业务经营许可 粤B2-20251165  公司地址：深圳市南山区粤海街道高新区社区高新南九道61号卫星大厦1003 联系电话：13316474667`">Copyright © 2019-{{ new Date().getFullYear() }} 深圳市易有云网络科技有限责任公司 版权所有<br />
                 <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }}</a>
                 <a href="https://assets.koolcenter.com/linkease/VTBOL.pdf" style="margin-left: 8px;" target="_blank">增值电信业务经营许可 粤B2-20251165</a><br />
-                <a>公司地址：深圳市南山区高新南环路29号留学生创业大厦一期 2001 &nbsp;&nbsp; 联系电话：13316474667</a>
+                <a>公司地址：深圳市南山区粤海街道高新区社区高新南九道61号卫星大厦1003 &nbsp;&nbsp; 联系电话：13316474667</a>
             </div>
         </div>
     </div>
