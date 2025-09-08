@@ -18,6 +18,22 @@ const getBeianDomainUrl = () => {
       return "https://web.ddnsto.com/app/#/login";
   }
 };
+const getBeianNumber = () => {
+  switch (getBulldDomain()) {
+    case "kooldns.cn":
+      return "44030002007900";
+    case "kooldns.com":
+      return "44030002007902";
+    case "tocmcc.cn":
+      return "";
+    case "toany.net":
+      return "";
+    case "ddnsto.vip":
+      return "44030002007897"
+    default:
+      return "";
+  }
+};
 const getBeianDomain = () => {
   switch (getBulldDomain()) {
     case "kooldns.cn":
@@ -220,6 +236,7 @@ module.exports = {
     // 搜索
     // search: false,
     // searchMaxSuggestions: 10
+    beiabNumber:getBeianNumber(),
     beian: getBeianDomain(),
     domain: getBulldDomain(),
   },
