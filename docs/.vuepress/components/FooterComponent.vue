@@ -14,18 +14,24 @@
                     </template>
                 </div>
             </div>
-            <div class="content_info" :title="`易有云网络科技有限责任公司 Copyright © 2019-2023  备案号： ${beianValue}`">易有云网络科技有限责任公司
-                Copyright © 2019-2023<br />
+            <div class="content_info" :title="`Copyright © 2019-${new Date().getFullYear()} 深圳市易有云网络科技有限责任公司 版权所有  备案号： ${beianValue} 增值电信业务经营许可 粤B2-20251165  公司地址：深圳市南山区高新南环路29号留学生创业大厦一期 2001 联系电话：13316474667`">Copyright © 2019-{{ new Date().getFullYear() }} 深圳市易有云网络科技有限责任公司 版权所有<br />
                 <a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">备案号： {{ beianValue }}</a>
+                <a href="https://assets.koolcenter.com/linkease/VTBOL.pdf" style="margin-left: 8px;" target="_blank">增值电信业务经营许可 粤B2-20251165</a>
+                <div style="display: inline-flex;" v-if="beiabNumber"><img :src="icon_anbei" style="width: 16px;height: 16px;margin-left:6px;" alt="">
+                <a :href="`http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=${beiabNumber}`" style="margin-left: 3px;" target="_blank">粤公网安备{{beiabNumber}}号</a></div>
+                <br />
+                <a style="cursor: default;">公司地址：深圳市南山区高新南环路29号留学生创业大厦一期 2001 &nbsp;&nbsp; 联系电话：13316474667</a>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import icon_anbei from "../public/assets/home/anbei.png"
 export default {
     data() {
         return {
+            icon_anbei,
             menus: [
                 {
                     title: "所有产品",
@@ -99,6 +105,9 @@ export default {
     computed: {
         beianValue() {
             return this.$themeConfig.beian
+        },
+        beiabNumber() {
+            return this.$themeConfig.beiabNumber
         }
     },
 }

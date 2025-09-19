@@ -236,7 +236,7 @@ export default {
           url: "https://doc.linkease.com/zh/guide/ddnsto/install/device/koolcenter_merlin.html",
         },
         {
-          text: "群辉",
+          text: "群晖",
           url: "https://doc.linkease.com/zh/guide/ddnsto/install/device/synology.html",
         },
 

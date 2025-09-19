@@ -12,9 +12,28 @@ const getBeianDomainUrl = () => {
     case "kooldns.com":
     case "tocmcc.cn":
     case "ddnsto.com":
-      return "https://www.ddnsto.com/app/#/login";
+    case "ddnsto.vip":
+      return "https://web.ddnsto.com/app/#/login";
     default:
-      return "/app/#/login";
+      return "https://web.ddnsto.com/app/#/login";
+  }
+};
+const getBeianNumber = () => {
+  switch (getBulldDomain()) {
+    case "kooldns.cn":
+      return "44030002007900";
+    case "kooldns.com":
+      return "44030002007902";
+    case "tocmcc.cn":
+      return "";
+    case "toany.net":
+      return "";
+    case "ddnsto.com":
+      return "44030002008017"
+    case "ddnsto.vip":
+      return "44030002007897"
+    default:
+      return "";
   }
 };
 const getBeianDomain = () => {
@@ -25,8 +44,30 @@ const getBeianDomain = () => {
       return "粤ICP备20024441号-3";
     case "tocmcc.cn":
       return "粤ICP备20024441号-6";
+    case "toany.net":
+      return "粤ICP备20024441号-13";
+    case "ddnsto.vip":
+      return "粤ICP备20024441号-14"
     default:
       return "粤ICP备20024441号";
+  }
+};
+const getTitle = () => {
+  switch (getBulldDomain()) {
+    case "ddnsto.com":
+      return "DDNSTO高效管理设备";
+    case "kooldns.cn":
+      return "DDNSTO远程控制";
+    case "kooldns.com":
+      return "DDNSTO远程控制";
+    case "tocmcc.cn":
+      return "DDNSTO远程控制";
+    case "toany.net":
+      return "触达你的服务器";
+    case "ddnsto.vip":
+      return "设备控制专家"
+    default:
+      return "DDNSTO远程控制";
   }
 };
 module.exports = {
@@ -38,7 +79,7 @@ module.exports = {
   devServer: {
     proxy: {
       "/api": {
-        target: "https://www.ddnsto.com/api",
+        target: "https://web.ddnsto.com/api",
         changeOrigin: true,
         pathRewrite: {
           "^/api": "",
@@ -57,7 +98,7 @@ module.exports = {
     },
   },
   // 站点标题
-  title: "DDNSTO远程控制",
+  title: getTitle(),
   // 网站的描述
   description:
     "DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理",
@@ -72,6 +113,9 @@ module.exports = {
       },
     ],
     ["script", { src: "/script/analytics.js" }],
+    [
+      'script', { src: "/script/google-analytics.js" }
+    ],
     [
       "script",
       {
@@ -194,6 +238,7 @@ module.exports = {
     // 搜索
     // search: false,
     // searchMaxSuggestions: 10
+    beiabNumber:getBeianNumber(),
     beian: getBeianDomain(),
     domain: getBulldDomain(),
   },
