@@ -28,6 +28,8 @@ const getBeianNumber = () => {
       return "";
     case "toany.net":
       return "";
+    case "ddnsto.com":
+      return "44030002008017"
     case "ddnsto.vip":
       return "44030002007897"
     default:
