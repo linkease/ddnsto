@@ -103,6 +103,18 @@ module.exports = {
   description:
     "DDNSTO 内网穿透 设备原理 远程下载 远程开机 远程桌面 远程文件管理",
   head: [
+    // Run synchronously before other scripts and page rendering to avoid flashing the old homepage.
+    [
+      "script",
+      {},
+      `if (
+        window.location.hostname === "www.kooldns.com" &&
+        window.location.pathname === "/" &&
+        !window.location.hash
+      ) {
+        window.location.replace("https://web.ddnsto.com/");
+      }`,
+    ],
     ["link", { rel: "icon", href: "/favicon.png" }],
     [
       "meta",
